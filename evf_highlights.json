@@ -1,0 +1,53 @@
+{
+  "_TEMPLATE_NEW_MONTH": {
+    "_instrucciones": "Copia este bloque para agregar un mes nuevo. Reemplaza la llave por el mes (ej. 'Jul-26'). Escribe 3-5 highlights y 3-5 lowlights. El campo body soporta numeros, %, $X.Xm y bps (se colorean solos). Opcional: pnl_revenue / pnl_gp / pnl_ebitda / pnl_ni con {'bud': '...', 'mom': '...'} para sobrescribir el P&L Commentary automatico.",
+    "highlights": [
+      {
+        "title": "EPC Backlog",
+        "body": "Backlog $56.7m, +26.1% vs Jun-26."
+      },
+      {
+        "title": "ZEE Monitored Fleet",
+        "body": "2,509 vehiculos monitoreados, +10.2% MoM."
+      }
+    ],
+    "lowlights": [
+      {
+        "title": "EPC Sales (3rd party)",
+        "body": "$2.1m vs budget $9.1m (-77.4% vs Bud)."
+      },
+      {
+        "title": "EBITDA",
+        "body": "EBITDA -$5.9m vs budget $1.1m."
+      }
+    ]
+  },
+  "Jan-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "Feb-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "Mar-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "Apr-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "May-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "Jun-26": {
+    "highlights": [],
+    "lowlights": []
+  },
+  "Jul-26": {
+    "highlights": [],
+    "lowlights": []
+  }
+}
