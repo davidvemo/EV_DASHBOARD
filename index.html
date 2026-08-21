@@ -480,7 +480,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 <div id="access-gate" style="position:fixed;inset:0;z-index:100000;background:linear-gradient(135deg,#1F5454,#0f3b3b);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif">
   <div style="background:#fff;border-radius:16px;padding:38px 40px;box-shadow:0 20px 60px rgba(0,0,0,0.4);max-width:380px;width:90%;text-align:center">
     <div style="font-size:34px;margin-bottom:6px">🔒</div>
-    <div style="font-size:19px;font-weight:800;color:#1F5454;letter-spacing:0.02em">DAE — Executive Summary</div>
+    <div style="font-size:19px;font-weight:800;color:#1F5454;letter-spacing:0.02em">EV FLEETS — Executive Summary</div>
     <div style="font-size:12px;color:#888;margin:8px 0 20px">Enter the access code to continue.</div>
     <input id="access-input" type="password" autocomplete="off" placeholder="Access code"
       style="width:100%;box-sizing:border-box;padding:12px 14px;border:1.5px solid #cfe0e0;border-radius:9px;font-size:14px;font-family:inherit;text-align:center;letter-spacing:0.05em;outline:none" />
@@ -492,7 +492,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 </div>
 <script>
 (function(){
-  var GATE_HASH="5f16ef47f1f0870c97ea41b3a70a2183b09a6d9840053b3b57c8af439f52db09";
+  var GATE_HASH="22822a80e508fee72004b5d8b95b27851f9f760eb5a0729df1fe0d66523fe67f";
   var SKEY="evf-access-ok";
   var gate=document.getElementById('access-gate');
   var input=document.getElementById('access-input');
@@ -539,7 +539,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
   <div style="display:flex;gap:20px;align-items:flex-start">
     <canvas id="vemo-game-canvas" width="320" height="500" style="background:#1a2a2a;border:3px solid #11ABAB;border-radius:10px;display:block"></canvas>
     <div style="color:#fff;font-size:13px;width:200px">
-      <div style="font-size:20px;font-weight:800;color:#7BDADA;margin-bottom:8px">🚖 VEMO RACE</div>
+      <div style="font-size:20px;font-weight:800;color:#7BDADA;margin-bottom:8px">⚡ VEMO RACE</div>
       <div style="color:#9aa3ac;margin-bottom:14px">Esquiva los autos. Cambia de carril.</div>
       <div style="margin-bottom:10px"><b>Score:</b> <span id="vg-score" style="color:#7BDADA;font-size:18px;font-weight:800">0</span></div>
       <div style="margin-bottom:10px"><b>Best:</b> <span id="vg-best" style="color:#5dd39e;font-weight:700">0</span></div>
@@ -588,7 +588,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 </div>
 <div id="chat-panel" class="chat-panel">
   <div class="chat-panel-hd">
-    <span>🚖 <b>VEMIA</b> · Your DAE Assistant</span>
+    <span>⚡ <b>VEMIA</b> · Your EV Fleets Assistant</span>
     <span style="margin-left:auto;display:flex;gap:6px">
       <button id="chat-clear" title="Clear conversation" style="background:none;border:none;color:#fff;cursor:pointer;font-size:14px;padding:2px 6px">🗑️</button>
       <button id="chat-close" title="Close (Esc)" style="background:none;border:none;color:#fff;cursor:pointer;font-size:14px;padding:2px 6px">✕</button>
@@ -769,7 +769,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 
 <footer class="foot">
   <div>VEMO · EV Fleets · Strictly Private &amp; Confidential</div>
-  <div>build 2026-08-20 18:22</div>
+  <div>build 2026-08-21 09:07</div>
 </footer>
 
 <script>
@@ -779,7 +779,7 @@ let KPI_RANGE = 'ytd';  // 'ytd' o 'historic'
 let PL_SHOW_HISTORIC = false;
 let PL_PERIOD_MODE = 'monthly';
 
-const MONTHLY_HL = {"Jan-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$10.3m</span> (-42.9% vs Bud) — actual $13.8m vs budget $24.1m. Split: EPC 3rd-party <span class=\"r\">-$0.6m</span>, EPC Interco <span class=\"r\">-$9.9m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$24.8m</span> (-64.3% vs Dec-25) — $13.8m vs $38.6m. EPC 3rd-party <span class=\"r\">-$4.5m</span>, EPC Interco <span class=\"r\">-$20.5m</span>, Contracted Revenues <span class=\"g\">$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$2.1m</span> (-32.4% vs Bud) — $4.3m at 31.0% margin vs budget $6.3m at 26.2%. OPEX <span class=\"g\">$8.3m</span> (actual -$9.5m vs budget -$17.8m).", "mom": "MXN <span class=\"g\">$3.1m</span> (277.5% vs Dec-25) — margin 31.0% vs 2.9%. OPEX <span class=\"g\">$28.0m</span> (-$9.5m vs -$37.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-69.8% vs Bud) — -$3.5m at -25.4% margin vs budget -$2.1m at -8.5%. SG&amp;A <span class=\"g\">$0.6m</span>: Direct Business Line <span class=\"g\">$0.0m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.6m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.7m (<span class=\"r\">-$2.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$8.0m</span> (69.5% vs Dec-25) — -$3.5m vs -$11.5m, margin -25.4% vs -29.8%. SG&amp;A <span class=\"g\">$4.8m</span> (-$7.8m vs -$12.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-32.9% vs Bud) — -$5.5m vs budget -$4.1m. Bridge: EBIT <span class=\"r\">-$1.4m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.7m vs budget -$1.7m).", "mom": "MXN <span class=\"g\">$16.3m</span> (74.9% vs Dec-25) — -$5.5m vs -$21.8m. EBIT <span class=\"g\">$8.0m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Feb-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$24.1m</span> (-59.3% vs Bud) — actual $16.6m vs budget $40.7m. Split: EPC 3rd-party <span class=\"r\">-$3.9m</span>, EPC Interco <span class=\"r\">-$20.3m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"g\">$2.8m</span> (20.1% vs Jan-26) — $16.6m vs $13.8m. EPC 3rd-party <span class=\"g\">$1.4m</span>, EPC Interco <span class=\"g\">$1.5m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-38.2% vs Bud) — $5.5m at 33.3% margin vs budget $8.9m at 22.0%. OPEX <span class=\"g\">$20.7m</span> (actual -$11.1m vs budget -$31.7m).", "mom": "MXN <span class=\"g\">$1.2m</span> (28.9% vs Jan-26) — margin 33.3% vs 31.0%. OPEX <span class=\"r\">-$1.5m</span> (-$11.1m vs -$9.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-650.3% vs Bud) — -$2.9m at -17.6% margin vs budget $0.5m at 1.3%. SG&amp;A <span class=\"r\">-$0.0m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.2m (<span class=\"r\">-$3.6m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.6m</span> (16.7% vs Jan-26) — -$2.9m vs -$3.5m, margin -17.6% vs -25.4%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$8.4m vs -$7.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-254.4% vs Bud) — -$4.8m vs budget -$1.3m. Bridge: EBIT <span class=\"r\">-$3.4m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.5m vs budget -$1.5m).", "mom": "MXN <span class=\"g\">$0.7m</span> (13.0% vs Jan-26) — -$4.8m vs -$5.5m. EBIT <span class=\"g\">$0.6m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Mar-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$18.8m</span> (-55.4% vs Bud) — actual $15.1m vs budget $33.9m. Split: EPC 3rd-party <span class=\"r\">-$0.2m</span>, EPC Interco <span class=\"r\">-$18.7m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$1.4m</span> (-8.7% vs Feb-26) — $15.1m vs $16.6m. EPC 3rd-party <span class=\"g\">$3.9m</span>, EPC Interco <span class=\"r\">-$5.3m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.7m</span> (-9.2% vs Bud) — $7.3m at 48.4% margin vs budget $8.1m at 23.8%. OPEX <span class=\"g\">$18.0m</span> (actual -$7.8m vs budget -$25.8m).", "mom": "MXN <span class=\"g\">$1.8m</span> (32.7% vs Feb-26) — margin 48.4% vs 33.3%. OPEX <span class=\"g\">$3.3m</span> (-$7.8m vs -$11.1m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.3m</span> (-245.2% vs Bud) — -$1.8m at -11.8% margin vs budget -$0.5m at -1.5%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.4m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.3m (<span class=\"r\">-$1.7m</span> vs Bud).", "mom": "MXN <span class=\"g\">$1.1m</span> (38.9% vs Feb-26) — -$1.8m vs -$2.9m, margin -11.8% vs -17.6%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$9.1m vs -$8.4m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.2m</span> (-47.8% vs Bud) — -$3.7m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$1.2m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.6m vs budget -$1.7m).", "mom": "MXN <span class=\"g\">$1.0m</span> (21.9% vs Feb-26) — -$3.7m vs -$4.8m. EBIT <span class=\"g\">$1.1m</span>, Interest expense <span class=\"r\">-$0.1m</span>."}}, "Apr-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$30.6m</span> (-66.3% vs Bud) — actual $15.5m vs budget $46.1m. Split: EPC 3rd-party <span class=\"r\">-$7.7m</span>, EPC Interco <span class=\"r\">-$23.3m</span>, Contracted Revenues <span class=\"g\">$0.5m</span>.", "mom": "MXN <span class=\"g\">$0.4m</span> (2.6% vs Mar-26) — $15.5m vs $15.1m. EPC 3rd-party <span class=\"r\">-$7.2m</span>, EPC Interco <span class=\"g\">$7.2m</span>, Contracted Revenues <span class=\"g\">$0.4m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-39.0% vs Bud) — $6.3m at 40.7% margin vs budget $10.4m at 22.5%. OPEX <span class=\"g\">$26.5m</span> (actual -$9.2m vs budget -$35.7m).", "mom": "MXN <span class=\"r\">-$1.0m</span> (-13.7% vs Mar-26) — margin 40.7% vs 48.4%. OPEX <span class=\"r\">-$1.4m</span> (-$9.2m vs -$7.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-242.1% vs Bud) — -$2.4m at -15.7% margin vs budget $1.7m at 3.7%. SG&amp;A <span class=\"r\">-$0.1m</span>: Direct Business Line <span class=\"r\">-$0.7m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.5m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.6m (<span class=\"r\">-$4.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.7m</span> (-37.1% vs Mar-26) — -$2.4m vs -$1.8m, margin -15.7% vs -11.8%. SG&amp;A <span class=\"g\">$0.3m</span> (-$8.8m vs -$9.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-1931.8% vs Bud) — -$4.2m vs budget -$0.2m. Bridge: EBIT <span class=\"r\">-$4.1m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.4m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$0.5m</span> (-12.8% vs Mar-26) — -$4.2m vs -$3.7m. EBIT <span class=\"r\">-$0.7m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "May-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$34.0m</span> (128.5% vs Bud) — actual $60.4m vs budget $26.4m. Split: EPC 3rd-party <span class=\"r\">-$2.7m</span>, EPC Interco <span class=\"g\">$36.5m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"g\">$44.9m</span> (289.2% vs Apr-26) — $60.4m vs $15.5m. EPC 3rd-party <span class=\"g\">$5.3m</span>, EPC Interco <span class=\"g\">$40.1m</span>, Contracted Revenues <span class=\"r\">-$0.4m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"g\">$2.0m</span> (25.8% vs Bud) — $9.6m at 15.9% margin vs budget $7.6m at 28.8%. OPEX <span class=\"r\">-$32.0m</span> (actual -$50.8m vs budget -$18.8m).", "mom": "MXN <span class=\"g\">$3.3m</span> (51.6% vs Apr-26) — margin 15.9% vs 40.7%. OPEX <span class=\"r\">-$41.6m</span> (-$50.8m vs -$9.2m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$1.3m</span> (123.2% vs Bud) — $0.2m at 0.4% margin vs budget -$1.1m at -4.0%. SG&amp;A <span class=\"r\">-$0.7m</span>: Direct Business Line <span class=\"r\">-$0.6m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.1m</span>. EBITDA ex CF &amp; Corp G&amp;A $3.9m (<span class=\"g\">$1.4m</span> vs Bud).", "mom": "MXN <span class=\"g\">$2.7m</span> (110.1% vs Apr-26) — $0.2m vs -$2.4m, margin 0.4% vs -15.7%. SG&amp;A <span class=\"r\">-$0.6m</span> (-$9.3m vs -$8.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$1.2m</span> (41.2% vs Bud) — -$1.8m vs budget -$3.0m. Bridge: EBIT <span class=\"g\">$1.3m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"g\">$2.4m</span> (58.0% vs Apr-26) — -$1.8m vs -$4.2m. EBIT <span class=\"g\">$2.7m</span>, Interest expense <span class=\"r\">-$0.2m</span>."}}, "Jun-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$7.3m</span> (-28.3% vs Bud) — actual $18.4m vs budget $25.7m. Split: EPC 3rd-party <span class=\"r\">-$7.1m</span>, EPC Interco <span class=\"r\">-$0.5m</span>, Contracted Revenues <span class=\"g\">$0.3m</span>.", "mom": "MXN <span class=\"r\">-$42.0m</span> (-69.5% vs May-26) — $18.4m vs $60.4m. EPC 3rd-party <span class=\"r\">-$4.3m</span>, EPC Interco <span class=\"r\">-$37.8m</span>, Contracted Revenues <span class=\"g\">$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-41.4% vs Bud) — $4.8m at 26.0% margin vs budget $8.2m at 31.8%. OPEX <span class=\"g\">$3.9m</span> (actual -$13.6m vs budget -$17.5m).", "mom": "MXN <span class=\"r\">-$4.8m</span> (-50.0% vs May-26) — margin 26.0% vs 15.9%. OPEX <span class=\"g\">$37.2m</span> (-$13.6m vs -$50.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-605.0% vs Bud) — -$5.0m at -27.4% margin vs budget -$0.7m at -2.8%. SG&amp;A <span class=\"r\">-$0.9m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.4m</span>. EBITDA ex CF &amp; Corp G&amp;A -$1.6m (<span class=\"r\">-$4.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$5.3m</span> (-2151.2% vs May-26) — -$5.0m vs $0.2m, margin -27.4% vs 0.4%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$9.8m vs -$9.3m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-164.9% vs Bud) — -$6.8m vs budget -$2.6m. Bridge: EBIT <span class=\"r\">-$4.3m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.5m vs budget -$1.5m).", "mom": "MXN <span class=\"r\">-$5.1m</span> (-286.8% vs May-26) — -$6.8m vs -$1.8m. EBIT <span class=\"r\">-$5.3m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "Jul-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$21.5m</span> (-52.9% vs Bud) — actual $19.1m vs budget $40.6m. Split: EPC 3rd-party <span class=\"r\">-$6.8m</span>, EPC Interco <span class=\"r\">-$15.6m</span>, Contracted Revenues <span class=\"g\">$0.9m</span>.", "mom": "MXN <span class=\"g\">$0.7m</span> (3.8% vs Jun-26) — $19.1m vs $18.4m. EPC 3rd-party <span class=\"g\">$0.4m</span>, EPC Interco <span class=\"r\">-$0.2m</span>, Contracted Revenues <span class=\"g\">$0.6m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$6.9m</span> (-70.0% vs Bud) — $3.0m at 15.5% margin vs budget $9.9m at 24.4%. OPEX <span class=\"g\">$14.5m</span> (actual -$16.2m vs budget -$30.7m).", "mom": "MXN <span class=\"r\">-$1.8m</span> (-38.1% vs Jun-26) — margin 15.5% vs 26.0%. OPEX <span class=\"r\">-$2.5m</span> (-$16.2m vs -$13.6m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$7.0m</span> (-631.5% vs Bud) — -$5.9m at -30.9% margin vs budget $1.1m at 2.7%. SG&amp;A <span class=\"r\">-$0.1m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.1m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.3m (<span class=\"r\">-$7.1m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.9m</span> (-17.3% vs Jun-26) — -$5.9m vs -$5.0m, margin -30.9% vs -27.4%. SG&amp;A <span class=\"g\">$1.0m</span> (-$8.9m vs -$9.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$6.9m</span> (-888.5% vs Bud) — -$7.6m vs budget -$0.8m. Bridge: EBIT <span class=\"r\">-$7.0m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.4m vs budget -$1.5m).", "mom": "MXN <span class=\"r\">-$0.8m</span> (-11.5% vs Jun-26) — -$7.6m vs -$6.8m. EBIT <span class=\"r\">-$0.9m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Jan-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$0.1m</span> (0.8% vs Bud) — actual $9.4m vs budget $9.3m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"g\">$9.4m</span> (0.0% vs n.a.) — $9.4m vs $0.0m. EPC 3rd-party <span class=\"g\">$3.8m</span>, EPC Interco <span class=\"g\">$1.9m</span>, Contracted Revenues <span class=\"g\">$3.7m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-29.3% vs Bud) — $3.3m at 35.4% margin vs budget $4.7m at 50.4%. OPEX <span class=\"r\">-$1.5m</span> (actual -$6.1m vs budget -$4.6m).", "mom": "MXN <span class=\"g\">$3.3m</span> (0.0% vs n.a.) — margin 35.4% vs 0.0%. OPEX <span class=\"r\">-$6.1m</span> (-$6.1m vs $0.0m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.6m</span> (-69.8% vs Bud) — -$3.8m at -40.3% margin vs budget -$2.2m at -23.9%. SG&amp;A <span class=\"r\">-$0.2m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.4m (<span class=\"r\">-$1.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$3.8m</span> (0.0% vs n.a.) — -$3.8m vs $0.0m, margin -40.3% vs 0.0%. SG&amp;A <span class=\"r\">-$7.1m</span> (-$7.1m vs $0.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.6m</span> (-35.5% vs Bud) — -$5.9m vs budget -$4.4m. Bridge: EBIT <span class=\"r\">-$1.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"r\">-$5.9m</span> (0.0% vs n.a.) — -$5.9m vs $0.0m. EBIT <span class=\"r\">-$4.1m</span>, Interest expense <span class=\"r\">-$1.9m</span>."}}, "Feb-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$0.1m</span> (1.0% vs Bud) — actual $7.6m vs budget $7.5m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$1.8m</span> (-19.4% vs Jan-25) — $7.6m vs $9.4m. EPC 3rd-party <span class=\"r\">-$0.5m</span>, EPC Interco <span class=\"r\">-$1.0m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.0m</span> (-0.2% vs Bud) — $3.0m at 39.6% margin vs budget $3.0m at 40.1%. OPEX <span class=\"r\">-$0.1m</span> (actual -$4.6m vs budget -$4.5m).", "mom": "MXN <span class=\"r\">-$0.3m</span> (-9.8% vs Jan-25) — margin 39.6% vs 35.4%. OPEX <span class=\"g\">$1.5m</span> (-$4.6m vs -$6.1m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-11.8% vs Bud) — -$5.3m at -69.3% margin vs budget -$4.7m at -62.7%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.5m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.0m (<span class=\"r\">-$0.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$1.5m</span> (-38.7% vs Jan-25) — -$5.3m vs -$3.8m, margin -69.3% vs -40.3%. SG&amp;A <span class=\"r\">-$1.1m</span> (-$8.3m vs -$7.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-8.0% vs Bud) — -$7.5m vs budget -$6.9m. Bridge: EBIT <span class=\"r\">-$0.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"r\">-$1.5m</span> (-25.4% vs Jan-25) — -$7.5m vs -$5.9m. EBIT <span class=\"r\">-$1.5m</span>, Interest expense <span class=\"r\">-$0.0m</span>."}}, "Mar-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$0.1m</span> (-0.3% vs Bud) — actual $19.5m vs budget $19.6m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>.", "mom": "MXN <span class=\"g\">$12.0m</span> (157.9% vs Feb-25) — $19.5m vs $7.6m. EPC 3rd-party <span class=\"g\">$0.9m</span>, EPC Interco <span class=\"g\">$11.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.8m</span> (-15.9% vs Bud) — $4.2m at 21.7% margin vs budget $5.0m at 25.7%. OPEX <span class=\"r\">-$0.7m</span> (actual -$15.3m vs budget -$14.6m).", "mom": "MXN <span class=\"g\">$1.2m</span> (41.2% vs Feb-25) — margin 21.7% vs 39.6%. OPEX <span class=\"r\">-$10.7m</span> (-$15.3m vs -$4.6m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.0m</span> (-52.8% vs Bud) — -$2.9m at -14.7% margin vs budget -$1.9m at -9.6%. SG&amp;A <span class=\"r\">-$0.2m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.9m (<span class=\"r\">-$1.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$2.4m</span> (45.3% vs Feb-25) — -$2.9m vs -$5.3m, margin -14.7% vs -69.3%. SG&amp;A <span class=\"g\">$1.1m</span> (-$7.1m vs -$8.3m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.0m</span> (-24.0% vs Bud) — -$5.1m vs budget -$4.1m. Bridge: EBIT <span class=\"r\">-$1.0m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"g\">$2.3m</span> (31.3% vs Feb-25) — -$5.1m vs -$7.5m. EBIT <span class=\"g\">$2.4m</span>, Interest expense <span class=\"r\">-$0.0m</span>."}}, "Apr-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$0.0m</span> (-0.2% vs Bud) — actual $13.3m vs budget $13.3m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"r\">-$6.3m</span> (-32.1% vs Mar-25) — $13.3m vs $19.5m. EPC 3rd-party <span class=\"g\">$5.2m</span>, EPC Interco <span class=\"r\">-$11.4m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.8m</span> (-14.8% vs Bud) — $4.5m at 33.9% margin vs budget $5.3m at 39.8%. OPEX <span class=\"r\">-$0.8m</span> (actual -$8.8m vs budget -$8.0m).", "mom": "MXN <span class=\"g\">$0.3m</span> (6.4% vs Mar-25) — margin 33.9% vs 21.7%. OPEX <span class=\"g\">$6.5m</span> (-$8.8m vs -$15.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-25.2% vs Bud) — -$3.1m at -23.4% margin vs budget -$2.5m at -18.7%. SG&amp;A <span class=\"g\">$0.2m</span>: Direct Business Line <span class=\"g\">$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.7m (<span class=\"r\">-$0.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.2m</span> (-8.2% vs Mar-25) — -$3.1m vs -$2.9m, margin -23.4% vs -14.7%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$7.6m vs -$7.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-13.7% vs Bud) — -$5.2m vs budget -$4.6m. Bridge: EBIT <span class=\"r\">-$0.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$0.1m</span> (-1.8% vs Mar-25) — -$5.2m vs -$5.1m. EBIT <span class=\"r\">-$0.2m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "May-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$27.2m</span> (150.8% vs Bud) — actual $45.2m vs budget $18.0m. Split: EPC 3rd-party <span class=\"g\">$0.1m</span>, EPC Interco <span class=\"g\">$27.1m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"g\">$31.9m</span> (240.5% vs Apr-25) — $45.2m vs $13.3m. EPC 3rd-party <span class=\"r\">-$4.8m</span>, EPC Interco <span class=\"g\">$36.7m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.3m</span> (-5.6% vs Bud) — $4.4m at 9.8% margin vs budget $4.7m at 26.0%. OPEX <span class=\"r\">-$27.4m</span> (actual -$40.8m vs budget -$13.3m).", "mom": "MXN <span class=\"r\">-$0.1m</span> (-1.9% vs Apr-25) — margin 9.8% vs 33.9%. OPEX <span class=\"r\">-$32.0m</span> (-$40.8m vs -$8.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$0.0m</span> (1.0% vs Bud) — -$2.8m at -6.2% margin vs budget -$2.8m at -15.7%. SG&amp;A <span class=\"g\">$0.3m</span>: Direct Business Line <span class=\"g\">$0.3m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.2m (<span class=\"g\">$0.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.3m</span> (9.8% vs Apr-25) — -$2.8m vs -$3.1m, margin -6.2% vs -23.4%. SG&amp;A <span class=\"g\">$0.4m</span> (-$7.2m vs -$7.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$0.2m</span> (4.3% vs Bud) — -$5.1m vs budget -$5.3m. Bridge: EBIT <span class=\"g\">$0.3m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$2.0m vs budget -$1.9m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.5% vs Apr-25) — -$5.1m vs -$5.2m. EBIT <span class=\"g\">$0.3m</span>, Interest expense <span class=\"r\">-$0.2m</span>."}}, "Jun-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$8.8m</span> (-29.6% vs Bud) — actual $20.8m vs budget $29.6m. Split: EPC 3rd-party <span class=\"g\">$1.6m</span>, EPC Interco <span class=\"r\">-$10.4m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"r\">-$24.3m</span> (-53.8% vs May-25) — $20.8m vs $45.2m. EPC 3rd-party <span class=\"g\">$3.2m</span>, EPC Interco <span class=\"r\">-$27.6m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.7m</span> (-27.6% vs Bud) — $4.5m at 21.6% margin vs budget $6.2m at 21.0%. OPEX <span class=\"g\">$7.0m</span> (actual -$16.3m vs budget -$23.4m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.1% vs May-25) — margin 21.6% vs 9.8%. OPEX <span class=\"g\">$24.4m</span> (-$16.3m vs -$40.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$2.3m</span> (-247.0% vs Bud) — -$3.2m at -15.2% margin vs budget -$0.9m at -3.1%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.5m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.0m (<span class=\"r\">-$2.2m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.4m</span> (-13.0% vs May-25) — -$3.2m vs -$2.8m, margin -15.2% vs -6.2%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$7.7m vs -$7.2m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$2.0m</span> (-59.5% vs Bud) — -$5.3m vs budget -$3.3m. Bridge: EBIT <span class=\"r\">-$2.0m</span> (D&amp;A <span class=\"g\">$0.3m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$0.2m</span> (-3.7% vs May-25) — -$5.3m vs -$5.1m. EBIT <span class=\"r\">-$0.3m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "Jul-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$13.7m</span> (-52.0% vs Bud) — actual $12.7m vs budget $26.3m. Split: EPC 3rd-party <span class=\"r\">-$3.1m</span>, EPC Interco <span class=\"r\">-$10.4m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>.", "mom": "MXN <span class=\"r\">-$8.2m</span> (-39.3% vs Jun-25) — $12.7m vs $20.8m. EPC 3rd-party <span class=\"r\">-$3.4m</span>, EPC Interco <span class=\"r\">-$4.5m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$2.5m</span> (-43.9% vs Bud) — $3.2m at 25.2% margin vs budget $5.7m at 21.6%. OPEX <span class=\"g\">$11.2m</span> (actual -$9.5m vs budget -$20.7m).", "mom": "MXN <span class=\"r\">-$1.3m</span> (-29.3% vs Jun-25) — margin 25.2% vs 21.6%. OPEX <span class=\"g\">$6.9m</span> (-$9.5m vs -$16.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$2.9m</span> (-1685.6% vs Bud) — -$3.0m at -24.0% margin vs budget -$0.2m at -0.6%. SG&amp;A <span class=\"r\">-$0.4m</span>: Direct Business Line <span class=\"r\">-$0.4m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.6m (<span class=\"r\">-$2.9m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.1m</span> (4.4% vs Jun-25) — -$3.0m vs -$3.2m, margin -24.0% vs -15.2%. SG&amp;A <span class=\"g\">$1.5m</span> (-$6.2m vs -$7.7m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$2.6m</span> (-103.4% vs Bud) — -$5.1m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$2.6m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.4% vs Jun-25) — -$5.1m vs -$5.3m. EBIT <span class=\"g\">$0.1m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Aug-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$15.4m</span> (-60.9% vs Bud) — actual $9.9m vs budget $25.2m. Split: EPC 3rd-party <span class=\"r\">-$6.4m</span>, EPC Interco <span class=\"r\">-$8.9m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>.", "mom": "MXN <span class=\"r\">-$2.8m</span> (-22.0% vs Jul-25) — $9.9m vs $12.7m. EPC 3rd-party <span class=\"r\">-$2.6m</span>, EPC Interco <span class=\"r\">-$0.2m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.1m</span> (-54.8% vs Bud) — $2.6m at 25.9% margin vs budget $5.7m at 22.4%. OPEX <span class=\"g\">$12.3m</span> (actual -$7.3m vs budget -$19.6m).", "mom": "MXN <span class=\"r\">-$0.6m</span> (-19.9% vs Jul-25) — margin 25.9% vs 25.2%. OPEX <span class=\"g\">$2.1m</span> (-$7.3m vs -$9.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-2246.7% vs Bud) — -$4.4m at -44.5% margin vs budget -$0.2m at -0.7%. SG&amp;A <span class=\"r\">-$1.1m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.2m (<span class=\"r\">-$4.4m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$1.4m</span> (-45.1% vs Jul-25) — -$4.4m vs -$3.0m, margin -44.5% vs -24.0%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$7.0m vs -$6.2m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-160.6% vs Bud) — -$6.5m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$4.0m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$1.4m</span> (-26.4% vs Jul-25) — -$6.5m vs -$5.1m. EBIT <span class=\"r\">-$1.4m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Sep-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$37.5m</span> (-66.8% vs Bud) — actual $18.6m vs budget $56.1m. Split: EPC 3rd-party <span class=\"g\">$1.4m</span>, EPC Interco <span class=\"r\">-$38.8m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>.", "mom": "MXN <span class=\"g\">$8.7m</span> (88.6% vs Aug-25) — $18.6m vs $9.9m. EPC 3rd-party <span class=\"g\">$8.4m</span>, EPC Interco <span class=\"g\">$0.4m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.7m</span> (-8.2% vs Bud) — $7.9m at 42.4% margin vs budget $8.6m at 15.3%. OPEX <span class=\"g\">$36.8m</span> (actual -$10.7m vs budget -$47.5m).", "mom": "MXN <span class=\"g\">$5.3m</span> (209.1% vs Aug-25) — margin 42.4% vs 25.9%. OPEX <span class=\"r\">-$3.4m</span> (-$10.7m vs -$7.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.9m</span> (-68.8% vs Bud) — $0.9m at 4.6% margin vs budget $2.7m at 4.9%. SG&amp;A <span class=\"r\">-$1.2m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A $3.1m (<span class=\"r\">-$2.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$5.2m</span> (119.4% vs Aug-25) — $0.9m vs -$4.4m, margin 4.6% vs -44.5%. SG&amp;A <span class=\"r\">-$0.1m</span> (-$7.0m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.8m</span> (-323.1% vs Bud) — -$1.2m vs budget $0.5m. Bridge: EBIT <span class=\"r\">-$1.6m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.8m vs budget -$1.6m).", "mom": "MXN <span class=\"g\">$5.3m</span> (81.3% vs Aug-25) — -$1.2m vs -$6.5m. EBIT <span class=\"g\">$5.2m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Oct-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$23.0m</span> (-68.6% vs Bud) — actual $10.5m vs budget $33.4m. Split: EPC 3rd-party <span class=\"r\">-$3.1m</span>, EPC Interco <span class=\"r\">-$19.9m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"r\">-$8.1m</span> (-43.7% vs Sep-25) — $10.5m vs $18.6m. EPC 3rd-party <span class=\"r\">-$4.5m</span>, EPC Interco <span class=\"r\">-$3.6m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.7m</span> (-28.3% vs Bud) — $4.3m at 40.9% margin vs budget $6.0m at 17.9%. OPEX <span class=\"g\">$21.3m</span> (actual -$6.2m vs budget -$27.5m).", "mom": "MXN <span class=\"r\">-$3.6m</span> (-45.7% vs Sep-25) — margin 40.9% vs 42.4%. OPEX <span class=\"g\">$4.5m</span> (-$6.2m vs -$10.7m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-17770.3% vs Bud) — -$4.3m at -41.0% margin vs budget $0.0m at 0.1%. SG&amp;A <span class=\"r\">-$2.6m</span>: Direct Business Line <span class=\"r\">-$2.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.3m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.1m (<span class=\"r\">-$4.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$5.2m</span> (-603.9% vs Sep-25) — -$4.3m vs $0.9m, margin -41.0% vs 4.6%. SG&amp;A <span class=\"r\">-$1.5m</span> (-$8.6m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-192.1% vs Bud) — -$6.3m vs budget -$2.2m. Bridge: EBIT <span class=\"r\">-$4.1m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$5.1m</span> (-420.0% vs Sep-25) — -$6.3m vs -$1.2m. EBIT <span class=\"r\">-$5.2m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Nov-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$18.7m</span> (-49.2% vs Bud) — actual $19.3m vs budget $38.0m. Split: EPC 3rd-party <span class=\"r\">-$0.6m</span>, EPC Interco <span class=\"r\">-$18.1m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"g\">$8.8m</span> (84.0% vs Oct-25) — $19.3m vs $10.5m. EPC 3rd-party <span class=\"g\">$2.4m</span>, EPC Interco <span class=\"g\">$6.3m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"g\">$2.5m</span> (40.4% vs Bud) — $8.8m at 45.5% margin vs budget $6.3m at 16.5%. OPEX <span class=\"g\">$21.2m</span> (actual -$10.5m vs budget -$31.7m).", "mom": "MXN <span class=\"g\">$4.5m</span> (104.8% vs Oct-25) — margin 45.5% vs 40.9%. OPEX <span class=\"r\">-$4.3m</span> (-$10.5m vs -$6.2m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$1.6m</span> (664.4% vs Bud) — $1.8m at 9.5% margin vs budget $0.2m at 0.6%. SG&amp;A <span class=\"r\">-$0.9m</span>: Direct Business Line <span class=\"r\">-$1.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.3m</span>. EBITDA ex CF &amp; Corp G&amp;A $4.0m (<span class=\"g\">$1.3m</span> vs Bud).", "mom": "MXN <span class=\"g\">$6.1m</span> (142.5% vs Oct-25) — $1.8m vs -$4.3m, margin 9.5% vs -41.0%. SG&amp;A <span class=\"g\">$1.6m</span> (-$7.0m vs -$8.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$1.5m</span> (82.6% vs Bud) — -$0.3m vs budget -$1.9m. Bridge: EBIT <span class=\"g\">$1.8m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.3m</span> (actual -$1.8m vs budget -$1.5m).", "mom": "MXN <span class=\"g\">$6.0m</span> (94.9% vs Oct-25) — -$0.3m vs -$6.3m. EBIT <span class=\"g\">$6.1m</span>, Interest expense <span class=\"r\">-$0.1m</span>."}}, "Dec-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$6.8m</span> (21.3% vs Bud) — actual $38.6m vs budget $31.8m. Split: EPC 3rd-party <span class=\"r\">-$0.5m</span>, EPC Interco <span class=\"g\">$7.3m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"g\">$19.3m</span> (100.2% vs Nov-25) — $38.6m vs $19.3m. EPC 3rd-party <span class=\"r\">-$0.4m</span>, EPC Interco <span class=\"g\">$19.8m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$4.7m</span> (-80.7% vs Bud) — $1.1m at 2.9% margin vs budget $5.9m at 18.5%. OPEX <span class=\"r\">-$11.5m</span> (actual -$37.5m vs budget -$26.0m).", "mom": "MXN <span class=\"r\">-$7.7m</span> (-87.1% vs Nov-25) — margin 2.9% vs 45.5%. OPEX <span class=\"r\">-$27.0m</span> (-$37.5m vs -$10.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$11.5m</span> (-26641.3% vs Bud) — -$11.5m at -29.8% margin vs budget -$0.0m at -0.1%. SG&amp;A <span class=\"r\">-$6.7m</span>: Direct Business Line <span class=\"r\">-$7.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$1.2m</span>. EBITDA ex CF &amp; Corp G&amp;A -$10.1m (<span class=\"r\">-$12.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$13.3m</span> (-729.8% vs Nov-25) — -$11.5m vs $1.8m, margin -29.8% vs 9.5%. SG&amp;A <span class=\"r\">-$5.7m</span> (-$12.6m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$19.7m</span> (-905.8% vs Bud) — -$21.8m vs budget -$2.2m. Bridge: EBIT <span class=\"r\">-$11.2m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$21.5m</span> (-6624.4% vs Nov-25) — -$21.8m vs -$0.3m. EBIT <span class=\"r\">-$13.3m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}};
+const MONTHLY_HL = {"Jan-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Record consumption of MXN$ 786k for Watts B2B, driven primarily by LAFA reaching MXN$ 722k (+17.5% MoM).<br>• Corporate EV customers continue to show commercial traction in both VEMO's public charging network and Watts B2B, with 4 new customers signed: Rotoplas, Newell, Driver and YesPablo (renting for ride-hailing users)."}, {"title": "EMSP: Co-branding and credit programs", "body": "• No additional chargers were signed during the month; however, progress was made integrating previously executed agreements into the Watts platform."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 11.5m, with: (i) MXN $5.7m comes from the EPC being developed for the ChaaS project for Holcim; (ii) MXN$ 2.9m from EPC projects for KIA (MXN $1.8m for chargers for their assembly plant), and other projects for Sigma, KOF, GNP and Difarmer; and (iii) MXN$ 2.1m comes from OEMs such as BYD, Stellantis and KIA dealerships.<br>• Total Pipeline of MXN$ 80.0m, with: (i) MXN$ 52.0m comes from OEMs, such as BYD, GM, Toyota, BMW, Changan, Hyundai, JAC, Nissan and Stellantis; and (ii) MXN$ 28.0m from corporate customers (such as Coppel, Phillip Morris, Packmail, Sigma, and Difarmer)."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN $3.0m (-16.8% vs. Budget), out of which: (i) MXN $1.7m came from the construction of a public charging site with a BYD dealership; (ii) MXN $0.7m came from Stellantis and Toyota dealerships; and (iii) MXN $0.6m from corporate EPC projects came, exclusively from Sigma."}, {"title": "ChaaS Offsite and Watts B2B", "body": "• We continue facing delays in the implementation of the C40 project as well as other EPC opportunities due to organizational changes at Bimbo and adjustments to the scope of its EV initiatives."}, {"title": "EMSP", "body": "• Slow progress on the BMW co-branding project."}, {"title": "ZEE", "body": "• Sigma contract has not yet been signed, still under review by Sigma team."}], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$10.3m</span> (-42.9% vs Bud) — actual $13.8m vs budget $24.1m. Split: EPC 3rd-party <span class=\"r\">-$0.6m</span>, EPC Interco <span class=\"r\">-$9.9m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$24.8m</span> (-64.3% vs Dec-25) — $13.8m vs $38.6m. EPC 3rd-party <span class=\"r\">-$4.5m</span>, EPC Interco <span class=\"r\">-$20.5m</span>, Contracted Revenues <span class=\"g\">$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$2.1m</span> (-32.4% vs Bud) — $4.3m at 31.0% margin vs budget $6.3m at 26.2%. OPEX <span class=\"g\">$8.3m</span> (actual -$9.5m vs budget -$17.8m).", "mom": "MXN <span class=\"g\">$3.1m</span> (277.5% vs Dec-25) — margin 31.0% vs 2.9%. OPEX <span class=\"g\">$28.0m</span> (-$9.5m vs -$37.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-69.8% vs Bud) — -$3.5m at -25.4% margin vs budget -$2.1m at -8.5%. SG&amp;A <span class=\"g\">$0.6m</span>: Direct Business Line <span class=\"g\">$0.0m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.6m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.7m (<span class=\"r\">-$2.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$8.0m</span> (69.5% vs Dec-25) — -$3.5m vs -$11.5m, margin -25.4% vs -29.8%. SG&amp;A <span class=\"g\">$4.8m</span> (-$7.8m vs -$12.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-32.9% vs Bud) — -$5.5m vs budget -$4.1m. Bridge: EBIT <span class=\"r\">-$1.4m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.7m vs budget -$1.7m).", "mom": "MXN <span class=\"g\">$16.3m</span> (74.9% vs Dec-25) — -$5.5m vs -$21.8m. EBIT <span class=\"g\">$8.0m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Feb-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Record consumption of MXN $797k (+39.9% MoM) for Watts B2B, driven by increases across most customers. The main three clients being LAFA (ride hailing), Adet (last mile delivery), and ConectaBee (electrical devices installation company, including residential EV chargers)."}, {"title": "EMSP: Co-branding and credit programs", "body": "• Reached a total of 18 DC chargers and 1.685 MW of installed capacity.<br>• Signed 2 additional 60kW chargers in Monterrey with the Cleber dealership group.<br>• Signed and onboarded in Watts the first 60kW charger in Tijuana with a BYD dealership, enabling the launch of VEMO LTO in the city during March.<br>• Activated a 150 kW CCS1 charger in Morelia."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 7.0m, with MXN $5.3m expected to be executed in March and the remaining MXN $1.7m in April. Specifically: (i) MXN $5.7m from the EPC projects under development for ChaaS (Holcim); (ii) MXN$ 0.8m from OEMs (e.g., BYD dealerships); and (iii) MXN$ 0.3m from EPC projects for Sigma, KOF (Coca Cola FEMSA), and Stellantis.<br>• Total pipeline of MXN$ 124.0m, most relevant including: (i) MXN $21.1m from BYD charger purchases; (ii) MXN $19.7m from GM dealership EPC projects; (iii) MXN $10.0m from Coppel corporate EPC projects and other clients such as Holcim, Nadro, Difarmer, and Packmail; (iv) MXN $6.0m from KIA assembly plants, and additional OEM related projects (Hyundai, Nissan, Changan, Toyota, JAC, BMW); and (v) MXN $67.2m from other small companies and projects.<br>• Of note, we have been invited in March to bid on a $130m project with DHL that involves EPC for 20 different sites during 2026. We have a strong history working with DHL over the past years and believe there is a decent likelihood of being awarded a portion of the sites."}, {"title": "MELI", "body": "• We are currently in negotiations with MELI to become the enabler of the whole EV ecosystem for MELI and its carriers, including FAAS, CHAAS, EPC, ZEE and/or Watts B2B. Very fluid dialogue with C-level."}, {"title": "ZEE", "body": "• Completed the installation of 27 additional vehicles for LALA, reaching a total fleet of 259 vehicles, becoming our largest external client and promoter.<br>• Contract with Sigma has been signed after months of negotiation, for the telemetry of 62 vehicles and 50 chargers."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN $4.5m (-46.4% vs. Budget), of which: (i) MXN $1.9m came from EPC projects at the KIA assembly plant; (ii) MXN $1.7m from subsequent construction phases of a public charging site with a BYD dealership; (iii) MXN $0.4m from a corporate EPC project for Sigma; and (iv) MXN $0.5m from other small projects.<br>• Slow start to the year with limited backlog conversion during January-February; however, stronger pipeline activity is expected to drive higher conversion levels in Q2."}, {"title": "EPC", "body": "• Key projects with GM dealerships (MXN $1.2m), Porsche (MXN $1.1m), and Heineken (MXN $0.9m) were not secured. In the case of Porsche's project, they decided not pursue the project. In the case of Heineken, Enel was awarded the deal.<br>• Security-related disruptions in Mexico impacted customs operations, delaying charger imports and shifting execution of Sigma and KIA projects into March."}, {"title": "EMSP", "body": "• Slow progress in Guadalajara's EMSP, due to a low number of DC chargers installed by dealerships."}], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$24.1m</span> (-59.3% vs Bud) — actual $16.6m vs budget $40.7m. Split: EPC 3rd-party <span class=\"r\">-$3.9m</span>, EPC Interco <span class=\"r\">-$20.3m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"g\">$2.8m</span> (20.1% vs Jan-26) — $16.6m vs $13.8m. EPC 3rd-party <span class=\"g\">$1.4m</span>, EPC Interco <span class=\"g\">$1.5m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-38.2% vs Bud) — $5.5m at 33.3% margin vs budget $8.9m at 22.0%. OPEX <span class=\"g\">$20.7m</span> (actual -$11.1m vs budget -$31.7m).", "mom": "MXN <span class=\"g\">$1.2m</span> (28.9% vs Jan-26) — margin 33.3% vs 31.0%. OPEX <span class=\"r\">-$1.5m</span> (-$11.1m vs -$9.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-650.3% vs Bud) — -$2.9m at -17.6% margin vs budget $0.5m at 1.3%. SG&amp;A <span class=\"r\">-$0.0m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.2m (<span class=\"r\">-$3.6m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.6m</span> (16.7% vs Jan-26) — -$2.9m vs -$3.5m, margin -17.6% vs -25.4%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$8.4m vs -$7.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-254.4% vs Bud) — -$4.8m vs budget -$1.3m. Bridge: EBIT <span class=\"r\">-$3.4m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.5m vs budget -$1.5m).", "mom": "MXN <span class=\"g\">$0.7m</span> (13.0% vs Jan-26) — -$4.8m vs -$5.5m. EBIT <span class=\"g\">$0.6m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Mar-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Record consumption of MXN $1.0m (+25.5% MoM), driven primarily by LAFA (MXN $954k) our most relevant Watts B2B client. Ongoing discussions to cover most of their charging needs (ca. 300 units currently, targeting 500 units by YE).<br>• Signed Watts B2B contract with Rotoplas (water storage company) for 10 vehicles."}, {"title": "EMSP: Co-branding and credit program", "body": "• BYD Iztapalapa public charging site reached COD and is active in Watts with 6 120kW chargers (12 connectors), under an EPC + EMSP structure we aim to replicate in non-LTO cities.<br>• Signed EMSP with a Buick GMC Cadillac dealership (Andrade's group) (1 CCS1 60 kW + 1 CCS1 150 kW) in Mexico City."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 38.0m, with MXN $5.4m expected to be executed in April. Mainly including: (i) MXN $23.0m from DHL project (300 AC chargers and EPC of 4 sites, execution expected June-July); (ii) MXN$ 2.2m from Coppel; (iii) MXN$ 1.5m from 1 new site for the Holcim's CHAAS project; (iv) MXN $0.6m from KIA's assembly plant; and (v) MXN $1.1m from various other small projects including BYD's dealerships.<br>• Total pipeline of MXN$ 210.0m, most relevant including: (i) MXN $25m from public charging infrastructure for Andrade's group (18 different dealerships, potential CHAAS + EMSP); (ii) MXN $22.3m from GM and MG dealership's EPC projects (100 and 150kW DC chargers, potential EMSP); (iii) MXN $8.5m from el Globo; (iv) MXN $8.0m from Coppel corporate sites; (v) MXN $7.0m for BYD dealerships and several other projects from corporate customers and dealerships that may include EMSP in other cities such as Guadalajara.<br>• Of note, the original full scope of the DHL project was 20 sites and MXN $130m. However, went ahead with 17 sites and an estimated Capex of MXN $90m. Out of this, VEMO was awarded with the charger's supply for the full scope and the EPC of 4 sites. On the other hand, 10 sites were awarded to C-NEUTRAL, 2 sites to Latnnova and 1 we still do not have the intel."}, {"title": "MELI", "body": "• Ongoing discussions to support their EV initiatives leveraging strong relationship with senior mgmt. Initial projects to include a pilot test of ZEE for ca. 10 units and charging infrastructure evaluation on one of their largest sites in Monterrey."}, {"title": "ZEE", "body": "• Signed Sigma's contract (61 vehicles, 50 chargers), with telemetry installation expected in April.<br>• We currently have a total of 456 vehicles from external customers (383 contracted / 73 pilots), with key clients including LALA (262), Maxus (30), and Grupo Modelo (21)."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN$ 8.4m (-2.0% vs. Budget), of which: (i) MXN $4.2m came from the execution of 2 sites part of the Holcim CHAAS project; (ii) MXN $2.8m from EPC projects at the KIA assembly plant; (iii) MXN $0.9m from the last phases of construction of a public charging site with a BYD dealership; and (iv) MXN $0.5m from a corporate EPC project for Sigma and GNP.<br>• EPC projects recognized for Q1 reached MXN $15.7m, MXN $4.8m below budget. Further, we faced a slow start of the year, with limited projects converted to backlog (especially during Jan-Feb). On the other hand, pipeline activity has increased, resulting in the expectation of growing conversion into backlog of several opportunities during Q2."}, {"title": "Watts B2B", "body": "• Delays in the signature of Watts B2B accounts for UMD and YesPablo, two ride-hailing companies that are electrifying their fleets, and currently have ca. 140 and 10 EVs, respectively."}, {"title": "EMSP", "body": "• Projects in Guadalajara with 3 different dealership groups are part of the pipeline as EPC + EMSP and under negotiation, however, none of them are expected to yield revenues in H1."}], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$18.8m</span> (-55.4% vs Bud) — actual $15.1m vs budget $33.9m. Split: EPC 3rd-party <span class=\"r\">-$0.2m</span>, EPC Interco <span class=\"r\">-$18.7m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$1.4m</span> (-8.7% vs Feb-26) — $15.1m vs $16.6m. EPC 3rd-party <span class=\"g\">$3.9m</span>, EPC Interco <span class=\"r\">-$5.3m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.7m</span> (-9.2% vs Bud) — $7.3m at 48.4% margin vs budget $8.1m at 23.8%. OPEX <span class=\"g\">$18.0m</span> (actual -$7.8m vs budget -$25.8m).", "mom": "MXN <span class=\"g\">$1.8m</span> (32.7% vs Feb-26) — margin 48.4% vs 33.3%. OPEX <span class=\"g\">$3.3m</span> (-$7.8m vs -$11.1m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.3m</span> (-245.2% vs Bud) — -$1.8m at -11.8% margin vs budget -$0.5m at -1.5%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.4m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.3m (<span class=\"r\">-$1.7m</span> vs Bud).", "mom": "MXN <span class=\"g\">$1.1m</span> (38.9% vs Feb-26) — -$1.8m vs -$2.9m, margin -11.8% vs -17.6%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$9.1m vs -$8.4m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.2m</span> (-47.8% vs Bud) — -$3.7m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$1.2m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.6m vs budget -$1.7m).", "mom": "MXN <span class=\"g\">$1.0m</span> (21.9% vs Feb-26) — -$3.7m vs -$4.8m. EBIT <span class=\"g\">$1.1m</span>, Interest expense <span class=\"r\">-$0.1m</span>."}}, "Apr-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Watts B2B consumption reached MXN $1.0m, driven primarily by LAFA (MXN $958k), our most relevant Watts B2B client. We are working on a broader integration with LAFA, including a guaranteed 17.5% discount and the implementation of DiDi discount as well as additional corporate customers available at Petrarca hub, which is expected to reinforce VEMO as LAFA's preferred charging network.<br>• The UMD contract was signed in May (independent mobility platform serving the Jewish community; 200-vehicle fleet, 70 EVs)."}, {"title": "EMSP: Co-branding and credit program", "body": "• KIA's co-branding project generated MXN $2.7m during the month. BMW co-branding project has been completed, but traction and conversion remained limited, resulting in a final project value of MXN $400k.<br>• Continued negotiations with Guadalajara dealerships for EPC/CHAAS + EMSP projects; discussions with a new group GP Auto that is interested in EMSP (30 dealerships)."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 40.0m, with MXN $9.9m expected to be executed in May. Mainly including: (i) MXN $23.0m from DHL project (300 AC chargers and EPC of 4 sites, execution expected June-July); (ii) MXN$ 6.6m from Coppel; (iii) MXN$ 4.4m from the first two sites of the ChaaS project for Andrade's group dealership, corresponding to the public charging infrastructure for 2 GM dealerships; (iv) MXN $2.4m from KIA's assembly plant; (v) MXN $1.5m for the remaining Holcim ChaaS sites; (vi) MXN $1.0m for dealership group FAME and other smaller projects.<br>• Total pipeline of MXN $75.7m, most relevant including: (i) MXN $36.0m from public charging infrastructure for Andrade's group (18 different dealerships, potential CHAAS + EMSP), execution expected in H2'26; (ii) MXN $15.0m from GM and MG dealerships EPC projects; (iii) MXN $8.2m from EPC projects for Monterrey ride-hailing company Casco Dharma; (iv) MXN $6.0m from Guadalajara dealership group MAG; (v) MXN $5.5m from DHL; and (vi) MXN $5.0m from dealership group FAME BYD."}, {"title": "MELI", "body": "• Discussions with Mercado Libre remain at an early stage and include 2 potential avenues: (i) FaaS for EVs, subject to positive TCO case, although current daily driving distances make the EV business case challenging; (ii) potential charging infrastructure and/or software opportunities to support Mercado Libre's broader fleet electrification strategy."}, {"title": "ZEE", "body": "• With the installation of Sigma's vehicles, we currently have a total of 500 vehicles from external customers (435 contracted / 65 pilots), with key clients including LALA (262), Sigma (50), Maxus (30), and Grupo Modelo (21)."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN $1.1m (-87.3% vs. Budget), of which: (i) MXN $0.5m came from an EPC project from Amports; (ii) MXN $0.3m from Sigma; and (iii) MXN $0.3m from other smaller projects. The decrease was driven primarily by charger arrivals close to month-end, together with changes to the inventory and delivery process, which prevented chargers from being delivered to customers on time for April revenue recognition. Even though sales have been consolidated and backlog has grown through the DHL and Andrade projects, execution is expected to be delayed toward H2'26, as these projects depend either on charger availability or progress with CFE."}, {"title": "EMSP", "body": "• No additional charger has been signed during April."}], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$30.6m</span> (-66.3% vs Bud) — actual $15.5m vs budget $46.1m. Split: EPC 3rd-party <span class=\"r\">-$7.7m</span>, EPC Interco <span class=\"r\">-$23.3m</span>, Contracted Revenues <span class=\"g\">$0.5m</span>.", "mom": "MXN <span class=\"g\">$0.4m</span> (2.6% vs Mar-26) — $15.5m vs $15.1m. EPC 3rd-party <span class=\"r\">-$7.2m</span>, EPC Interco <span class=\"g\">$7.2m</span>, Contracted Revenues <span class=\"g\">$0.4m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-39.0% vs Bud) — $6.3m at 40.7% margin vs budget $10.4m at 22.5%. OPEX <span class=\"g\">$26.5m</span> (actual -$9.2m vs budget -$35.7m).", "mom": "MXN <span class=\"r\">-$1.0m</span> (-13.7% vs Mar-26) — margin 40.7% vs 48.4%. OPEX <span class=\"r\">-$1.4m</span> (-$9.2m vs -$7.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-242.1% vs Bud) — -$2.4m at -15.7% margin vs budget $1.7m at 3.7%. SG&amp;A <span class=\"r\">-$0.1m</span>: Direct Business Line <span class=\"r\">-$0.7m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.5m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.6m (<span class=\"r\">-$4.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.7m</span> (-37.1% vs Mar-26) — -$2.4m vs -$1.8m, margin -15.7% vs -11.8%. SG&amp;A <span class=\"g\">$0.3m</span> (-$8.8m vs -$9.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-1931.8% vs Bud) — -$4.2m vs budget -$0.2m. Bridge: EBIT <span class=\"r\">-$4.1m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.4m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$0.5m</span> (-12.8% vs Mar-26) — -$4.2m vs -$3.7m. EBIT <span class=\"r\">-$0.7m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "May-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Two new contracts have been signed: BYD trucks (for their testing vehicles) and UMD (independent mobility platform serving the Jewish community; 200-vehicle fleet, 70 EVs)."}, {"title": "EMSP: Co-branding and credit program", "body": "• Signed a 180kW CCS1 charger at a GM dealership in Mazatlan.<br>• Ford issued a new order for VEMO Credit program for MXN $670k."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 45.0m, with MXN $6.2m expected to be executed in June. Mainly including: (i) MXN $23.0m from DHL project; (ii) MXN$ 14.0m from the additional sites of the ChaaS project for Andrade's group dealership, corresponding to the public charging infrastructure for 2 GM dealerships; (iii) MXN$ 4.4m from Coppel; (iv) MXN $1.5m for the remaining Holcim ChaaS sites; (v) MXN $1.3m from KIA's assembly plant; (vi) MXN $2.8m from other smaller projects.<br>• Total pipeline of MXN $121m, most relevant including: (i) ~MXN$40m on a very early stage — we've been invited to participate on a tender for LALA that considers the EPC for 32 sites installing DC chargers from 30, 44 and 60kW; (ii) MXN $26.0m from public charging infrastructure for Andrade's group (18 different dealerships, potential CHAAS + EMSP), execution expected in H2'26; (iii) MXN $11m and a second tender for GM assembly plants for EPC and OEM; (iv) MXN $8.2m from EPC projects for Monterrey ride-hailing company Casco Dharma; (v) MXN $6.0m from Guadalajara dealership group MAG; and (vi) several projects around MXN $4-5m for dealership groups such as Ismo, Dalton, Grupo Mena, etc."}, {"title": "MELI", "body": "• Discussions with Mercado Libre are being funneled to the repair of their existing infrastructure either as EPC or ChaaS (at a very early stage on the negotiation process) and the installation of telemetry in their existing vehicles (pilot test units will be installed in June)."}, {"title": "ZEE", "body": "• With the installation of Sigma's and Hutchinson port's vehicles, we currently have a total of 531 vehicles from external customers (456 contracted / 75 pilots), with key clients including LALA (262), Sigma (57), Maxus (30), and Grupo Modelo (21).<br>• Advanced discussions with Andesmar to implement ZEE in 17 units in Buenos Aires. This would represent ZEE's first international customer and a strategic milestone in the platform's regional expansion."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN $6.4m (-29.5% vs. Budget), of which: (i) MXN $1.8m came from an EPC and chargers for KIA assembly plants; (ii) MXN $1.7m from Coppel; (iii) MXN $1.0m from dealership group Fame; and (iv) MXN $1.9m from other smaller projects."}, {"title": "ChaaS Offsite and Watts B2B", "body": "• Watts B2B consumption reached MXN $852k (-14.8% MoM), driven by a 12% decline from LAFA, our largest customer, following the launch of their own charging hub as well as operational issues related to employee turnover. In response, we have developed a revised proposal centered around the utilization of our Gran Oso hub, offering a more attractive operational solution for LAFA."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Delays on the signature of Andrade's projects and DHL contracts have prevented more pipeline to become backlog; long lead times for the execution of projects that require CFE (Andrade) and lack of availability of Charger for DHL push the projects to H2."}, {"title": "EMSP", "body": "• Delays in signature from grupo FAME (8 chargers, 60kW GBT)."}], "pnl_revenue": {"bud": "MXN <span class=\"g\">$34.0m</span> (128.5% vs Bud) — actual $60.4m vs budget $26.4m. Split: EPC 3rd-party <span class=\"r\">-$2.7m</span>, EPC Interco <span class=\"g\">$36.5m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"g\">$44.9m</span> (289.2% vs Apr-26) — $60.4m vs $15.5m. EPC 3rd-party <span class=\"g\">$5.3m</span>, EPC Interco <span class=\"g\">$40.1m</span>, Contracted Revenues <span class=\"r\">-$0.4m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"g\">$2.0m</span> (25.8% vs Bud) — $9.6m at 15.9% margin vs budget $7.6m at 28.8%. OPEX <span class=\"r\">-$32.0m</span> (actual -$50.8m vs budget -$18.8m).", "mom": "MXN <span class=\"g\">$3.3m</span> (51.6% vs Apr-26) — margin 15.9% vs 40.7%. OPEX <span class=\"r\">-$41.6m</span> (-$50.8m vs -$9.2m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$1.3m</span> (123.2% vs Bud) — $0.2m at 0.4% margin vs budget -$1.1m at -4.0%. SG&amp;A <span class=\"r\">-$0.7m</span>: Direct Business Line <span class=\"r\">-$0.6m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.1m</span>. EBITDA ex CF &amp; Corp G&amp;A $3.9m (<span class=\"g\">$1.4m</span> vs Bud).", "mom": "MXN <span class=\"g\">$2.7m</span> (110.1% vs Apr-26) — $0.2m vs -$2.4m, margin 0.4% vs -15.7%. SG&amp;A <span class=\"r\">-$0.6m</span> (-$9.3m vs -$8.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$1.2m</span> (41.2% vs Bud) — -$1.8m vs budget -$3.0m. Bridge: EBIT <span class=\"g\">$1.3m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"g\">$2.4m</span> (58.0% vs Apr-26) — -$1.8m vs -$4.2m. EBIT <span class=\"g\">$2.7m</span>, Interest expense <span class=\"r\">-$0.2m</span>."}}, "Jun-26": {"highlights": [{"title": "ChaaS Offsite and Watts B2B", "body": "• Watts B2B revenues reached MXN$ 908k (+6.6% MoM). The increase was mainly driven by LAFA's consumption, which reached 123,029 kWh (+17% MoM), its highest consumption to date. The second largest customer increase was Conectabee, which returned to April consumption levels, followed by Heineken. LAFA's increased usage was driven by the incorporation of additional fleet. BYD Trucks and ride-hailing company UMD, both recently signed, have begun using our network."}, {"title": "EMSP: Co-branding and credit program", "body": "• 11 new chargers signed, which are expected to improve VCN's footprint by adding GBT 60 kW DC chargers across 9 cities (Celaya, Hermosillo, Querétaro, Lázaro Cárdenas, Morelia, Uruapan, Veracruz, Xalapa and Zamora), as well as a 120 kW CCS1 charger in Mazatlán.<br>• The BYD Iztapalapa charging site was officially inaugurated during a high-visibility event attended by BYD, fleet operators, and prospective customers. We believe the site can serve as a flagship EMSP reference case for other dealership groups, particularly in cities where we still lack fast-charging infrastructure."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• Total backlog of MXN$ 56.7m, with MXN $10m expected to be executed in July. Mainly including: (i) MXN$ 25.0m from the ChaaS project for Grupo Andrade, which includes EMSP and is expected to expand VCN's footprint through 7 sites with DC chargers ranging from 60 kW to 150 kW; (ii) MXN$ 21.0m from the DHL project, covering the supply of 300 AC chargers and the EPC work at 4 sites; (iii) MXN$ 4.3m from corporate EPC for 1 Coppel site that is almost completed; (iv) MXN$ 1.6m for dealership group FAME; (v) MXN$ 1.6m from KIA's assembly plant; (vi) MXN$ 1.5m from the remaining Holcim ChaaS sites; and (vii) MXN$ 1.5m from other smaller projects.<br>• Total pipeline of MXN $105.8m, most relevant including: (i) MXN$ 19m from remaining Grupo Andrade ChaaS + EMSP; (ii) MXN$ 12.6m from GM dealership projects; (iii) MXN$ 11m from a corporate GM project to provide chargers and O&amp;M for assembly plants and MXN$ 1.6m from additional dealership EPC; (iv) MXN$ 8.2m from EPC projects for Monterrey-based ride-hailing company Casco Dharma; (v) MXN$ 6.0m from Guadalajara dealership group MAG; and (vi) several MXN$ 3-5m EPC opportunities with dealership groups, with the remaining pipeline distributed across additional small and mid-sized dealership/corporate EPC opportunities."}, {"title": "MELI", "body": "• MELI is currently prioritizing expense reduction, which has slowed EV-related projects. ZEE telemetry and intelligent chargers are being tested as potential levers to improve current fleet utilization and reduce operating costs. Next month, discussions are expected to focus on positioning VEMO as the charging infrastructure ecosystem for Mercado Libre's carriers."}, {"title": "PEMEX", "body": "• Continues to show interest in developing public charging infrastructure and has indicated a preference for a larger-scale project, rather than limiting the initial scope to two sites."}, {"title": "ZEE", "body": "• Monthly contracted ZEE vehicles increased from 456 to 466 (+2.2% MoM, +7.9% vs budget), adding 2 vehicles for Sigma, 4 vehicles for LALA and 4 vehicles for commercial vans OEM Upower (Vizeon). Pilot tests have started with Oxxo and Mercado Libre.<br>• The Buenos Aires's project with Andesmar remains in progress, focused on the homologation process required to install the telemetry in the vehicles."}], "lowlights": [{"title": "Total EPC/O&amp;M", "body": "• Total EPC revenues closed at MXN $2.1m (-77.4% vs. Budget), of which: (i) MXN $1.2m came from an EPC for Tesla; (ii) MXN $0.5m from Coppel; and (iii) MXN $0.4m from other smaller projects."}, {"title": "ChaaS Offsite and Watts B2B", "body": "• No additional B2B customer was signed during June."}, {"title": "Selected Backlog &amp; Pipeline", "body": "• It was not possible to recognize the execution of Coppel's due to customer-side personnel unavailability, which shifted MXN$ 4.3m from June to July. Of note, H2 execution is expected to begin catching up on YTD underperformance, supported by projects signed between April and June (mainly DHL and Grupo Andrade) which drove record backlog."}], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$7.3m</span> (-28.3% vs Bud) — actual $18.4m vs budget $25.7m. Split: EPC 3rd-party <span class=\"r\">-$7.1m</span>, EPC Interco <span class=\"r\">-$0.5m</span>, Contracted Revenues <span class=\"g\">$0.3m</span>.", "mom": "MXN <span class=\"r\">-$42.0m</span> (-69.5% vs May-26) — $18.4m vs $60.4m. EPC 3rd-party <span class=\"r\">-$4.3m</span>, EPC Interco <span class=\"r\">-$37.8m</span>, Contracted Revenues <span class=\"g\">$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.4m</span> (-41.4% vs Bud) — $4.8m at 26.0% margin vs budget $8.2m at 31.8%. OPEX <span class=\"g\">$3.9m</span> (actual -$13.6m vs budget -$17.5m).", "mom": "MXN <span class=\"r\">-$4.8m</span> (-50.0% vs May-26) — margin 26.0% vs 15.9%. OPEX <span class=\"g\">$37.2m</span> (-$13.6m vs -$50.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-605.0% vs Bud) — -$5.0m at -27.4% margin vs budget -$0.7m at -2.8%. SG&amp;A <span class=\"r\">-$0.9m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.4m</span>. EBITDA ex CF &amp; Corp G&amp;A -$1.6m (<span class=\"r\">-$4.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$5.3m</span> (-2151.2% vs May-26) — -$5.0m vs $0.2m, margin -27.4% vs 0.4%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$9.8m vs -$9.3m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-164.9% vs Bud) — -$6.8m vs budget -$2.6m. Bridge: EBIT <span class=\"r\">-$4.3m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.5m vs budget -$1.5m).", "mom": "MXN <span class=\"r\">-$5.1m</span> (-286.8% vs May-26) — -$6.8m vs -$1.8m. EBIT <span class=\"r\">-$5.3m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "Jul-26": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$21.5m</span> (-52.9% vs Bud) — actual $19.1m vs budget $40.6m. Split: EPC 3rd-party <span class=\"r\">-$6.8m</span>, EPC Interco <span class=\"r\">-$15.6m</span>, Contracted Revenues <span class=\"g\">$0.9m</span>.", "mom": "MXN <span class=\"g\">$0.7m</span> (3.8% vs Jun-26) — $19.1m vs $18.4m. EPC 3rd-party <span class=\"g\">$0.4m</span>, EPC Interco <span class=\"r\">-$0.2m</span>, Contracted Revenues <span class=\"g\">$0.6m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$6.9m</span> (-70.0% vs Bud) — $3.0m at 15.5% margin vs budget $9.9m at 24.4%. OPEX <span class=\"g\">$14.5m</span> (actual -$16.2m vs budget -$30.7m).", "mom": "MXN <span class=\"r\">-$1.8m</span> (-38.1% vs Jun-26) — margin 15.5% vs 26.0%. OPEX <span class=\"r\">-$2.5m</span> (-$16.2m vs -$13.6m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$7.0m</span> (-631.5% vs Bud) — -$5.9m at -30.9% margin vs budget $1.1m at 2.7%. SG&amp;A <span class=\"r\">-$0.1m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.1m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.3m (<span class=\"r\">-$7.1m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.9m</span> (-17.3% vs Jun-26) — -$5.9m vs -$5.0m, margin -30.9% vs -27.4%. SG&amp;A <span class=\"g\">$1.0m</span> (-$8.9m vs -$9.8m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$6.9m</span> (-888.5% vs Bud) — -$7.6m vs budget -$0.8m. Bridge: EBIT <span class=\"r\">-$7.0m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.1m</span> (actual -$1.4m vs budget -$1.5m).", "mom": "MXN <span class=\"r\">-$0.8m</span> (-11.5% vs Jun-26) — -$7.6m vs -$6.8m. EBIT <span class=\"r\">-$0.9m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Jan-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$0.1m</span> (0.8% vs Bud) — actual $9.4m vs budget $9.3m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"g\">$9.4m</span> (0.0% vs n.a.) — $9.4m vs $0.0m. EPC 3rd-party <span class=\"g\">$3.8m</span>, EPC Interco <span class=\"g\">$1.9m</span>, Contracted Revenues <span class=\"g\">$3.7m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.4m</span> (-29.3% vs Bud) — $3.3m at 35.4% margin vs budget $4.7m at 50.4%. OPEX <span class=\"r\">-$1.5m</span> (actual -$6.1m vs budget -$4.6m).", "mom": "MXN <span class=\"g\">$3.3m</span> (0.0% vs n.a.) — margin 35.4% vs 0.0%. OPEX <span class=\"r\">-$6.1m</span> (-$6.1m vs $0.0m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.6m</span> (-69.8% vs Bud) — -$3.8m at -40.3% margin vs budget -$2.2m at -23.9%. SG&amp;A <span class=\"r\">-$0.2m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.4m (<span class=\"r\">-$1.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$3.8m</span> (0.0% vs n.a.) — -$3.8m vs $0.0m, margin -40.3% vs 0.0%. SG&amp;A <span class=\"r\">-$7.1m</span> (-$7.1m vs $0.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.6m</span> (-35.5% vs Bud) — -$5.9m vs budget -$4.4m. Bridge: EBIT <span class=\"r\">-$1.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"r\">-$5.9m</span> (0.0% vs n.a.) — -$5.9m vs $0.0m. EBIT <span class=\"r\">-$4.1m</span>, Interest expense <span class=\"r\">-$1.9m</span>."}}, "Feb-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$0.1m</span> (1.0% vs Bud) — actual $7.6m vs budget $7.5m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>.", "mom": "MXN <span class=\"r\">-$1.8m</span> (-19.4% vs Jan-25) — $7.6m vs $9.4m. EPC 3rd-party <span class=\"r\">-$0.5m</span>, EPC Interco <span class=\"r\">-$1.0m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.0m</span> (-0.2% vs Bud) — $3.0m at 39.6% margin vs budget $3.0m at 40.1%. OPEX <span class=\"r\">-$0.1m</span> (actual -$4.6m vs budget -$4.5m).", "mom": "MXN <span class=\"r\">-$0.3m</span> (-9.8% vs Jan-25) — margin 39.6% vs 35.4%. OPEX <span class=\"g\">$1.5m</span> (-$4.6m vs -$6.1m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-11.8% vs Bud) — -$5.3m at -69.3% margin vs budget -$4.7m at -62.7%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.5m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.0m (<span class=\"r\">-$0.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$1.5m</span> (-38.7% vs Jan-25) — -$5.3m vs -$3.8m, margin -69.3% vs -40.3%. SG&amp;A <span class=\"r\">-$1.1m</span> (-$8.3m vs -$7.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-8.0% vs Bud) — -$7.5m vs budget -$6.9m. Bridge: EBIT <span class=\"r\">-$0.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"r\">-$1.5m</span> (-25.4% vs Jan-25) — -$7.5m vs -$5.9m. EBIT <span class=\"r\">-$1.5m</span>, Interest expense <span class=\"r\">-$0.0m</span>."}}, "Mar-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$0.1m</span> (-0.3% vs Bud) — actual $19.5m vs budget $19.6m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>.", "mom": "MXN <span class=\"g\">$12.0m</span> (157.9% vs Feb-25) — $19.5m vs $7.6m. EPC 3rd-party <span class=\"g\">$0.9m</span>, EPC Interco <span class=\"g\">$11.0m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.8m</span> (-15.9% vs Bud) — $4.2m at 21.7% margin vs budget $5.0m at 25.7%. OPEX <span class=\"r\">-$0.7m</span> (actual -$15.3m vs budget -$14.6m).", "mom": "MXN <span class=\"g\">$1.2m</span> (41.2% vs Feb-25) — margin 21.7% vs 39.6%. OPEX <span class=\"r\">-$10.7m</span> (-$15.3m vs -$4.6m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.0m</span> (-52.8% vs Bud) — -$2.9m at -14.7% margin vs budget -$1.9m at -9.6%. SG&amp;A <span class=\"r\">-$0.2m</span>: Direct Business Line <span class=\"r\">-$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.9m (<span class=\"r\">-$1.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$2.4m</span> (45.3% vs Feb-25) — -$2.9m vs -$5.3m, margin -14.7% vs -69.3%. SG&amp;A <span class=\"g\">$1.1m</span> (-$7.1m vs -$8.3m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.0m</span> (-24.0% vs Bud) — -$5.1m vs budget -$4.1m. Bridge: EBIT <span class=\"r\">-$1.0m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.9m vs budget -$1.9m).", "mom": "MXN <span class=\"g\">$2.3m</span> (31.3% vs Feb-25) — -$5.1m vs -$7.5m. EBIT <span class=\"g\">$2.4m</span>, Interest expense <span class=\"r\">-$0.0m</span>."}}, "Apr-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$0.0m</span> (-0.2% vs Bud) — actual $13.3m vs budget $13.3m. Split: EPC 3rd-party <span class=\"g\">$0.0m</span>, EPC Interco <span class=\"g\">$0.0m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"r\">-$6.3m</span> (-32.1% vs Mar-25) — $13.3m vs $19.5m. EPC 3rd-party <span class=\"g\">$5.2m</span>, EPC Interco <span class=\"r\">-$11.4m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.8m</span> (-14.8% vs Bud) — $4.5m at 33.9% margin vs budget $5.3m at 39.8%. OPEX <span class=\"r\">-$0.8m</span> (actual -$8.8m vs budget -$8.0m).", "mom": "MXN <span class=\"g\">$0.3m</span> (6.4% vs Mar-25) — margin 33.9% vs 21.7%. OPEX <span class=\"g\">$6.5m</span> (-$8.8m vs -$15.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-25.2% vs Bud) — -$3.1m at -23.4% margin vs budget -$2.5m at -18.7%. SG&amp;A <span class=\"g\">$0.2m</span>: Direct Business Line <span class=\"g\">$0.2m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $0.7m (<span class=\"r\">-$0.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.2m</span> (-8.2% vs Mar-25) — -$3.1m vs -$2.9m, margin -23.4% vs -14.7%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$7.6m vs -$7.1m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$0.6m</span> (-13.7% vs Bud) — -$5.2m vs budget -$4.6m. Bridge: EBIT <span class=\"r\">-$0.6m</span> (D&amp;A <span class=\"g\">$0.0m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$0.1m</span> (-1.8% vs Mar-25) — -$5.2m vs -$5.1m. EBIT <span class=\"r\">-$0.2m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "May-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$27.2m</span> (150.8% vs Bud) — actual $45.2m vs budget $18.0m. Split: EPC 3rd-party <span class=\"g\">$0.1m</span>, EPC Interco <span class=\"g\">$27.1m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"g\">$31.9m</span> (240.5% vs Apr-25) — $45.2m vs $13.3m. EPC 3rd-party <span class=\"r\">-$4.8m</span>, EPC Interco <span class=\"g\">$36.7m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.3m</span> (-5.6% vs Bud) — $4.4m at 9.8% margin vs budget $4.7m at 26.0%. OPEX <span class=\"r\">-$27.4m</span> (actual -$40.8m vs budget -$13.3m).", "mom": "MXN <span class=\"r\">-$0.1m</span> (-1.9% vs Apr-25) — margin 9.8% vs 33.9%. OPEX <span class=\"r\">-$32.0m</span> (-$40.8m vs -$8.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$0.0m</span> (1.0% vs Bud) — -$2.8m at -6.2% margin vs budget -$2.8m at -15.7%. SG&amp;A <span class=\"g\">$0.3m</span>: Direct Business Line <span class=\"g\">$0.3m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.2m (<span class=\"g\">$0.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.3m</span> (9.8% vs Apr-25) — -$2.8m vs -$3.1m, margin -6.2% vs -23.4%. SG&amp;A <span class=\"g\">$0.4m</span> (-$7.2m vs -$7.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$0.2m</span> (4.3% vs Bud) — -$5.1m vs budget -$5.3m. Bridge: EBIT <span class=\"g\">$0.3m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$2.0m vs budget -$1.9m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.5% vs Apr-25) — -$5.1m vs -$5.2m. EBIT <span class=\"g\">$0.3m</span>, Interest expense <span class=\"r\">-$0.2m</span>."}}, "Jun-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$8.8m</span> (-29.6% vs Bud) — actual $20.8m vs budget $29.6m. Split: EPC 3rd-party <span class=\"g\">$1.6m</span>, EPC Interco <span class=\"r\">-$10.4m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"r\">-$24.3m</span> (-53.8% vs May-25) — $20.8m vs $45.2m. EPC 3rd-party <span class=\"g\">$3.2m</span>, EPC Interco <span class=\"r\">-$27.6m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.7m</span> (-27.6% vs Bud) — $4.5m at 21.6% margin vs budget $6.2m at 21.0%. OPEX <span class=\"g\">$7.0m</span> (actual -$16.3m vs budget -$23.4m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.1% vs May-25) — margin 21.6% vs 9.8%. OPEX <span class=\"g\">$24.4m</span> (-$16.3m vs -$40.8m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$2.3m</span> (-247.0% vs Bud) — -$3.2m at -15.2% margin vs budget -$0.9m at -3.1%. SG&amp;A <span class=\"r\">-$0.5m</span>: Direct Business Line <span class=\"r\">-$0.5m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A $1.0m (<span class=\"r\">-$2.2m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$0.4m</span> (-13.0% vs May-25) — -$3.2m vs -$2.8m, margin -15.2% vs -6.2%. SG&amp;A <span class=\"r\">-$0.5m</span> (-$7.7m vs -$7.2m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$2.0m</span> (-59.5% vs Bud) — -$5.3m vs budget -$3.3m. Bridge: EBIT <span class=\"r\">-$2.0m</span> (D&amp;A <span class=\"g\">$0.3m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$0.2m</span> (-3.7% vs May-25) — -$5.3m vs -$5.1m. EBIT <span class=\"r\">-$0.3m</span>, Interest expense <span class=\"g\">$0.2m</span>."}}, "Jul-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$13.7m</span> (-52.0% vs Bud) — actual $12.7m vs budget $26.3m. Split: EPC 3rd-party <span class=\"r\">-$3.1m</span>, EPC Interco <span class=\"r\">-$10.4m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>.", "mom": "MXN <span class=\"r\">-$8.2m</span> (-39.3% vs Jun-25) — $12.7m vs $20.8m. EPC 3rd-party <span class=\"r\">-$3.4m</span>, EPC Interco <span class=\"r\">-$4.5m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$2.5m</span> (-43.9% vs Bud) — $3.2m at 25.2% margin vs budget $5.7m at 21.6%. OPEX <span class=\"g\">$11.2m</span> (actual -$9.5m vs budget -$20.7m).", "mom": "MXN <span class=\"r\">-$1.3m</span> (-29.3% vs Jun-25) — margin 25.2% vs 21.6%. OPEX <span class=\"g\">$6.9m</span> (-$9.5m vs -$16.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$2.9m</span> (-1685.6% vs Bud) — -$3.0m at -24.0% margin vs budget -$0.2m at -0.6%. SG&amp;A <span class=\"r\">-$0.4m</span>: Direct Business Line <span class=\"r\">-$0.4m</span>, CF &amp; Corp G&amp;A <span class=\"r\">-$0.0m</span>. EBITDA ex CF &amp; Corp G&amp;A -$0.6m (<span class=\"r\">-$2.9m</span> vs Bud).", "mom": "MXN <span class=\"g\">$0.1m</span> (4.4% vs Jun-25) — -$3.0m vs -$3.2m, margin -24.0% vs -15.2%. SG&amp;A <span class=\"g\">$1.5m</span> (-$6.2m vs -$7.7m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$2.6m</span> (-103.4% vs Bud) — -$5.1m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$2.6m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"g\">$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"g\">$0.1m</span> (2.4% vs Jun-25) — -$5.1m vs -$5.3m. EBIT <span class=\"g\">$0.1m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Aug-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$15.4m</span> (-60.9% vs Bud) — actual $9.9m vs budget $25.2m. Split: EPC 3rd-party <span class=\"r\">-$6.4m</span>, EPC Interco <span class=\"r\">-$8.9m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>.", "mom": "MXN <span class=\"r\">-$2.8m</span> (-22.0% vs Jul-25) — $9.9m vs $12.7m. EPC 3rd-party <span class=\"r\">-$2.6m</span>, EPC Interco <span class=\"r\">-$0.2m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$3.1m</span> (-54.8% vs Bud) — $2.6m at 25.9% margin vs budget $5.7m at 22.4%. OPEX <span class=\"g\">$12.3m</span> (actual -$7.3m vs budget -$19.6m).", "mom": "MXN <span class=\"r\">-$0.6m</span> (-19.9% vs Jul-25) — margin 25.9% vs 25.2%. OPEX <span class=\"g\">$2.1m</span> (-$7.3m vs -$9.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-2246.7% vs Bud) — -$4.4m at -44.5% margin vs budget -$0.2m at -0.7%. SG&amp;A <span class=\"r\">-$1.1m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.2m (<span class=\"r\">-$4.4m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$1.4m</span> (-45.1% vs Jul-25) — -$4.4m vs -$3.0m, margin -44.5% vs -24.0%. SG&amp;A <span class=\"r\">-$0.7m</span> (-$7.0m vs -$6.2m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.0m</span> (-160.6% vs Bud) — -$6.5m vs budget -$2.5m. Bridge: EBIT <span class=\"r\">-$4.0m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.0m</span> (actual -$1.8m vs budget -$1.8m).", "mom": "MXN <span class=\"r\">-$1.4m</span> (-26.4% vs Jul-25) — -$6.5m vs -$5.1m. EBIT <span class=\"r\">-$1.4m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Sep-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$37.5m</span> (-66.8% vs Bud) — actual $18.6m vs budget $56.1m. Split: EPC 3rd-party <span class=\"g\">$1.4m</span>, EPC Interco <span class=\"r\">-$38.8m</span>, Contracted Revenues <span class=\"r\">-$0.2m</span>.", "mom": "MXN <span class=\"g\">$8.7m</span> (88.6% vs Aug-25) — $18.6m vs $9.9m. EPC 3rd-party <span class=\"g\">$8.4m</span>, EPC Interco <span class=\"g\">$0.4m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$0.7m</span> (-8.2% vs Bud) — $7.9m at 42.4% margin vs budget $8.6m at 15.3%. OPEX <span class=\"g\">$36.8m</span> (actual -$10.7m vs budget -$47.5m).", "mom": "MXN <span class=\"g\">$5.3m</span> (209.1% vs Aug-25) — margin 42.4% vs 25.9%. OPEX <span class=\"r\">-$3.4m</span> (-$10.7m vs -$7.3m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$1.9m</span> (-68.8% vs Bud) — $0.9m at 4.6% margin vs budget $2.7m at 4.9%. SG&amp;A <span class=\"r\">-$1.2m</span>: Direct Business Line <span class=\"r\">-$1.3m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.2m</span>. EBITDA ex CF &amp; Corp G&amp;A $3.1m (<span class=\"r\">-$2.0m</span> vs Bud).", "mom": "MXN <span class=\"g\">$5.2m</span> (119.4% vs Aug-25) — $0.9m vs -$4.4m, margin 4.6% vs -44.5%. SG&amp;A <span class=\"r\">-$0.1m</span> (-$7.0m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$1.8m</span> (-323.1% vs Bud) — -$1.2m vs budget $0.5m. Bridge: EBIT <span class=\"r\">-$1.6m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.8m vs budget -$1.6m).", "mom": "MXN <span class=\"g\">$5.3m</span> (81.3% vs Aug-25) — -$1.2m vs -$6.5m. EBIT <span class=\"g\">$5.2m</span>, Interest expense <span class=\"g\">$0.0m</span>."}}, "Oct-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$23.0m</span> (-68.6% vs Bud) — actual $10.5m vs budget $33.4m. Split: EPC 3rd-party <span class=\"r\">-$3.1m</span>, EPC Interco <span class=\"r\">-$19.9m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"r\">-$8.1m</span> (-43.7% vs Sep-25) — $10.5m vs $18.6m. EPC 3rd-party <span class=\"r\">-$4.5m</span>, EPC Interco <span class=\"r\">-$3.6m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$1.7m</span> (-28.3% vs Bud) — $4.3m at 40.9% margin vs budget $6.0m at 17.9%. OPEX <span class=\"g\">$21.3m</span> (actual -$6.2m vs budget -$27.5m).", "mom": "MXN <span class=\"r\">-$3.6m</span> (-45.7% vs Sep-25) — margin 40.9% vs 42.4%. OPEX <span class=\"g\">$4.5m</span> (-$6.2m vs -$10.7m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$4.3m</span> (-17770.3% vs Bud) — -$4.3m at -41.0% margin vs budget $0.0m at 0.1%. SG&amp;A <span class=\"r\">-$2.6m</span>: Direct Business Line <span class=\"r\">-$2.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.3m</span>. EBITDA ex CF &amp; Corp G&amp;A -$2.1m (<span class=\"r\">-$4.6m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$5.2m</span> (-603.9% vs Sep-25) — -$4.3m vs $0.9m, margin -41.0% vs 4.6%. SG&amp;A <span class=\"r\">-$1.5m</span> (-$8.6m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$4.2m</span> (-192.1% vs Bud) — -$6.3m vs budget -$2.2m. Bridge: EBIT <span class=\"r\">-$4.1m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$5.1m</span> (-420.0% vs Sep-25) — -$6.3m vs -$1.2m. EBIT <span class=\"r\">-$5.2m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}, "Nov-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"r\">-$18.7m</span> (-49.2% vs Bud) — actual $19.3m vs budget $38.0m. Split: EPC 3rd-party <span class=\"r\">-$0.6m</span>, EPC Interco <span class=\"r\">-$18.1m</span>, Contracted Revenues <span class=\"g\">$0.0m</span>.", "mom": "MXN <span class=\"g\">$8.8m</span> (84.0% vs Oct-25) — $19.3m vs $10.5m. EPC 3rd-party <span class=\"g\">$2.4m</span>, EPC Interco <span class=\"g\">$6.3m</span>, Contracted Revenues <span class=\"g\">$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"g\">$2.5m</span> (40.4% vs Bud) — $8.8m at 45.5% margin vs budget $6.3m at 16.5%. OPEX <span class=\"g\">$21.2m</span> (actual -$10.5m vs budget -$31.7m).", "mom": "MXN <span class=\"g\">$4.5m</span> (104.8% vs Oct-25) — margin 45.5% vs 40.9%. OPEX <span class=\"r\">-$4.3m</span> (-$10.5m vs -$6.2m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"g\">$1.6m</span> (664.4% vs Bud) — $1.8m at 9.5% margin vs budget $0.2m at 0.6%. SG&amp;A <span class=\"r\">-$0.9m</span>: Direct Business Line <span class=\"r\">-$1.2m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$0.3m</span>. EBITDA ex CF &amp; Corp G&amp;A $4.0m (<span class=\"g\">$1.3m</span> vs Bud).", "mom": "MXN <span class=\"g\">$6.1m</span> (142.5% vs Oct-25) — $1.8m vs -$4.3m, margin 9.5% vs -41.0%. SG&amp;A <span class=\"g\">$1.6m</span> (-$7.0m vs -$8.6m)."}, "pnl_ni": {"bud": "MXN <span class=\"g\">$1.5m</span> (82.6% vs Bud) — -$0.3m vs budget -$1.9m. Bridge: EBIT <span class=\"g\">$1.8m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.3m</span> (actual -$1.8m vs budget -$1.5m).", "mom": "MXN <span class=\"g\">$6.0m</span> (94.9% vs Oct-25) — -$0.3m vs -$6.3m. EBIT <span class=\"g\">$6.1m</span>, Interest expense <span class=\"r\">-$0.1m</span>."}}, "Dec-25": {"highlights": [], "lowlights": [], "pnl_revenue": {"bud": "MXN <span class=\"g\">$6.8m</span> (21.3% vs Bud) — actual $38.6m vs budget $31.8m. Split: EPC 3rd-party <span class=\"r\">-$0.5m</span>, EPC Interco <span class=\"g\">$7.3m</span>, Contracted Revenues <span class=\"r\">-$0.0m</span>.", "mom": "MXN <span class=\"g\">$19.3m</span> (100.2% vs Nov-25) — $38.6m vs $19.3m. EPC 3rd-party <span class=\"r\">-$0.4m</span>, EPC Interco <span class=\"g\">$19.8m</span>, Contracted Revenues <span class=\"r\">-$0.1m</span>."}, "pnl_gp": {"bud": "MXN <span class=\"r\">-$4.7m</span> (-80.7% vs Bud) — $1.1m at 2.9% margin vs budget $5.9m at 18.5%. OPEX <span class=\"r\">-$11.5m</span> (actual -$37.5m vs budget -$26.0m).", "mom": "MXN <span class=\"r\">-$7.7m</span> (-87.1% vs Nov-25) — margin 2.9% vs 45.5%. OPEX <span class=\"r\">-$27.0m</span> (-$37.5m vs -$10.5m)."}, "pnl_ebitda": {"bud": "MXN <span class=\"r\">-$11.5m</span> (-26641.3% vs Bud) — -$11.5m at -29.8% margin vs budget -$0.0m at -0.1%. SG&amp;A <span class=\"r\">-$6.7m</span>: Direct Business Line <span class=\"r\">-$7.9m</span>, CF &amp; Corp G&amp;A <span class=\"g\">$1.2m</span>. EBITDA ex CF &amp; Corp G&amp;A -$10.1m (<span class=\"r\">-$12.7m</span> vs Bud).", "mom": "MXN <span class=\"r\">-$13.3m</span> (-729.8% vs Nov-25) — -$11.5m vs $1.8m, margin -29.8% vs 9.5%. SG&amp;A <span class=\"r\">-$5.7m</span> (-$12.6m vs -$7.0m)."}, "pnl_ni": {"bud": "MXN <span class=\"r\">-$19.7m</span> (-905.8% vs Bud) — -$21.8m vs budget -$2.2m. Bridge: EBIT <span class=\"r\">-$11.2m</span> (D&amp;A <span class=\"g\">$0.2m</span>), Interest expense <span class=\"r\">-$0.1m</span> (actual -$1.7m vs budget -$1.6m).", "mom": "MXN <span class=\"r\">-$21.5m</span> (-6624.4% vs Nov-25) — -$21.8m vs -$0.3m. EBIT <span class=\"r\">-$13.3m</span>, Interest expense <span class=\"g\">$0.1m</span>."}}};
 
 /* ============ Helpers ============ */
 const MN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -896,14 +896,16 @@ function renderAlerts(){
     {k:'ebit',            l:'EBIT',             th:0.30, dir:'down', unit:'M'},
     {k:'net_income',      l:'Net Income',       th:0.30, dir:'down', unit:'M'},
     {k:'opex',            l:'OPEX',             th:0.20, dir:'up',   unit:'M'},
-    {k:'corporate_expenses',l:'SG&A',           th:0.20, dir:'up',   unit:'M'},
+    {k:'sga',             l:'SG&A',             th:0.20, dir:'up',   unit:'M'},
     {k:'gross_margin',    l:'Gross Margin',     th:0.10, dir:'down', unit:'%'},
     {k:'ebitda_margin',   l:'EBITDA Margin',    th:0.10, dir:'down', unit:'%'},
     {k:'ni_margin',       l:'NI Margin',        th:0.10, dir:'down', unit:'%'},
-    {k:'performance_ratio',l:'Performance Ratio',absTarget:0.80, dir:'down', unit:'%'},
-    {k:'churn',           l:'Churn',            absTarget:0.25, dir:'up',   unit:'%'},
-    {k:'fill_rate_eop',   l:'Fill Rate',        absTarget:0.85, dir:'down', unit:'%'},
-    {k:'utilization',     l:'Utilization',      th:0.10, dir:'down', unit:'%'},
+    {k:'epc',             l:'EPC (3rd party)',  th:0.20, dir:'down', unit:'M'},
+    {k:'epc_interco',     l:'EPC Interco',      th:0.20, dir:'down', unit:'M'},
+    {k:'contracted_revenues',l:'Contracted Revenues', th:0.20, dir:'down', unit:'M'},
+    {k:'epc_backlog',     l:'EPC Backlog',      th:0.25, dir:'down', unit:'M'},
+    {k:'epc_pipeline',    l:'EPC Pipeline',     th:0.25, dir:'down', unit:'M'},
+    {k:'zee_total_monitored',l:'ZEE Monitored Vehicles', th:0.15, dir:'down', unit:'#'},
   ];
   const alerts = [];
   CHECKS.forEach(c => {
@@ -1997,13 +1999,13 @@ function renderHubsExpense(){
   const tgt=document.getElementById('rat-hubs'); if(!tgt) return;
   const HE = D.hubs_expense;
   if(!HE || !HE.order || !HE.order.length){
-    tgt.innerHTML = '<div class="vemo-section-title">DAE – <b>Hubs P&L</b></div><div style="padding:20px;color:var(--tx3);font-size:12px">No hub data available.</div>';
+    tgt.innerHTML = '<div class="vemo-section-title">EVF – <b>Hubs P&L</b></div><div style="padding:20px;color:var(--tx3);font-size:12px">No hub data available.</div>';
     return;
   }
   // Excluir EJERCITO NACIONAL del selector
   const hubs = HE.order.filter(function(h){ return h.toUpperCase().indexOf('EJERCITO')<0; });
   if(!hubs.length){
-    tgt.innerHTML='<div class="vemo-section-title">DAE – <b>Hubs P&L</b></div><div style="padding:20px;color:var(--tx3);font-size:12px">No hub data available.</div>';
+    tgt.innerHTML='<div class="vemo-section-title">EVF – <b>Hubs P&L</b></div><div style="padding:20px;color:var(--tx3);font-size:12px">No hub data available.</div>';
     return;
   }
   if(__HUB_SEL==null || hubs.indexOf(__HUB_SEL)<0) __HUB_SEL = hubs[0];
@@ -2019,8 +2021,8 @@ function renderHubsExpense(){
   function fmtC(v){ if(v==null||isNaN(v)) return '—'; const n=Math.round(v); return n<0?'('+Math.abs(n).toLocaleString()+')':'$'+n.toLocaleString(); }
   function fmtP(v){ if(v==null||isNaN(v)||!isFinite(v)) return 'n.a.'; return (v*100).toFixed(1)+'%'; }
   function findL(name){ return lines.find(function(l){ return (l.label||'').trim().toLowerCase()===name; }); }
-  const SPECIAL = ['ride hailing revenue','revenue','opex','gross profit','gp%'];
-  const rhr=findL('ride hailing revenue'), rev=findL('revenue'), opex=findL('opex'), gp=findL('gross profit');
+  const SPECIAL = ['EV fleet electrification revenue','revenue','opex','gross profit','gp%'];
+  const rhr=findL('EV fleet electrification revenue'), rev=findL('revenue'), opex=findL('opex'), gp=findL('gross profit');
   const revVals  = rev  ? sliceV(rev.vals)  : months.map(function(){return 0;});
   const opexVals = opex ? sliceV(opex.vals) : months.map(function(){return 0;});
   const gpVals   = gp   ? sliceV(gp.vals)   : revVals.map(function(r,i){ return r+(opexVals[i]||0); });
@@ -2031,7 +2033,7 @@ function renderHubsExpense(){
     .sort(function(a,b){ return Math.abs(sumv(b.vals))-Math.abs(sumv(a.vals)); });
 
   // Selector de hub (arriba, centrado)
-  let html = '<div class="vemo-section-title">DAE – <b>Hubs P&L</b> <span style="font-size:10px;font-weight:400;color:var(--tx3);letter-spacing:0.04em;text-transform:none;margin-left:8px;font-style:italic">P&L per hub</span></div>';
+  let html = '<div class="vemo-section-title">EVF – <b>Hubs P&L</b> <span style="font-size:10px;font-weight:400;color:var(--tx3);letter-spacing:0.04em;text-transform:none;margin-left:8px;font-style:italic">P&L per hub</span></div>';
   html += '<div style="display:flex;justify-content:center;align-items:center;gap:10px;margin:4px 0 16px 0">'+
     '<span style="font-size:11px;color:var(--tx3);text-transform:uppercase;letter-spacing:0.06em;font-weight:700">Hub</span>'+
     '<select id="hub-picker" style="font-family:inherit;font-size:13px;font-weight:700;padding:8px 16px;border:1.5px solid var(--teal);background:var(--forest);color:#fff;border-radius:7px;cursor:pointer;min-width:260px;text-align:center">'+
@@ -2078,7 +2080,7 @@ function renderIncidentsBlock(){
   const tgt=document.getElementById('rat-inc'); if(!tgt) return;
   tgt.innerHTML = ''; // limpiar primero
   // Título
-  tgt.insertAdjacentHTML('beforeend', '<div class="vemo-section-title">DAE – <b>Incidents</b></div>');
+  tgt.insertAdjacentHTML('beforeend', '<div class="vemo-section-title">EVF – <b>Incidents</b></div>');
   // 1) Charts arriba (igual que los otros sub-tabs)
   renderRatioCharts('rat-inc', RATIO_CHARTS.inc);
   // 2) Tabla expandible despues
@@ -2197,7 +2199,7 @@ function makeLineChart(canvasId,label,data,opts){
       byYear[yr][mo]=(v==null||isNaN(v)||Math.abs(v)<1e-6)?null:v;
     }
     if(opts.hist2024 && opts.hist2024.some(v=>v!=null&&v!==0)) byYear['2024']=opts.hist2024.slice(0,12).map(v=>(v==null||isNaN(v))?null:v);
-    // 2023 (archivo "VEMO 2024 DAE FY Financials"): ceros = mes sin dato -> null
+    // 2023 (archivo "VEMO 2024 EVF FY Financials"): ceros = mes sin dato -> null
     if(opts.hist2023 && opts.hist2023.some(v=>v!=null&&v!==0)) byYear['2023']=opts.hist2023.slice(0,12).map(v=>(v==null||isNaN(v)||Math.abs(v)<1e-9)?null:v);
     const yrColors={'2023':'#9aa3ac','2024':'#C0392B','2025':'#1F5454','2026':'#11ABAB'};
     const years=Object.keys(byYear).sort();
@@ -3130,16 +3132,14 @@ const _VEMIA_SYNONYMS = [
   {pat:/(bottom.?line|net profit|net earnings|final profit|utilidad final|ganancia neta)/gi, replace:'net income'},
   // OPEX
   {pat:/(operating costs?|operating expenses?|how much (we|are we) (spending|cost)|cuanto (gastamos|cuesta operar)|expense)/gi, replace:'opex'},
-  // Churn
-  {pat:/(driver loss|drivers leaving|attrition|bajas de conductores|abandonment|retention loss)/gi, replace:'churn'},
-  // Performance Ratio
-  {pat:/(driver efficiency|on.?trip rate|driving efficiency|productividad de conductor)/gi, replace:'performance ratio'},
-  // Fleet
-  {pat:/(how many cars|cuantos vehiculos|how many vehicles|vehicle count)/gi, replace:'total fleet'},
-  // Active drivers
-  {pat:/(how many drivers|cuantos conductores|driver count|drivers active|conductores activos)/gi, replace:'active drivers'},
-  // Trips
-  {pat:/(how many trips|cuantos viajes|ride count|trip count|viajes realizados)/gi, replace:'trips'},
+  // Backlog
+  {pat:/(signed.+not executed|obra firmada|por ejecutar|committed work|pending execution)/gi, replace:'backlog'},
+  // Pipeline
+  {pat:/(commercial opportunities|oportunidades comerciales|prospects|cotizaciones|quotes outstanding)/gi, replace:'pipeline'},
+  // Monitored fleet
+  {pat:/(how many vehicles|cuantos vehiculos|vehicle count|vehiculos monitoreados|monitored units)/gi, replace:'monitored vehicles'},
+  // EPC
+  {pat:/(charger installations?|instalaciones de cargadores|infrastructure projects|obra de carga)/gi, replace:'epc'},
   // Margin
   {pat:/(profit margin|margen de ganancia|margin\b)/gi, replace:'ebitda margin'},
   // Time references
@@ -3244,7 +3244,7 @@ function _vemiaParseExtPeriod(text){
 const _VEMIA_PATTERNS = [
   {pat:/(give me|d[aá]me|show me|muestra|mu[eé]strame)\s+(the\s+)?(numbers?|n[uú]meros?|stats|results?)/i, redirect:'executive summary'},
   {pat:/(in (one|1)|en (un|1))\s+(slide|page|minute|sentence|frase)/i, redirect:'1 slide summary'},
-  {pat:/(what (do you|did you|will you)\s+think|qu[eé] piensas|qu[eé] opinas)/i, redirect:'que opinas de DAE'},
+  {pat:/(what (do you|did you|will you)\s+think|qu[eé] piensas|qu[eé] opinas)/i, redirect:'que opinas de EV Fleets'},
   {pat:/(quick (overview|summary|recap)|recap|res[uú]men r[aá]pido)/i, redirect:'executive summary'},
   {pat:/(summary|resumen)\s+(for|de|del|of)\s+(this|the|el|esta|este)?\s*(period|month|mes|per[ií]odo|quarter|trimestre)?/i, redirect:'executive summary'},
   {pat:/^(summary|resumen|res[uú]men|overview|sumario)\s*[\.\?!]?\s*$/i, redirect:'executive summary'},
@@ -3410,14 +3410,14 @@ function chatBotAnswer(q){
       const endM = startM + 2;
       const monthStr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][endM-1];
       // KPI puede venir antes
-      const kpiInQ = lq.match(/\b(revenue|ebitda|opex|net income|gross profit|trips|drivers|churn|gp)\b/i);
+      const kpiInQ = lq.match(/\b(revenue|ebitda|opex|net income|gross profit|epc|interco|contracted|backlog|pipeline|zee|gp)\b/i);
       if(kpiInQ){
         const yy = String(extP.year).slice(-2);
         return chatBotAnswer(kpiInQ[1] + ' ' + monthStr.toLowerCase() + ' ' + yy);
       }
     }
     if(extP && extP.kind === 'last_n_months'){
-      const kpiInQ = lq.match(/\b(revenue|ebitda|opex|net income|gross profit|trips|drivers|churn|gp)\b/i);
+      const kpiInQ = lq.match(/\b(revenue|ebitda|opex|net income|gross profit|epc|interco|contracted|backlog|pipeline|zee|gp)\b/i);
       if(kpiInQ){
         const t = arr(kpiInQ[1].toLowerCase() === 'gp' ? 'gross_profit' : kpiInQ[1].toLowerCase().replace(' ','_'));
         if(t && t.length){
@@ -3432,7 +3432,7 @@ function chatBotAnswer(q){
 
   // === COMPOUND QUERY: si menciona 2 KPIs, intentar responder ambos ===
   const compoundMatch = /([a-z]+) (and|y|&|\+) ([a-z]+)/i.exec(lq);
-  if(compoundMatch && /revenue|ebitda|opex|gp|gross|net income|trips|drivers|churn/i.test(compoundMatch[1]) && /revenue|ebitda|opex|gp|gross|net income|trips|drivers|churn/i.test(compoundMatch[3])){
+  if(compoundMatch && /revenue|ebitda|opex|gp|gross|net income|epc|interco|contracted|backlog|pipeline|zee/i.test(compoundMatch[1]) && /revenue|ebitda|opex|gp|gross|net income|epc|interco|contracted|backlog|pipeline|zee/i.test(compoundMatch[3])){
     const k1 = compoundMatch[1], k2 = compoundMatch[3];
     if(k1 !== k2){
       const period = lq.replace(compoundMatch[0],'').trim();
@@ -3541,12 +3541,13 @@ function chatBotAnswer(q){
   if(/alert|riesg|warning/.test(lq)){
     const a=[]; const eb=+arr('ebitda')[CUR]||0, ebPrev=+arr('ebitda')[PREV]||0;
     if(ebPrev&&Math.abs((eb-ebPrev)/Math.abs(ebPrev))>0.30) a.push('⚠ EBITDA cayó '+fmtPct((eb-ebPrev)/Math.abs(ebPrev)*100,1)+' vs '+mlblShort(PREV));
-    const pr=+arr('performance_ratio')[CUR]||0; if(pr&&pr<0.80) a.push('⚠ Performance Ratio bajo: '+fmtPct(pr*100,1));
-    const ch=+arr('churn')[CUR]||0; if(ch>0.25) a.push('⚠ Churn alto: '+fmtPct(ch*100,1));
+    const _gm=+arr('gross_margin')[CUR]||0; if(_gm&&_gm<0.15) a.push('⚠ Gross Margin bajo: '+fmtPct(_gm*100,1));
+    const _bl=+arr('epc_backlog')[KPI_LI]||0, _pl=+arr('epc_pipeline')[KPI_LI]||0;
+    if(_bl && _pl && _bl > _pl) a.push('⚠ Backlog ('+fmtMm(_bl)+') mayor al Pipeline ('+fmtMm(_pl)+') — poca cobertura comercial hacia adelante');
     return a.length? 'Alerts '+mlblShort(CUR)+':\n'+a.join('\n') : 'No critical alerts in '+mlblShort(CUR)+' 👍';
   }
   if(/top.*opex|gasto/.test(lq)){
-    const lines=[['ev_fuel_cost','EV/Fuel'],['driver_payments','Driver Pay'],['maintenance_opex','Maintenance'],['insurance_opex','Insurance'],['marketing','Marketing'],['charging_infra','Charging'],['uber_take_rate','Uber Take']];
+    const lines=[['opex','OPEX'],['direct_line_sga','Direct Business Line SG&A'],['cf_corp_ga','CF & Corp G&A'],['da','D&A'],['interest_expense','Interest Expense'],['marketing','Marketing'],['charging_infra','Charging']];
     const arrR = lines.map(([k,l])=>({l, v:Math.abs(sum(arr(k),CUR,CUR))})).filter(x=>x.v>0).sort((a,b)=>b.v-a.v).slice(0,5);
     return 'Top OPEX lines '+mlblShort(CUR)+':\n'+arrR.map((x,i)=>(i+1)+'. '+x.l+': '+fmtMm(x.v)+'M').join('\n');
   }
@@ -3578,7 +3579,7 @@ function chatBotAnswer(q){
 
   // ¿Quién eres? / About yourself
   if(/who are you|wh?o.+vemia|qui[eé]n eres|qui[eé]n es vemia|present[aá]te|introduce yourself|tell me about yourself|cu[eé]ntame sobre ti|about yourself/i.test(lq)){
-    return _banner('Hi, I am VEMIA 🚖')+
+    return _banner('Hi, I am VEMIA ⚡')+
       '<div class="ri"><div>I am the AI assistant for <b>VEMO</b>, the Mexican electromobility company. My name is a fusion of <b>VEMO + IA</b> (AI in Spanish). I was created to help you analyze your EVF dashboard data.</div></div>'+
       '<div class="ri"><div><b>What I can do:</b> answer executive questions, decompose variances, project year-end, find correlations, rank KPI impact, flag risks, propose actions for next month, summarize the period for board/CEO/CFO, and much more.</div></div>'+
       '<div class="ri"><div><b>Languages:</b> I understand English and Spanish. <b>My data:</b> I read directly from your Excel (Actuals + Budget) and update with every script run.</div></div>'+
@@ -3599,9 +3600,9 @@ function chatBotAnswer(q){
       '<div class="ri"><div><b>VEMO</b> is the leading Mexican cleantech company driving the electromobility revolution in Latin America. We make clean mobility possible through technology, charging infrastructure, and EV fleet services.</div></div>'+
       '<div class="ri"><div><b>Founded:</b> 2021 in Mexico City by <b>Germán Losada</b> and <b>Roberto Rocha</b> (former private equity executives). Backed by <b>Riverstone Holdings LLC</b>, a US asset manager focused on energy infrastructure.</div></div>'+
       '<div class="ri"><div><b>Funding:</b> '+_good('$314M USD')+' raised across 3 rounds from 7 investors (Series D stage). Most recently: $1,300 MXN MDP secured to accelerate Mexico operations.</div></div>'+
-      '<div class="ri"><div><b>Business lines (Ecosystem):</b><br>• <b>EVF</b> — EV ride-hailing fleet (this dashboard!)<br>• <b>VEMO Charge</b> — Charging infrastructure network<br>• <b>VEMO Conduce</b> — Driver platform<br>• <b>Fleet financing</b> — EV financing solutions<br>• <b>Fleet management technology</b></div></div>'+
+      '<div class="ri"><div><b>Business lines (Ecosystem):</b><br>• <b>EV Fleets (EVF)</b> — corporate fleet electrification: EPC charging infrastructure, ChaaS/FaaS and ZEE monitoring (this dashboard!)<br>• <b>VEMO Charge</b> — public charging network &amp; hubs<br>• <b>Fleet operations</b> — separate units, not this dashboard<br>• <b>Fleet financing</b> — EV financing &amp; operational leasing<br>• <b>Fleet management technology</b> — ZEE platform</div></div>'+
       '<div class="ri"><div><b>Mission:</b> Accelerate Latin America\'s transition to electric vehicles through an integrated ecosystem — vehicles, charging, software, and financing all in one platform.</div></div>'+
-      '<div class="ri"><div><b>Why it matters:</b> Mexico City has some of the worst air quality in the region. Every VEMO trip replaces a combustion vehicle ride — cleaner air, less noise, lower CO₂.</div></div>';
+      '<div class="ri"><div><b>Why it matters:</b> Mexico City has some of the worst air quality in the region. Every combustion fleet that goes electric means cleaner air, less noise and lower CO₂.</div></div>';
   }
 
   // ¿Quiénes son los fundadores? / Founders
@@ -3617,17 +3618,18 @@ function chatBotAnswer(q){
     return _banner('VEMO Operations')+
       '<div class="ri"><div><b>Headquarters:</b> Mexico City, Mexico 🇲🇽</div></div>'+
       '<div class="ri"><div><b>Primary cities:</b> Mexico City (CDMX), Guadalajara, Monterrey.</div></div>'+
-      '<div class="ri"><div><b>Partnerships:</b> Integrated with <b>Uber</b> as a fleet operator — drivers run UberX & Black on VEMO EVs.</div></div>'+
+      '<div class="ri"><div><b>EV Fleets clients:</b> B2B — companies electrifying their own fleet, plus users of the public charging hubs via <b>Watts B2B</b> and the <b>eMSP</b> service.</div></div>'+
       '<div class="ri"><div><b>Expansion:</b> Targeting broader Latin America footprint with funding from latest round.</div></div>';
   }
 
-  // What is DAE? / DAE explanation
-  if(/what is dae|about dae|qu[eé] es dae|cu[eé]ntame.+dae/i.test(lq)){
-    return _banner('About DAE')+
-      '<div class="ri"><div><b>EVF</b> stands for <i>"Driver-as-Employee"</i> — VEMO\'s ride-hailing fleet operations entity in Mexico.</div></div>'+
-      '<div class="ri"><div><b>How it works:</b> VEMO owns the EV fleet. Drivers are <b>full employees</b> of DAE (not contractors), driving on the Uber platform.</div></div>'+
-      '<div class="ri"><div><b>Why this model:</b> Solves the chicken-and-egg of EV adoption — drivers cannot afford EVs, so VEMO provides them. Drivers focus on driving; VEMO handles vehicles, charging, maintenance.</div></div>'+
-      '<div class="ri"><div><b>This dashboard:</b> tracks the financial & operational performance of DAE: revenue per hour, driver productivity, fleet utilization, vehicle maintenance, churn, P&L, etc.</div></div>';
+  // What is EVF? / EVF explanation
+  if(/what is (evf|ev fleets|dae)|about (evf|ev fleets|dae)|qu[eé] es (evf|ev fleets|dae)|cu[eé]ntame.+(evf|ev fleets)/i.test(lq)){
+    return _banner('About EV Fleets (EVF)')+
+      '<div class="ri"><div><b>EVF</b> is VEMO\'s EV-infrastructure and fleet-services entity. Its P&L runs on two engines: <b>EPC</b> and <b>Contracted Revenues</b>.</div></div>'+
+      '<div class="ri"><div><b>EPC</b> (Engineering, Procurement &amp; Construction): designing and installing charging infrastructure. Reported split between <b>third-party</b> clients and <b>Interco</b> (work executed for other VEMO entities).</div></div>'+
+      '<div class="ri"><div><b>Contracted Revenues</b>: the recurring service lines (ChaaS / FaaS and other operating revenue) that sit on top of the project business.</div></div>'+
+      '<div class="ri"><div><b>ZEE</b>: the monitored-fleet metric — vehicles under monitoring, split between <b>LTO</b> and <b>third-party</b> units.</div></div>'+
+      '<div class="ri"><div><b>This dashboard:</b> P&L vs Budget (EPC, EPC Interco, Contracted Revenues, OPEX, SG&amp;A, EBITDA, EBIT, Net income) plus the commercial KPIs: EPC Sales, Backlog, Pipeline and ZEE monitored vehicles.</div></div>';
   }
 
   // Inversores / Investors
@@ -3677,7 +3679,7 @@ function chatBotAnswer(q){
     /\b(management.+prepared|prepared.+answer|prepared.+management)/i.test(lq) ||
     /\b(highlight|lowlight|narrative|commentary)\b/i.test(lq) ||
         /^(grafic|chart|plot|gr[aá]fica|gr[aá]ficame|show.+chart|trend)/i.test(lq) ||
-    /grafic.+(revenue|ebitda|opex|trips|drivers|fleet|churn)/i.test(lq) ||
+    /grafic.+(revenue|ebitda|opex|epc|backlog|pipeline|zee|fleet)/i.test(lq) ||
     /\b(executive summary|resumen ejecutivo)/i.test(lq) ||
     /\b(why did|por qu[eé]|root cause|cost driver)/i.test(lq) ||
     /\b(what should I worry|qu[eé] me preocupa|top risks?|principales riesgos)/i.test(lq) ||
@@ -3704,33 +3706,34 @@ function chatBotAnswer(q){
     // OPEX
     'opex':'opex','op ex':'opex','gastos':'opex','costos':'opex',
     // SG&A
-    'sga':'corporate_expenses','sg&a':'corporate_expenses','corporate expenses':'corporate_expenses',
-    // Driver Payments
-    'driver pay':'driver_payments','driver payments':'driver_payments','pago a conductores':'driver_payments','pago conductores':'driver_payments','dp':'driver_payments',
-    // KPIs operativos
-    'utilization':'utilization','utilizacion':'utilization','util':'utilization',
-    'performance':'performance_ratio','performance ratio':'performance_ratio','pr':'performance_ratio',
-    'trips':'trips_total','viajes':'trips_total',
-    'churn':'churn',
-    'active drivers':'eop_active_drivers','drivers':'eop_active_drivers','conductores':'eop_active_drivers',
-    'fleet':'total_fleet','flota':'total_fleet','vehicles':'operational_vehicles','vehiculos':'operational_vehicles',
-    'fill rate':'fill_rate_eop','fr':'fill_rate_eop',
-    'rph':'revenue_per_hour','revenue per hour':'revenue_per_hour',
-    'tph':'trips_per_hour','trips per hour':'trips_per_hour',
-    'supply hours':'supply_hours','sh':'supply_hours',
-    'maintenance':'maintenance_opex','maint':'maintenance_opex',
-    'marketing':'marketing','mkt':'marketing',
-    'incidents':'inc_atfault_total','incidentes':'inc_atfault_total',
+    'sga':'sga','sg&a':'sga','corporate expenses':'cf_corp_ga',
+    // Lineas de revenue EVF
+    'epc':'epc','epc third party':'epc','epc 3rd party':'epc','epc terceros':'epc',
+    'epc interco':'epc_interco','interco':'epc_interco',
+    'contracted revenues':'contracted_revenues','contracted':'contracted_revenues','ingresos contratados':'contracted_revenues',
+    // KPIs comerciales EVF
+    'epc sales':'epc_sales_3p','ventas epc':'epc_sales_3p',
+    'backlog':'epc_backlog','epc backlog':'epc_backlog',
+    'pipeline':'epc_pipeline','epc pipeline':'epc_pipeline',
+    'zee':'zee_total_monitored','monitored vehicles':'zee_total_monitored','vehiculos monitoreados':'zee_total_monitored',
+    'monitored lto':'zee_monitored_lto','lto':'zee_monitored_lto',
+    'monitored third party':'zee_monitored_3p','monitored 3p':'zee_monitored_3p',
+    'fleet':'zee_total_monitored','flota':'zee_total_monitored','vehicles':'zee_total_monitored','vehiculos':'zee_total_monitored',
+    // Bloques de SG&A EVF
+    'direct business line':'direct_line_sga','direct line':'direct_line_sga',
+    'cf corp':'cf_corp_ga','corporate':'cf_corp_ga','cross functional':'cf_corp_ga',
+    'ebitda ex':'ebitda_ex_cf_corp',
     // Headcount / staff
     'hc':'headcount','head count':'headcount','headcount':'headcount','staff':'headcount','personal':'headcount','empleados':'headcount',
-    // Take rate
-    'take rate':'uber_take_rate_pct','uber take rate':'uber_take_rate_pct','tr':'uber_take_rate_pct',
-    // Hires / Exits / Churn metrics
+    // Margenes
+    'gross margin':'gross_margin','gm':'gross_margin','margen bruto':'gross_margin',
+    'ebitda margin':'ebitda_margin','margen ebitda':'ebitda_margin',
+    // Headcount movements
     'hires':'hires','contrataciones':'hires','altas':'hires',
     'exits':'exits','salidas':'exits','bajas':'exits','attrition':'exits',
     // Trips additional
     'trips per hour':'trips_per_hour','tph':'trips_per_hour',
-    'price per ride':'price_per_ride','precio por viaje':'price_per_ride','ppt':'price_per_ride',
+    'chargers':'chargers_signed','cargadores':'chargers_signed',
     'd&a':'da','da':'da','depreciation':'da','amortization':'da',
     'taxes':'taxes','impuestos':'taxes',
     'interest':'interest_expense','intereses':'interest_expense',
@@ -3771,39 +3774,39 @@ function chatBotAnswer(q){
     return '🏆 ' + lbl + ' MES · ' + bk.replace(/_/g,' ').toUpperCase() + '\n• Month: ' + mlblShort(bestIdx) + '\n• Valor: ' + _fmtKpi(bestVal,bk);
   }
 
-  // ====== INTENT: DAE general opinion / qué piensas ======
-  if(/qu[eé] opin|opini[oó]n|what (do you think|think about)|assessment|c[oó]mo (va|esta).+(dae|empresa|negocio)|estado.+empresa/i.test(lq)){
+  // ====== INTENT: EVF general opinion / que piensas ======
+  if(/qu[eé] opin|opini[oó]n|what (do you think|think about)|assessment|c[oó]mo (va|esta).+(evf|ev fleets|empresa|negocio)|estado.+empresa/i.test(lq)){
     const rev = +arr('revenue')[CUR]||0, revB = +barr('revenue')[CUR]||0;
+    const gp  = +arr('gross_profit')[CUR]||0;
     const eb  = +arr('ebitda')[CUR]||0,  ebB  = +barr('ebitda')[CUR]||0;
-    const ni  = +arr('net_income')[CUR]||0;
-    const ch  = +arr('churn')[CUR]||0;
-    const pr  = +arr('performance_ratio')[CUR]||0;
-    let out = '🤔 <b>VEMIA opina · DAE en ' + mlblShort(CUR) + '</b>\n\n';
-    if(rev > revB) out += '✅ <b>Revenue</b>: Above Budget (' + fmtMm(rev) + 'M vs ' + fmtMm(revB) + 'M) — positive momentum.\n';
-    else if(revB) out += '⚠️ <b>Revenue</b>: Below Budget (' + fmtMm(rev) + 'M vs ' + fmtMm(revB) + 'M) — review pipeline.\n';
-    if(eb < 0) out += '🔴 <b>EBITDA</b>: Negative (' + fmtMm(eb) + 'M) — the unit is still scaling, not yet profitable.\n';
-    else out += '🟢 <b>EBITDA</b>: Positive (' + fmtMm(eb) + 'M).\n';
-    if(ch > 0.30) out += '🔴 <b>Churn</b>: ' + fmtPct(ch*100,1) + ' — critical, needs a retention plan.\n';
-    else if(ch > 0.20) out += '🟡 <b>Churn</b>: ' + fmtPct(ch*100,1) + ' — watch closely.\n';
-    if(pr && pr < 0.78) out += '🟡 <b>Performance Ratio</b>: ' + fmtPct(pr*100,1) + ' — below target (80%+).\n';
+    const epc = +arr('epc')[CUR]||0,     epcB = +barr('epc')[CUR]||0;
+    const bl  = +arr('epc_backlog')[KPI_LI]||0;
+    const pl  = +arr('epc_pipeline')[KPI_LI]||0;
+    const gm  = rev ? gp/rev : 0;
+    let out = '🤔 <b>VEMIA · EV Fleets in ' + mlblShort(CUR) + '</b>\n\n';
+    if(revB) out += (rev >= revB ? '✅' : '⚠️') + ' <b>Revenues</b>: ' + fmtMm(rev) + ' vs Budget ' + fmtMm(revB) + '.\n';
+    if(epcB) out += (epc >= epcB ? '✅' : '⚠️') + ' <b>EPC (3rd party)</b>: ' + fmtMm(epc) + ' vs Budget ' + fmtMm(epcB) + ' — usually the main swing factor in revenue.\n';
+    out += (gm >= 0.20 ? '🟢' : '🟡') + ' <b>Gross Margin</b>: ' + fmtPct(gm*100,1) + '.\n';
+    out += (eb >= 0 ? '🟢' : '🔴') + ' <b>EBITDA</b>: ' + fmtMm(eb) + (ebB ? ' vs Budget ' + fmtMm(ebB) : '') + '.\n';
+    if(bl) out += '📘 <b>Backlog</b>: ' + fmtMm(bl) + ' · <b>Pipeline</b>: ' + fmtMm(pl) + ' (as of ' + mlblShort(KPI_LI) + ').\n';
     out += '\n<b>My overall take:</b> ';
-    if(eb < 0 && ch > 0.25) out += 'DAE is in an investment / scaling phase. Focus on driver retention and operating efficiency to accelerate the path to profitability.';
-    else if(rev > revB && eb > 0) out += 'DAE executing very well — Revenue and EBITDA above plan.';
-    else out += 'Mixed business — Revenue above plan but profitability pending. The key driver is operating efficiency (RPH, churn, performance ratio).';
+    if(eb < 0 && revB && rev < revB) out += 'Revenue is landing short of plan and EBITDA is negative — the gap sits mostly in EPC execution. Backlog and Pipeline are what convert into future revenue, so the thing to watch is how fast backlog is being executed.';
+    else if(eb >= 0 && revB && rev >= revB) out += 'EVF is executing above plan on both revenue and EBITDA.';
+    else out += 'Mixed picture — check whether the revenue gap sits in EPC third-party, EPC Interco or Contracted Revenues, since each carries a very different margin profile.';
     return out;
   }
 
   // ====== INTENT: OPPORTUNITIES (mas permisivo) ======
   if(/oprtunidad|oportunidad|opportunit|hay alguna.+(oport|opp)|que.+vemos.+positivo|areas?.+crec/i.test(lq)){
-    let out = _banner('Top Opportunities for DAE');
+    let out = _banner('Top Opportunities for EV Fleets');
     const items = topVariances('budPos', 5);
     items.forEach(function(r,i){
       out += '<div class="ri"><div>'+(i+1)+'. <b>'+r.ln.l+'</b>: '+_good('+'+fmtMm(r.delta)+'M vs Budget')+' ('+_pctTxt(r.pct, true).replace(/<[^>]+>/g,'')+'). Lever para escalar.</div></div>';
     });
     // Si no hay items above budget, sugerir oportunidades estructurales
     if(!items.length){
-      out += '<div class="ri"><div>1. <b>Driver retention</b>: Reducing churn (' + fmtPct((+arr('churn')[CUR]||0)*100,1) + ') can unlock ~$X.XM in YoY revenue.</div></div>';
-      out += '<div class="ri"><div>2. <b>Performance Ratio</b>: Raising to 80%+ from ' + fmtPct((+arr('performance_ratio')[CUR]||0)*100,1) + ' increases effective supply.</div></div>';
+      out += '<div class="ri"><div>1. <b>Backlog execution</b>: ' + fmtMm(+arr('epc_backlog')[KPI_LI]||0) + ' of signed EPC work is pending execution — converting it faster pulls revenue forward.</div></div>';
+      out += '<div class="ri"><div>2. <b>Pipeline conversion</b>: ' + fmtMm(+arr('epc_pipeline')[KPI_LI]||0) + ' of open opportunities — the win rate here sets next quarters\' EPC revenue.</div></div>';
       out += '<div class="ri"><div>3. <b>Pricing/Trip mix</b>: Optimize premium service mix (Black, Flash).</div></div>';
     }
     return out;
@@ -3814,7 +3817,7 @@ function chatBotAnswer(q){
     const eb = +arr('ebitda')[CUR]||0, ebB = +barr('ebitda')[CUR]||0;
     const rev = +arr('revenue')[CUR]||0, revB = +barr('revenue')[CUR]||0;
     let out = '👋 Hi David — yes, you\'re doing great keeping the dashboard up to date.\n\n';
-    out += '<b>DAE pulse ' + mlblShort(CUR) + ':</b>\n';
+    out += '<b>EV Fleets pulse ' + mlblShort(CUR) + ':</b>\n';
     if(rev > revB) out += '✅ Revenue above Budget (' + fmtMm(rev) + 'M vs ' + fmtMm(revB) + 'M)\n';
     else if(revB) out += '⚠️ Revenue below Budget — needs team attention\n';
     if(eb > ebB) out += '✅ EBITDA above Budget\n';
@@ -3823,10 +3826,10 @@ function chatBotAnswer(q){
     return out;
   }
   if(/(matias|galuccio|carlos|diez|lider.+dae|quien.+(lid|dirig|maneja).+dae|leadership.+dae|team.+dae)/i.test(lq)){
-    return '👥 <b>DAE Leadership</b>\n• <b>Matias Galuccio</b> — DAE Lead\n• <b>Carlos Diez</b> — DAE Co-lead\n• <b>David Jiménez</b> — FP&amp;A / Dashboard owner (you!)\n\nDAE = EV Fleets, VEMO division operated with employed drivers in partnership with Uber.';
+    return '👥 <b>EVF — KPI owners</b> <span style="color:#888;font-size:10px">(as listed in the Proposed Main KPIs file)</span>\n• <b>EPC Backlog / Pipeline</b> — Luz Amelia Torres Diaz\n• <b>ZEE Monitored Third-Party Vehicles</b> — Tino\n• <b>EPC Sales &amp; P&amp;L</b> — FP&amp;A\n• <b>David Jiménez</b> — FP&amp;A / Dashboard owner (you!)\n\nI only have the KPI owners named in the source file — I do not have the EVF org chart.';
   }
-  if(/about (dae|vemo conduce)|qu[eé] es dae|que significa dae/i.test(lq)){
-    return '🚖 <b>About DAE (EV Fleets)</b>\n\nDAE — also known as <b>VEMO Conduce</b> — is the VEMO division where drivers are <b>direct employees</b> (with salary, benefits, assigned vehicle), not independent contractors.\n\n• <b>Operation</b>: Own EV fleet operated on Uber\n• <b>Leads</b>: Matias Galuccio + Carlos Diez\n• <b>Model</b>: Formal employment with labor benefits, aligned with the Uber One spirit but as employment\n• <b>Stack</b>: Electric vehicles, telematics, centralized maintenance\n• <b>Location</b>: Offices and main operation in Mexico City (CDMX)\n\nDAE is one of VEMO\'s pillars along with Subleasing and other lines.';
+  if(/what does evf mean|que significa evf|evf breakdown|l[ií]neas.+evf|business lines/i.test(lq)){
+    return '⚡ <b>EVF — business lines</b>\n\n• <b>EPC (third party)</b>: charging-infrastructure projects for external clients\n• <b>EPC Interco</b>: the same capability executed for other VEMO entities\n• <b>Contracted Revenues</b>: recurring service lines (ChaaS / FaaS and other operating revenue)\n• <b>ZEE</b>: monitored fleet — LTO units + third-party units\n\nForward visibility comes from <b>Backlog</b> (signed, not yet executed) and <b>Pipeline</b> (open commercial opportunities).';
   }
 
   // Find KPI keyword con WORD BOUNDARIES (no matchear "pr" dentro de "april")
@@ -3843,10 +3846,10 @@ function chatBotAnswer(q){
   }
   // Detectar formato de KPI: % vs $ vs # (cuenta)
   function _isPctKpi(k){
-    return /(margin|rate|ratio|churn|utilization|fill_rate|pct|inactivity|availability|adj_performance)/.test(k);
+    return /(margin|rate|ratio|pct)/.test(k);
   }
   function _isCountKpi(k){
-    return /(headcount|drivers|recruiters|trips|vehicles|fleet|hires|exits|hubs|incidents|km_per|drv_)/.test(k);
+    return /(zee_|monitored|vehicles|fleet|headcount|chargers|units)/.test(k);
   }
   function _fmtKpi(v, key){
     if(v == null || isNaN(v)) return '-';
@@ -4030,8 +4033,8 @@ function chatBotAnswer(q){
     return '<div style="margin:8px 0">'+svg+'</div>';
   }
 
-  if(/^(grafic|chart|plot|gr[aá]fica|gr[aá]ficame|show.+chart|trend)/i.test(lq) || /grafic.+(revenue|ebitda|opex|ingresos|gastos|net income|gross profit|trips|drivers|fleet|churn|utilization|maintenance|marketing|interest)/i.test(lq) || /chart.+(revenue|ebitda|opex|trips|drivers|fleet|churn)/i.test(lq)){
-    const KP2={'revenue':'revenue','ingresos':'revenue','ebitda':'ebitda','ebit':'ebit','gross profit':'gross_profit','net income':'net_income','opex':'opex','sga':'corporate_expenses','sg&a':'corporate_expenses','driver pay':'driver_payments','utilization':'utilization','performance':'performance_ratio','trips':'trips_total','churn':'churn','active drivers':'eop_active_drivers','fleet':'total_fleet','operational vehicles':'operational_vehicles','fill rate':'fill_rate_eop','rph':'revenue_per_hour','revenue per hour':'revenue_per_hour','supply hours':'supply_hours','maintenance':'maintenance_opex','marketing':'marketing','interest':'interest_expense','gastos':'opex','utilidad bruta':'gross_profit','utilidad neta':'net_income','conductores':'eop_active_drivers','flota':'total_fleet','maintenance per km':'maintenance_per_km'};
+  if(/^(grafic|chart|plot|gr[aá]fica|gr[aá]ficame|show.+chart|trend)/i.test(lq) || /grafic.+(revenue|ebitda|opex|ingresos|gastos|net income|gross profit|epc|interco|contracted|backlog|pipeline|zee|fleet|interest)/i.test(lq) || /chart.+(revenue|ebitda|opex|epc|backlog|pipeline|zee|fleet)/i.test(lq)){
+    const KP2={'revenue':'revenue','ingresos':'revenue','ebitda':'ebitda','ebit':'ebit','gross profit':'gross_profit','net income':'net_income','opex':'opex','sga':'sga','sg&a':'sga','epc':'epc','epc interco':'epc_interco','interco':'epc_interco','contracted revenues':'contracted_revenues','contracted':'contracted_revenues','epc sales':'epc_sales_3p','backlog':'epc_backlog','pipeline':'epc_pipeline','zee':'zee_total_monitored','monitored vehicles':'zee_total_monitored','monitored lto':'zee_monitored_lto','fleet':'zee_total_monitored','flota':'zee_total_monitored','interest':'interest_expense','gastos':'opex','utilidad bruta':'gross_profit','utilidad neta':'net_income','direct business line':'direct_line_sga','cf corp':'cf_corp_ga','da':'da','d&a':'da'};
     let chartKey = null, kLen = 0;
     for(const k in KP2){ if(lq.indexOf(k)>=0 && k.length > kLen){ chartKey = KP2[k]; kLen = k.length; } }
     if(!chartKey) chartKey = 'revenue';
@@ -4125,7 +4128,7 @@ function chatBotAnswer(q){
   const onlyDate = parseDateRef(lq);
   if(onlyDate){
     const v = +arr('revenue')[onlyDate.idx]||0;
-    return '📊 Revenue · '+mlblShort(onlyDate.idx)+': '+fmtMm(v)+'M\n💡 Tip: especifica un KPI (ej. "ebitda enero 2025", "trips abril 2026", "active drivers mar-26")';
+    return '📊 Revenue · '+mlblShort(onlyDate.idx)+': '+fmtMm(v)+'M\n💡 Tip: especifica un KPI (ej. "ebitda enero 2025", "epc abril 2026", "zee monitored vehicles mar-26")';
   }
   if(/forecast|proyecc/.test(lq)){
     const a=arr('revenue'); if(a.length<3) return 'Need at least 3 months for forecast.';
@@ -4219,9 +4222,9 @@ function chatBotAnswer(q){
     // mode: 'inc'|'dec'|'budPos'|'budNeg'|'mom'|'yoy'
     const lines = [
       {k:'revenue', l:'Revenue', good:'up'},
-      {k:'ride_hailing_revenue', l:'Ride-hailing Revenue', good:'up'},
+      {k:'epc', l:'EPC (3rd party)', good:'up'},
       {k:'opex', l:'OPEX', good:'down'},
-      {k:'driver_payments', l:'Driver Payments', good:'down'},
+      {k:'opex', l:'OPEX', good:'down'},
       {k:'maintenance_opex', l:'Maintenance', good:'down'},
       {k:'ev_fuel_cost', l:'EV/Fuel Cost', good:'down'},
       {k:'marketing', l:'Marketing', good:'down'},
@@ -4265,26 +4268,17 @@ function chatBotAnswer(q){
     if(isKpiFocus){
       // Operational KPI changes (NOT financial)
       const opLines = [
-        {k:'performance_ratio', l:'Performance Ratio', type:'pct', good:'up'},
-        {k:'utilization', l:'Utilization', type:'pct', good:'up'},
-        {k:'revenue_per_hour', l:'Revenue per Hour', good:'up'},
-        {k:'trips_total', l:'Trips', good:'up'},
-        {k:'supply_hours', l:'Supply Hours', good:'up'},
-        {k:'time_online', l:'Time Online', good:'up'},
-        {k:'eop_active_drivers', l:'Active Drivers', good:'up'},
-        {k:'fill_rate_eop', l:'Fill Rate', type:'pct', good:'up'},
-        {k:'churn', l:'Churn', type:'pct', good:'down'},
-        {k:'hires', l:'Hires', good:'up'},
-        {k:'total_fleet', l:'Total Fleet', good:'up'},
-        {k:'operational_vehicles', l:'Operational Vehicles', good:'up'},
-        {k:'fleet_availability', l:'Fleet Availability', type:'pct', good:'up'},
-        {k:'maintenance_per_km', l:'Maintenance/km', good:'down'},
-        {k:'inc_atfault_total', l:'Incidents At-Fault', good:'down'},
-        {k:'trips_per_vehicle', l:'Trips/Vehicle', good:'up'},
-        {k:'trips_per_driver', l:'Trips/Driver', good:'up'},
-        {k:'daily_hours_per_vehicle', l:'Daily Hours/Vehicle', good:'up'},
-        {k:'unattendance_rate', l:'Unattendance Rate', type:'pct', good:'down'},
-        {k:'avg_km_per_trip', l:'Avg KM/Trip', good:'down'},
+        {k:'epc_sales_3p', l:'EPC Sales (3rd party)', good:'up'},
+        {k:'epc_backlog', l:'EPC Backlog', good:'up'},
+        {k:'epc_pipeline', l:'EPC Pipeline', good:'up'},
+        {k:'zee_monitored_lto', l:'ZEE Monitored LTO Vehicles', good:'up'},
+        {k:'zee_monitored_3p', l:'ZEE Monitored 3rd-Party Vehicles', good:'up'},
+        {k:'zee_total_monitored', l:'ZEE Total Monitored Vehicles', good:'up'},
+        {k:'epc', l:'EPC (3rd party revenue)', good:'up'},
+        {k:'epc_interco', l:'EPC Interco', good:'up'},
+        {k:'contracted_revenues', l:'Contracted Revenues', good:'up'},
+        {k:'gross_margin', l:'Gross Margin', type:'pct', good:'up'},
+        {k:'ebitda_margin', l:'EBITDA Margin', type:'pct', good:'up'},
       ];
       const results = opLines.map(ln => {
         const a = arr(ln.k);
@@ -4364,7 +4358,7 @@ function chatBotAnswer(q){
     // Find sub-components that grew most
     const subItems = [];
     if(targetKey==='opex' || /cost|opex|gasto/.test(lq)){
-      ['ev_fuel_cost','driver_payments','maintenance_opex','marketing','insurance_opex','training_cost','uber_take_rate','charging_infra','towing_service','washing','telematics_opex'].forEach(k=>{
+      ['opex','direct_line_sga','cf_corp_ga','da','interest_expense','towing_service','washing','telematics_opex'].forEach(k=>{
         const a2 = arr(k);
         if(!a2.length) return;
         const c = +a2[CUR]||0, p = +a2[PREV]||0;
@@ -4388,15 +4382,14 @@ function chatBotAnswer(q){
   if(/improved|mejoraron|mejor|deteriora|empeora|kpis? (improved|deteriorated|require attention)/.test(lq)){
     const askImproved = /improved|mejor|positiv/.test(lq);
     const opLines = [
-      {k:'performance_ratio', l:'Performance Ratio', good:'up', type:'pct'},
-      {k:'utilization', l:'Utilization', good:'up', type:'pct'},
-      {k:'revenue_per_hour', l:'Revenue/Hour', good:'up'},
-      {k:'fleet_availability', l:'Fleet Availability', good:'up', type:'pct'},
-      {k:'fill_rate_eop', l:'Fill Rate', good:'up', type:'pct'},
-      {k:'eop_active_drivers', l:'Active Drivers', good:'up'},
-      {k:'maintenance_per_km', l:'Maintenance/km', good:'down'},
-      {k:'inc_atfault_total', l:'Incidents At-Fault', good:'down'},
-      {k:'churn', l:'Churn', good:'down', type:'pct'},
+      {k:'epc_sales_3p', l:'EPC Sales (3rd party)', good:'up'},
+      {k:'epc_backlog', l:'EPC Backlog', good:'up'},
+      {k:'epc_pipeline', l:'EPC Pipeline', good:'up'},
+      {k:'zee_monitored_lto', l:'ZEE Monitored LTO Vehicles', good:'up'},
+      {k:'zee_total_monitored', l:'ZEE Total Monitored Vehicles', good:'up'},
+      {k:'gross_margin', l:'Gross Margin', good:'up', type:'pct'},
+      {k:'ebitda_margin', l:'EBITDA Margin', good:'up', type:'pct'},
+      {k:'ni_margin', l:'Net Income Margin', good:'up', type:'pct'},
     ];
     const results = opLines.map(ln=>{
       const a = arr(ln.k);
@@ -4421,15 +4414,15 @@ function chatBotAnswer(q){
     const opex = Math.abs(+arr('opex')[CUR]||0), opexB = Math.abs(+barr('opex')[CUR]||0);
     const eb = +arr('ebitda')[CUR]||0, ebB = +barr('ebitda')[CUR]||0;
     const ni = +arr('net_income')[CUR]||0, niB = +barr('net_income')[CUR]||0;
-    const ut = +arr('utilization')[CUR]||0, utPrev = +arr('utilization')[PREV]||0;
-    const drv = +arr('eop_active_drivers')[CUR]||0, drvPrev = +arr('eop_active_drivers')[PREV]||0;
+    const ut = +arr('gross_margin')[CUR]||0, utPrev = +arr('gross_margin')[PREV]||0;
+    const drv = +arr('zee_total_monitored')[KPI_LI]||0, drvPrev = +arr('zee_total_monitored')[KPI_LI-1]||0;
     let out = '📋 EXECUTIVE SUMMARY · '+mlblShort(CUR)+'\n\n';
     if(revB) out += '• Revenue: '+fmtMm(rev)+'M ('+(rev>=revB?'sobre':'bajo')+' Budget por '+fmtMm(Math.abs(rev-revB))+'M, '+fmtPct((rev-revB)/Math.abs(revB)*100,1)+')\n';
     if(opexB) out += '• OPEX: '+fmtMm(opex)+'M ('+(opex>opexB?'EXCEDE':'bajo')+' Budget por '+fmtMm(Math.abs(opex-opexB))+'M)\n';
     if(ebB) out += '• EBITDA: '+fmtMm(eb)+'M ('+(eb>=ebB?'sobre':'bajo')+' Budget por '+fmtMm(Math.abs(eb-ebB))+'M)\n';
     if(niB) out += '• Net Income: '+fmtMm(ni)+'M ('+(ni>=niB?'sobre':'bajo')+' Budget)\n';
-    if(utPrev) out += '• Utilization: '+fmtPct(ut*100,1)+' (vs '+fmtPct(utPrev*100,1)+' prior month)\n';
-    if(drvPrev) out += '• Active Drivers: '+fmtInt(drv)+' ('+fmtPct((drv-drvPrev)/Math.abs(drvPrev)*100,1)+' MoM)\n';
+    if(utPrev) out += '• Gross Margin: '+fmtPct(ut*100,1)+' (vs '+fmtPct(utPrev*100,1)+' prior month)\n';
+    if(drvPrev) out += '• ZEE Monitored Vehicles: '+fmtInt(drv)+' ('+fmtPct((drv-drvPrev)/Math.abs(drvPrev)*100,1)+' MoM)\n';
     // Top risk = mayor variance vs budget negativo
     const risks = topVariances('budNeg', 1);
     if(risks.length) out += '\n🚨 Main risk: '+risks[0].ln.l+' is '+fmtMm(risks[0].delta)+'M below Budget';
@@ -4441,11 +4434,11 @@ function chatBotAnswer(q){
     const items = topVariances('budNeg', 3);
     let out = '🚨 PRINCIPALES RIESGOS '+mlblShort(CUR)+':\n\n';
     items.forEach((r,i)=>{ out += (i+1)+'. '+r.ln.l+': '+fmtMm(r.delta)+'M vs Budget ('+fmtPct(r.pct,1)+')\n'; });
-    // Operational alerts
-    const ch = +arr('churn')[CUR]||0;
-    if(ch > 0.25) out += '\n⚠️ Churn elevado: '+fmtPct(ch*100,1)+' (target <25%)';
-    const pr = +arr('performance_ratio')[CUR]||0;
-    if(pr && pr < 0.80) out += '\n⚠️ Performance Ratio bajo: '+fmtPct(pr*100,1)+' (target >80%)';
+    // Alertas comerciales EVF
+    const _gm2 = +arr('gross_margin')[CUR]||0;
+    if(_gm2 && _gm2 < 0.15) out += '\n⚠️ Gross Margin bajo: '+fmtPct(_gm2*100,1);
+    const _bl2 = +arr('epc_backlog')[KPI_LI]||0, _pl2 = +arr('epc_pipeline')[KPI_LI]||0;
+    if(_bl2 && _pl2 && _bl2 > _pl2) out += '\n⚠️ Backlog ('+fmtMm(_bl2)+') mayor al Pipeline ('+fmtMm(_pl2)+') — poca cobertura comercial hacia adelante';
     return out;
   }
 
@@ -4509,20 +4502,23 @@ function chatBotAnswer(q){
     const maintCur = Math.abs(+arr('maintenance_opex')[CUR]||0);
     const maintAvg = Math.abs(avg(arr('maintenance_opex'), Math.max(0,CUR-6), CUR-1));
     if(maintAvg && maintCur > maintAvg*1.15){
-      recs.push({pri:2, area:'Maintenance', issue:'15%+ above 6M avg ('+fmtMm(maintCur)+'M vs avg '+fmtMm(maintAvg)+'M)', action:'Review maintenance per km, identify outlier vehicles, preventive program'});
+      recs.push({pri:2, area:'Maintenance', issue:'15%+ above 6M avg ('+fmtMm(maintCur)+'M vs avg '+fmtMm(maintAvg)+'M)', action:'Review project maintenance cost and outlier sites, preventive program'});
     }
-    const ch = +arr('churn')[CUR]||0;
-    if(ch > 0.25){
-      recs.push({pri:1, area:'Driver Retention', issue:'Churn '+fmtPct(ch*100,1)+' (target <25%)', action:'Review incentives, exit interviews, onboarding program for new drivers'});
+    const _abl = +arr('epc_backlog')[KPI_LI]||0, _apl = +arr('epc_pipeline')[KPI_LI]||0;
+    if(_abl){
+      recs.push({pri:1, area:'Backlog execution', issue:fmtMm(_abl)+' signed and pending execution', action:'Sequence project delivery so signed EPC work converts to revenue inside the year'});
     }
-    const pr = +arr('performance_ratio')[CUR]||0;
-    if(pr && pr < 0.80){
-      recs.push({pri:2, area:'Performance', issue:'PR '+fmtPct(pr*100,1)+' (target >80%)', action:'Identify low utilization shifts/zones, adjust driver supply'});
+    if(_apl && _abl && _apl < _abl){
+      recs.push({pri:2, area:'Commercial coverage', issue:'Pipeline ('+fmtMm(_apl)+') below Backlog ('+fmtMm(_abl)+')', action:'Rebuild the funnel — current pipeline does not replace the backlog being executed'});
     }
-    const drv = +arr('eop_active_drivers')[CUR]||0;
-    const drvP = +arr('eop_active_drivers')[PREV]||0;
+    const _agm = +arr('gross_margin')[CUR]||0;
+    if(_agm && _agm < 0.20){
+      recs.push({pri:2, area:'Gross Margin', issue:'GM '+fmtPct(_agm*100,1), action:'Review EPC project pricing and subcontracted cost per project'});
+    }
+    const drv = +arr('zee_total_monitored')[KPI_LI]||0;
+    const drvP = +arr('zee_total_monitored')[KPI_LI-1]||0;
     if(drvP && (drv-drvP)/drvP < -0.04){
-      recs.push({pri:1, area:'Recruitment', issue:'Active Drivers down '+fmtPct((drv-drvP)/Math.abs(drvP)*100,1)+' MoM', action:'Accelerate hiring pipeline, review acquisition channels, boost referrals'});
+      recs.push({pri:1, area:'Monitored fleet', issue:'ZEE monitored vehicles down '+fmtPct((drv-drvP)/Math.abs(drvP)*100,1)+' MoM', action:'Check contract renewals and onboarding of new monitored units'});
     }
     const mkt = Math.abs(+arr('marketing')[CUR]||0), mktB = Math.abs(+barr('marketing')[CUR]||0);
     if(mktB && mkt > mktB*1.10){
@@ -4535,7 +4531,7 @@ function chatBotAnswer(q){
     const incCur = +arr('inc_atfault_total')[CUR]||0;
     const incAvg = avg(arr('inc_atfault_total'), Math.max(0,CUR-6), CUR-1);
     if(incAvg && incCur > incAvg*1.10){
-      recs.push({pri:2, area:'Safety', issue:'At-Fault incidents '+fmtInt(incCur)+' vs 6M avg '+fmtInt(incAvg), action:'Safety training program, review drivers with incident history'});
+      recs.push({pri:2, area:'Project delivery', issue:'Site incidents '+fmtInt(incCur)+' vs 6M avg '+fmtInt(incAvg), action:'Review installation safety and site supervivers with incident history'});
     }
     recs.sort(function(a,b){return a.pri-b.pri});
     if(!recs.length){
@@ -4551,7 +4547,7 @@ function chatBotAnswer(q){
 
   // 12. Anomalies / Outliers / Unusual
   if(/anomal|outlier|unusual|inusual|fuera de rango|exceed.+range/.test(lq)){
-    const lines2 = ['revenue','opex','ebitda','net_income','maintenance_opex','marketing','driver_payments'];
+    const lines2 = ['revenue','epc','epc_interco','contracted_revenues','opex','ebitda','net_income'];
     const outliers = [];
     lines2.forEach(k=>{
       const a = arr(k); if(!a.length) return;
@@ -4575,11 +4571,11 @@ function chatBotAnswer(q){
   if(/key takeaway|insight|conclusiones|takeaway/.test(lq)){
     const rev = +arr('revenue')[CUR]||0, revB = +barr('revenue')[CUR]||0;
     const eb = +arr('ebitda')[CUR]||0, ebB = +barr('ebitda')[CUR]||0;
-    const drv = +arr('eop_active_drivers')[CUR]||0, drvPrev = +arr('eop_active_drivers')[PREV]||0;
+    const drv = +arr('zee_total_monitored')[KPI_LI]||0, drvPrev = +arr('zee_total_monitored')[KPI_LI-1]||0;
     let out = '💡 KEY INSIGHTS · '+mlblShort(CUR)+':\n\n';
     if(revB && rev > revB) out += '✓ Revenue por encima de Budget ('+fmtPct((rev-revB)/Math.abs(revB)*100,1)+')\n';
     if(ebB && eb < ebB) out += '⚠️ EBITDA bajo Budget — revisar gastos\n';
-    if(drvPrev && drv < drvPrev) out += '⚠️ Active Drivers cayendo MoM ('+fmtPct((drv-drvPrev)/Math.abs(drvPrev)*100,1)+')\n';
+    if(drvPrev && drv < drvPrev) out += '⚠️ ZEE monitored vehicles cayendo MoM ('+fmtPct((drv-drvPrev)/Math.abs(drvPrev)*100,1)+')\n';
     const items = topVariances('inc', 1);
     if(items.length) out += '📈 Mayor incremento MoM: '+items[0].ln.l+' '+fmtMm(items[0].delta)+'M\n';
     return out;
@@ -4697,7 +4693,7 @@ function chatBotAnswer(q){
   if(/correlation|move together|leading indicator|predict.+profit/i.test(lq)){
     const target = key || 'ebitda';
     const tA = arr(target);
-    const candidates = ['revenue','opex','driver_payments','maintenance_opex','marketing','performance_ratio','utilization','eop_active_drivers','total_fleet','trips_total','fill_rate_eop','churn'];
+    const candidates = ['revenue','epc','epc_interco','contracted_revenues','opex','sga','direct_line_sga','cf_corp_ga','gross_profit','gross_margin','epc_sales_3p','epc_backlog','epc_pipeline','zee_total_monitored'];
     const corrs = [];
     candidates.forEach(function(k){
       if(k===target) return;
@@ -4735,8 +4731,8 @@ function chatBotAnswer(q){
     let out = _banner('Root Cause · '+k.replace(/_/g,' ').toUpperCase());
     out += '<div class="ri"><div>Total change: <span class="m">'+fmtMm(delta)+'M</span> ('+_pctTxt(prev?delta/Math.abs(prev)*100:0, delta>0).replace(/<[^>]+>/g,'')+' MoM)</div></div>';
     // Drivers
-    const subKeys = k==='opex'?['ev_fuel_cost','driver_payments','maintenance_opex','marketing','insurance_opex','uber_take_rate']:
-                    k==='revenue'?['ride_hailing_revenue','advertising_revenue','insurance_revenue','uber_bonus','provision_reversal']:
+    const subKeys = k==='opex'?['opex']:
+                    k==='revenue'?['epc','epc_interco','contracted_revenues']:
                     ['revenue','opex','corporate_expenses','da'];
     const subs = subKeys.map(function(sk){
       const a = arr(sk);
@@ -4756,9 +4752,9 @@ function chatBotAnswer(q){
   // CEO / CFO / Board questions
   if(/if you were ceo|if i were ceo|ceo.+focus|focus.+ceo/i.test(lq)){
     let out = _banner('CEO Strategic Focus');
-    out += '<div class="ri"><div><b>Revenue growth:</b> '+(_v('revenue')>=_v('revenue',PREV)?_good('growing'):_bad('declining'))+' — focus on demand drivers (RPH, supply hours, fleet utilization).</div></div>';
-    const ch = _v('churn');
-    if(ch>0.25) out += '<div class="ri"><div><b>Driver retention:</b> '+_bad('CRITICAL')+' — churn '+fmtPct(ch*100,1)+' above target. Strategic priority.</div></div>';
+    out += '<div class="ri"><div><b>Revenue growth:</b> '+(_v('revenue')>=_v('revenue',PREV)?_good('growing'):_bad('declining'))+' — focus on the commercial funnel (EPC pipeline, win rate, backlog execution).</div></div>';
+    const ch = 0;
+    if(false) out += '<div class="ri"><div><b>n/a:</b> '+_bad('')+' Strategic priority.</div></div>';
     const items = topVariances('budNeg',2);
     if(items.length) out += '<div class="ri"><div><b>Budget execution:</b> Top miss in <b>'+items[0].ln.l+'</b> '+_bad(fmtMm(items[0].delta)+'M')+'. Demand operational deep-dive.</div></div>';
     out += '<div class="ri"><div><b>Cash runway:</b> EBITDA '+(_v('ebitda')<0?_bad('negative — runway compression risk'):_good('positive'))+'</div></div>';
@@ -4779,15 +4775,15 @@ function chatBotAnswer(q){
     out += '<div class="ri"><div>1. What is driving the '+(_v('ebitda')<_b('ebitda')?_bad('EBITDA miss'):_good('EBITDA outperformance'))+' vs Budget?</div></div>';
     out += '<div class="ri"><div>2. How will Q'+(Math.floor((CUR%12)/3)+1)+' performance close vs full-year plan?</div></div>';
     out += '<div class="ri"><div>3. What is the path to break-even / margin expansion?</div></div>';
-    const ch=_v('churn'); if(ch>0.25) out += '<div class="ri"><div>4. Why is churn '+_bad(fmtPct(ch*100,1))+' and what is the retention plan?</div></div>';
-    else out += '<div class="ri"><div>4. Are we tracking to fleet/driver capacity plans?</div></div>';
+    const _bq=+arr('epc_backlog')[KPI_LI]||0; if(_bq) out += '<div class="ri"><div>4. How much of the '+fmtMm(_bq)+' backlog lands this year, and what is the execution plan?</div></div>';
+    else out += '<div class="ri"><div>4. Are we tracking to the charging-capacity and installation plan?</div></div>';
     out += '<div class="ri"><div>5. What are the top 3 risks to plan and mitigation actions?</div></div>';
     return out;
   }
 
   // 3 consecutive months worsening
   if(/3 consecutive|3 months.+(deteriorat|worsen)|outside normal/i.test(lq)){
-    const checkKs = ['revenue','ebitda','gross_profit','net_income','performance_ratio','utilization','eop_active_drivers','fill_rate_eop'];
+    const checkKs = ['revenue','ebitda','gross_profit','net_income','epc','epc_interco','contracted_revenues','gross_margin','epc_backlog','epc_pipeline','zee_total_monitored'];
     const worse = [];
     checkKs.forEach(function(k){
       const a = arr(k); if(!a.length) return;
@@ -4831,12 +4827,12 @@ function chatBotAnswer(q){
     items.forEach(function(r,i){
       out += '<div class="ri"><div>'+(i+1)+'. <b>'+r.ln.l+'</b>: '+_bad(fmtMm(r.delta)+'M vs Budget')+' — '+_pctTxt(r.pct, false).replace(/<[^>]+>/g,'')+'. Demand operational review.</div></div>';
     });
-    const ch = _v('churn');
-    if(ch > 0.25) out += '<div class="ri"><div>4. <b>Driver retention</b>: '+_bad('Churn '+fmtPct(ch*100,1))+' — exit interviews + retention program.</div></div>';
-    const pr = _v('performance_ratio');
-    if(pr && pr < 0.80) out += '<div class="ri"><div>5. <b>Performance Ratio</b>: '+_bad(fmtPct(pr*100,1))+' (target >80%) — optimize supply allocation.</div></div>';
+    const _blF = +arr('epc_backlog')[KPI_LI]||0;
+    if(_blF) out += '<div class="ri"><div>4. <b>Backlog execution</b>: '+fmtMm(_blF)+' signed and pending — pull it into the year.</div></div>';
+    const _gmF = _v('gross_margin');
+    if(_gmF && _gmF < 0.20) out += '<div class="ri"><div>5. <b>Gross Margin</b>: '+_bad(fmtPct(_gmF*100,1))+' — review EPC project pricing and subcontracted cost.</div></div>';
     const opex = Math.abs(_v('opex')), opexB = Math.abs(_b('opex'));
-    if(opexB && opex > opexB) out += '<div class="ri"><div>6. <b>OPEX discipline</b>: Exceeds Budget by '+_bad(fmtMm(opex-opexB)+'M')+'. Audit driver payments + maintenance.</div></div>';
+    if(opexB && opex > opexB) out += '<div class="ri"><div>6. <b>OPEX discipline</b>: Exceeds Budget by '+_bad(fmtMm(opex-opexB)+'M')+'. Audit subcontracted EPC cost + maintenance.</div></div>';
     return out;
   }
 
@@ -4847,25 +4843,17 @@ function chatBotAnswer(q){
     const target = arr(useEbitda ? 'ebitda' : 'revenue');
     const targetLbl = useEbitda ? 'EBITDA' : 'Revenue';
     const candidates = [
-      {k:'trips_total', l:'Trips'},
-      {k:'eop_active_drivers', l:'Active Drivers'},
-      {k:'performance_ratio', l:'Performance Ratio'},
-      {k:'utilization', l:'Utilization'},
-      {k:'fill_rate_eop', l:'Fill Rate'},
-      {k:'fleet_availability', l:'Fleet Availability'},
-      {k:'churn', l:'Churn', invert:true},
-      {k:'supply_hours', l:'Supply Hours'},
-      {k:'revenue_per_hour', l:'Revenue per Hour'},
-      {k:'price_per_ride', l:'Price per Ride'},
-      {k:'trips_per_hour', l:'Trips per Hour'},
-      {k:'driver_payments', l:'Driver Payments', invert:true},
-      {k:'ev_fuel_cost', l:'EV/Fuel Cost', invert:true},
-      {k:'maintenance_opex', l:'Maintenance', invert:true},
-      {k:'uber_take_rate', l:'Uber Take Rate', invert:true},
-      {k:'corporate_expenses', l:'SG&A', invert:true},
-      {k:'marketing', l:'Marketing', invert:true},
-      {k:'total_fleet', l:'Total Fleet'},
-      {k:'operational_vehicles', l:'Operational Vehicles'},
+      {k:'epc', l:'EPC (3rd party)'},
+      {k:'epc_interco', l:'EPC Interco'},
+      {k:'contracted_revenues', l:'Contracted Revenues'},
+      {k:'epc_sales_3p', l:'EPC Sales (3rd party)'},
+      {k:'epc_backlog', l:'EPC Backlog'},
+      {k:'epc_pipeline', l:'EPC Pipeline'},
+      {k:'zee_monitored_lto', l:'ZEE Monitored LTO'},
+      {k:'zee_total_monitored', l:'ZEE Total Monitored'},
+      {k:'gross_margin', l:'Gross Margin'},
+      {k:'opex', l:'OPEX', invert:true},
+      {k:'sga', l:'SG&A', invert:true},
     ];
     const ranked = candidates.map(function(c){
       const a = arr(c.k); if(!a.length) return null;
@@ -4922,8 +4910,8 @@ function chatBotAnswer(q){
     items.forEach(function(r,i){
       out += '<div class="ri"><div>'+(i+1)+'. <b>'+r.ln.l+'</b>: '+_bad(fmtMm(r.delta)+'M vs Budget')+' ('+_pctTxt(r.pct, false).replace(/<[^>]+>/g,'')+'). Requires action.</div></div>';
     });
-    const ch = _v('churn');
-    if(ch > 0.25) out += '<div class="ri"><div>+ <b>Churn</b>: '+_bad(fmtPct(ch*100,1))+' (target <25%) — driver retention risk.</div></div>';
+    const _gq = _v('gross_margin');
+    if(_gq && _gq < 0.20) out += '<div class="ri"><div>+ <b>Gross Margin</b>: '+_bad(fmtPct(_gq*100,1))+' — EPC pricing / subcontracted cost risk.</div></div>';
     return out;
   }
 
@@ -4934,7 +4922,7 @@ function chatBotAnswer(q){
     const items = topVariances('budNeg', 1);
     if(items.length) out += '<div class="ri"><div>2. '+_bad('Top miss: '+items[0].ln.l)+' '+fmtMm(items[0].delta)+'M and recovery plan.</div></div>';
     out += '<div class="ri"><div>3. <b>Forecast year-end</b>: trajectory and gap analysis.</div></div>';
-    out += '<div class="ri"><div>4. <b>Operational KPIs</b>: utilization, churn, fleet productivity.</div></div>';
+    out += '<div class="ri"><div>4. <b>Commercial KPIs</b>: EPC backlog, pipeline and ZEE monitored fleet.</div></div>';
     out += '<div class="ri"><div>5. <b>Strategic initiatives</b>: progress and ROI.</div></div>';
     out += '<div class="ri"><div>6. <b>Capital allocation</b> & cash runway.</div></div>';
     return out;
@@ -4946,9 +4934,9 @@ function chatBotAnswer(q){
     out += '<div class="ri"><div>1. What is the path to '+(_v('ebitda')<0?_bad('positive EBITDA'):_good('margin expansion'))+'?</div></div>';
     out += '<div class="ri"><div>2. How sustainable is the revenue growth? Trajectory by line of business.</div></div>';
     out += '<div class="ri"><div>3. What are the key drivers of OPEX increases and timing of optimization?</div></div>';
-    out += '<div class="ri"><div>4. What is the LTV/CAC ratio and customer/driver acquisition strategy?</div></div>';
+    out += '<div class="ri"><div>4. What is the client acquisition strategy and win rate on the EPC pipeline?</div></div>';
     out += '<div class="ri"><div>5. When do we hit profitability and how much capital is required to get there?</div></div>';
-    out += '<div class="ri"><div>6. Competitive positioning vs Uber/competitors in Mexico.</div></div>';
+    out += '<div class="ri"><div>6. Charging-capacity constraints and permitting timelines on EPC projects.</div></div>';
     return out;
   }
 
@@ -5008,22 +4996,22 @@ function chatBotAnswer(q){
   // === JUEGO: VEMO RACE ===
   if(/\b(play game|jugar|juego|game|race|vemo race|carros|highway)\b/i.test(lq)){
     setTimeout(() => { try { window.startVemoGame && window.startVemoGame(); } catch(e){} }, 200);
-    return '🎮 <b>VEMO RACE</b> 🚖<br><br>Starting the game... Dodge the cars by switching lanes with ← / → (or A / D).<br><br>The game speeds up with each car you dodge. Your best score is saved automatically.<br><br>💡 Tip: press <kbd>Space</kbd> to pause, <kbd>R</kbd> to restart, <kbd>Esc</kbd> to close.';
+    return '🎮 <b>VEMO RACE</b> ⚡<br><br>Starting the game... Dodge the cars by switching lanes with ← / → (or A / D).<br><br>The game speeds up with each car you dodge. Your best score is saved automatically.<br><br>💡 Tip: press <kbd>Space</kbd> to pause, <kbd>R</kbd> to restart, <kbd>Esc</kbd> to close.';
   }
 
-  // === CHISTES SOBRE VEMO / EVs / RIDE-HAILING ===
+  // === CHISTES SOBRE VEMO / EVs / CARGA ===
   if(/\b(chiste|joke|cuentame uno|broma|funny|hazme reir|me rio)\b/i.test(lq)){
     const chistes = [
-      '🚖 Why do VEMO drivers never get lost? Because they always have an <b>electric plan</b>. ⚡',
+      '⚡ Why do EV Fleets projects never get lost? Because they always have an <b>electric plan</b>. ⚡',
       '🔋 Know what the charger said to the VEMO battery? — "Without you I have no current." 😄',
       '🚗 What\'s a VEMO\'s favorite sport? — <b>Tesla-tic</b>. 🎾',
       '⚡ A VEMO walks into a bar... and stays plugged in all night. 🍻',
-      '🚕 Why is VEMO better than Uber? — Because it <b>drives</b> the narrative, it doesn\'t follow it. 😎',
-      '📊 My favorite KPI is churn... because it keeps me <b>on the move</b>. 🏃‍♂️',
-      '🚖 What does OPEX say to EBITDA? — "Relax, I\'m just here to take up your space." 😅',
+      '🔌 Why is a charging hub the best colleague? — Because it always gives you <b>a charge</b> and never asks for one back. 😎',
+      '📊 My favorite KPI is Backlog... because it is the only place where <b>pending work</b> is good news. 🏃‍♂️',
+      '⚡ What does OPEX say to EBITDA? — "Relax, I\'m just here to take up your space." 😅',
       '💸 Budget called Actual and said: "Please, let yourself be caught up to." 📈',
       '🔋 What do you call a VEMO in a hurry? — <b>Acceleration on demand</b>. ⚡',
-      '🚗 An Uber, a Didi and a VEMO get into the same trip... the one with the best performance ratio wins. 🏆'
+      '⚡ Two chargers argue about who is faster. The EPC project manager replies: "whichever one I actually finish installing." 🏆'
     ];
     return _rand(chistes) + '<br><br>💡 Ask me for another joke anytime or ask "VEMO fun fact".';
   }
@@ -5033,17 +5021,17 @@ function chatBotAnswer(q){
     const facts = [
       '⚡ <b>VEMO was founded in 2021</b> by Germán Losada and Roberto Rocha, former mobility-sector executives in Mexico.',
       '💰 VEMO has raised over <b>$314M USD</b> in capital, with Riverstone Holdings as lead investor.',
-      '🚖 VEMO operates <b>the largest ride-hailing EV fleet in Latin America</b>, with 100% electric vehicles.',
-      '🔋 VEMO\'s strategy combines <b>3 models</b>: DAE (employed drivers), Subleasing and Direct Lease — diversifying risk.',
-      '🌎 VEMO is one of the first operators in Mexico to offer <b>social security and formal benefits</b> to ride-hailing drivers.',
-      '🤝 VEMO operates mainly in partnership with <b>Uber Mexico</b>, serving as a dedicated fleet with electric vehicles.',
+      '⚡ VEMO operates <b>one of the largest electric fleets in Latin America</b>, 100% electric.',
+      '🔋 VEMO\'s strategy combines several models: <b>EV Fleets</b> (charging infrastructure + fleet services), Subleasing and Direct Lease.',
+      '🔌 <b>EV Fleets</b> designs, installs and operates charging infrastructure — including full <i>electrolineras</i> — for corporate clients.',
+      '🤝 <b>Watts B2B</b> lets companies use VEMO\'s public charging hubs on a pay-per-use basis, with no infrastructure investment of their own.',
       '⚡ Each electric VEMO avoids roughly <b>3-5 tons of CO₂/year</b> vs an equivalent gasoline sedan.',
-      '🏢 The founding team has prior experience at companies like Cabify, Avis and the Mexican automotive industry.',
-      '🎯 The DAE unit = "<b>EV Fleets</b>" — meaning the driver is a formal employee, not a contractor (a unique model in the Mexican market).',
-      '📈 By 2026, VEMO operates over <b>3,000 electric vehicles</b> in CDMX, Monterrey and Guadalajara.',
+      '📡 <b>ZEE</b> is the monitoring platform: real-time visibility of vehicles, charging, users and performance.',
+      '🎯 <b>EVF</b> revenue has two very different engines: <b>EPC</b> (project-based charging infrastructure, lumpy month to month) and <b>Contracted Revenues</b> (recurring services).',
+      '⚙️ <b>ChaaS</b> (Charging-as-a-Service) and operational leasing let a client electrify from day one without upfront capital.',
       '🏢 <b>VEMO\'s corporate offices are in CDMX</b> — where most of the fleet operation and charging hubs also live.',
-      '🚖 The main DAE/VEMO Conduce operation is concentrated in <b>Mexico City</b>, with expansion underway to MTY and GDL.',
-      '🔌 VEMO has its own charging infrastructure (charging hubs) — key to keeping the fleet running 24/7.'
+      '📘 In EVF, <b>Backlog</b> (signed, pending execution) and <b>Pipeline</b> (open opportunities) are the leading indicators — they become EPC revenue in later months.',
+      '🔌 VEMO runs its own network of charging hubs — the backbone behind ChaaS, Watts B2B and the eMSP service.'
     ];
     return _rand(facts) + '<br><br>💡 Ask me for another fun fact anytime.';
   }
@@ -5065,17 +5053,17 @@ function chatBotAnswer(q){
   // === GREETINGS / SMALL TALK ===
   if(/^(hi|hello|hey|hola|que tal|qué tal|buenos dias|buenas tardes|buenas noches|saludos)\b/i.test(lq)){
     const saludos = [
-      '👋 ¡Hola David! Soy VEMIA, lista para analizar DAE. ¿Qué quieres ver hoy?',
-      '🚖 ¡Hey! Aquí VEMIA — pregúntame algo de DAE, revenue, ebitda, o pide un chiste.',
+      '👋 ¡Hola David! Soy VEMIA, lista para analizar EV Fleets. ¿Qué quieres ver hoy?',
+      '⚡ ¡Hey! Aquí VEMIA — pregúntame algo de EV Fleets, revenue, ebitda, o pide un chiste.',
       '⚡ Hola, ¿cómo va? Pídeme datos, un fun fact, o el "executive summary".'
     ];
     return _rand(saludos);
   }
   if(/^(gracias|thanks|thank you|ty|thx|merci)\b/i.test(lq)){
-    return '🤗 You\'re welcome, David. I\'m here to help with DAE 24/7. Anything else?';
+    return '🤗 You\'re welcome, David. I\'m here to help with EV Fleets 24/7. Anything else?';
   }
   if(/\b(quien.+eres|quién eres|who are you|que eres|qué eres|preséntate)\b/i.test(lq)){
-    return '🤖 <b>I am VEMIA</b> — the EVF dashboard AI assistant.<br><br>• <b>Born</b>: 2021 (alongside VEMO)<br>• <b>Mission</b>: Turn numbers into decisions<br>• <b>Specialty</b>: DAE (EV Fleets) financial and operating KPIs<br>• <b>Languages</b>: I understand Spanish and English, and always reply in English<br><br>Ask me: KPIs, executive analysis, jokes, fun facts, VEMO links, comparisons, forecasts. Try me!';
+    return '🤖 <b>I am VEMIA</b> — the EVF dashboard AI assistant.<br><br>• <b>Born</b>: 2021 (alongside VEMO)<br>• <b>Mission</b>: Turn numbers into decisions<br>• <b>Specialty</b>: EV Fleets (EPC &amp; ZEE) financial and commercial KPIs<br>• <b>Languages</b>: I understand Spanish and English, and always reply in English<br><br>Ask me: KPIs, executive analysis, jokes, fun facts, VEMO links, comparisons, forecasts. Try me!';
   }
 
   // === MATH SIMPLE (calculadora rápida) ===
@@ -5087,30 +5075,33 @@ function chatBotAnswer(q){
     } catch(e){}
   }
 
-  // === INDUSTRY / EV / MEXICO MOBILITY KNOWLEDGE ===
-  if(/\b(ride.?hailing|industria|mercado.+mexico|competencia|uber|didi|cabify)\b/i.test(lq)){
-    return '🚖 <b>Ride-hailing industry in Mexico (2026)</b><br><br>• <b>Uber</b>: clear leader (~70% share)<br>• <b>Didi</b>: #2 with strong presence in GDL/MTY<br>• <b>InDriver, Cabify, Beat</b>: smaller competitors<br>• <b>VEMO</b>: dedicated EV fleet in partnership with Uber — unique model<br><br>📈 Estimated total market: $5-7B USD/year in Mexico. EV penetration still <5% but growing fast.';
+  // === INDUSTRY / EV / MEXICO E-MOBILITY KNOWLEDGE ===
+  if(/\b(industria|mercado.+mexico|competencia|competitors|charging market|electromovilidad)\b/i.test(lq)){
+    return '⚡ <b>Fleet electrification &amp; charging in Mexico</b><br><br>What EV Fleets sells into:<br>• <b>Corporate fleets</b> going electric, which need charging capacity before they can operate<br>• <b>Charging infrastructure</b>: design, installation and operation (EPC), including full electrolineras<br>• <b>Recurring services</b>: ChaaS / operational leasing with chargers and monitoring included, so the client needs no upfront capital<br>• <b>eMSP</b>: turning private chargers into revenue-generating public points<br>• <b>Watts B2B</b>: pay-per-use access to VEMO\'s public hubs<br><br>⚠️ I don\'t have market-share or competitor data in this dashboard — only VEMO EVF financials and commercial KPIs.';
   }
   if(/\b(ev|electric|vehiculo electrico|eléctrico|sustentab|sostenib|carbon|emisiones|co2)\b/i.test(lq) && !/take rate/.test(lq)){
-    return '⚡ <b>Sustainability / EV at VEMO</b><br><br>• 100% electric fleet<br>• Each vehicle avoids ~3-5 tons CO₂/year vs a gasoline sedan<br>• Own charging hubs in CDMX, MTY, GDL<br>• Aligned with the Mexican government\'s electric mobility goals<br><br>💡 VEMO is the largest ride-hailing EV fleet in LATAM.';
+    return '⚡ <b>Sustainability / EV at VEMO</b><br><br>• 100% electric fleets<br>• Each vehicle avoids ~3-5 tons CO₂/year vs a gasoline sedan<br>• Own charging hubs in CDMX, MTY, GDL<br>• Aligned with the Mexican government\'s electric mobility goals<br><br>💡 VEMO is the largest EV fleet electrification EV fleet in LATAM.';
   }
 
   // === GOALS / TARGETS / OBJETIVOS ===
   if(/\b(meta|objetivo|target|goal|aspiraci)\b/i.test(lq) && !/budget/.test(lq)){
-    return '🎯 <b>DAE Goals (board pack references)</b><br>• <b>Revenue</b>: meet monthly Budget + grow YoY ≥10%<br>• <b>EBITDA Margin</b>: break-even target in 2026, >5% in 2027<br>• <b>Performance Ratio</b>: ≥80% (driver efficiency measure)<br>• <b>Churn</b>: <25% monthly<br>• <b>Fleet Utilization</b>: ≥75%<br><br>💡 For specific details ask me about each KPI vs Budget.';
+    return '🎯 <b>EVF — what this dashboard tracks against plan</b><br>• <b>Revenues</b>: EPC (3rd party) + EPC Interco + Contracted Revenues vs monthly Budget<br>• <b>Gross Margin</b>: Gross profit / Revenues<br>• <b>EBITDA</b>: reported both all-in and <i>ex CF &amp; Corp G&amp;A</i><br>• <b>EPC Backlog &amp; Pipeline</b>: forward visibility (the source file carries no budget for these — shown as n.a.)<br>• <b>ZEE Monitored Vehicles</b>: LTO + third-party vs Budget<br><br>⚠️ These are the <b>lines tracked</b>, not official targets — the source file does not carry target thresholds. Ask me about any KPI vs Budget for the actual gap.';
   }
 
   // === RECOMMENDATIONS ===
   if(/\b(que recomien|qué recomien|recomienda|recomendaci|sugeri|que deberia|what should we do|next step)\b/i.test(lq)){
     const eb = +arr('ebitda')[CUR]||0, ebB = +barr('ebitda')[CUR]||0;
-    const ch = +arr('churn')[CUR]||0;
+    const epc = +arr('epc')[CUR]||0, epcB = +barr('epc')[CUR]||0;
+    const gm  = (+arr('gross_margin')[CUR]||0);
+    const bl  = +arr('epc_backlog')[KPI_LI]||0, pl = +arr('epc_pipeline')[KPI_LI]||0;
     let out = '💡 <b>VEMIA recommends · ' + mlblShort(CUR) + '</b><br><br>';
-    if(ebB && eb < ebB) out += '1. <b>Close the EBITDA gap</b>: ' + fmtMm(ebB-eb) + 'M below plan. Audit driver payments + marketing efficiency.<br>';
-    if(ch > 0.30) out += '2. <b>Driver retention plan</b>: churn ' + fmtPct(ch*100,1) + ' is critical. Exit interviews + retention bonuses.<br>';
-    const pr = +arr('performance_ratio')[CUR]||0;
-    if(pr && pr < 0.80) out += '3. <b>Performance Ratio</b>: ' + fmtPct(pr*100,1) + ' (target ≥80%). Optimize supply allocation and supply hours.<br>';
-    out += '4. <b>Pricing optimization</b>: review service mix (UberX/Black/Flash) to maximize revenue/hour.<br>';
-    out += '5. <b>Year-end run-rate</b>: ask me "projected year end ebitda" to see the trajectory.<br>';
+    let n = 1;
+    if(ebB && eb < ebB) out += (n++) + '. <b>Close the EBITDA gap</b>: ' + fmtMm(ebB-eb) + ' below plan. Start from the revenue mix (EPC vs Interco vs Contracted) before cutting cost.<br>';
+    if(epcB && epc < epcB) out += (n++) + '. <b>EPC third-party shortfall</b>: ' + fmtMm(epcB-epc) + ' vs Budget — the biggest single driver of the revenue gap.<br>';
+    if(bl) out += (n++) + '. <b>Execute the backlog</b>: ' + fmtMm(bl) + ' signed and pending. Faster execution pulls revenue into the year.<br>';
+    if(pl) out += (n++) + '. <b>Work the pipeline</b>: ' + fmtMm(pl) + ' open — win rate here sets next quarters\' EPC revenue.<br>';
+    if(gm && gm < 0.20) out += (n++) + '. <b>Margin mix</b>: Gross Margin at ' + fmtPct(gm*100,1) + '. Check project-level pricing and subcontracted cost on EPC.<br>';
+    out += (n++) + '. <b>Year-end run-rate</b>: ask me "projected year end ebitda" to see the trajectory.<br>';
     return out;
   }
 
@@ -5119,7 +5110,7 @@ function chatBotAnswer(q){
     const frases = [
       '💪 "Lo que no se mide, no se mejora." — Peter Drucker',
       '⚡ "La mejor manera de predecir el futuro es construirlo." — Peter Drucker',
-      '🚖 "No vendemos viajes, vendemos puntualidad y confianza." — Filosofía VEMO',
+      '⚡ "No vendemos cargadores, vendemos la certeza de que la flota arranca cada mañana." — Filosofía VEMO',
       '📊 "Los numbers no mienten. Pero hay que saber qué pregunta hacerles." — VEMIA',
       '🌎 "Cada KWh es un paso hacia un México más limpio." — Sustainability VEMO'
     ];
@@ -5128,7 +5119,7 @@ function chatBotAnswer(q){
 
   // === COMPLIMENTS / FEEDBACK ===
   if(/\b(eres genial|eres increible|increíble|wow|excelente|amazing|cool|me gusta)\b/i.test(lq)){
-    return '🥰 Thanks David! I appreciate it. Let\'s keep analyzing DAE — ask me whatever you need.';
+    return '🥰 Thanks David! I appreciate it. Let\'s keep analyzing EV Fleets — ask me whatever you need.';
   }
   if(/\b(eres tonta|no sirves|inutil|sucks|garbage|terrible|malo)\b/i.test(lq)){
     return '😅 Sorry if I couldn\'t help. I\'m a simple AI — but I can improve. What were you trying to ask? Try other words or ask "help" to see my menu.';
@@ -5136,12 +5127,12 @@ function chatBotAnswer(q){
 
   // === HELP / MENU ===
   if(/^(ayuda|help|menu|menú|what can you do|que puedes hacer|qué puedes hacer)\b/i.test(lq)){
-    return '🤖 <b>VEMIA · Menu</b><br><br>📊 <b>KPIs</b>: "revenue april 2026", "ebitda ytd 2026", "take rate", "churn"<br>📈 <b>Analysis</b>: "executive summary", "main increases", "what should I worry", "best month ebitda"<br>🎯 <b>Compare</b>: "compare ebitda mar apr", "revenue 2025 vs 2026"<br>💡 <b>Recommendations</b>: "what do you recommend", "next steps"<br>🌐 <b>VEMO</b>: "linkedin", "website", "fun fact", "joke", "who are you"<br>🕒 <b>Other</b>: "what time is it", "what day is it"<br><br>💬 I understand Spanish and English, and always reply in English.';
+    return '🤖 <b>VEMIA · Menu</b><br><br>📊 <b>KPIs</b>: "revenue april 2026", "ebitda ytd 2026", "epc backlog", "pipeline"<br>📈 <b>Analysis</b>: "executive summary", "main increases", "what should I worry", "best month ebitda"<br>🎯 <b>Compare</b>: "compare ebitda mar apr", "revenue 2025 vs 2026"<br>💡 <b>Recommendations</b>: "what do you recommend", "next steps"<br>🌐 <b>VEMO</b>: "linkedin", "website", "fun fact", "joke", "who are you"<br>🕒 <b>Other</b>: "what time is it", "what day is it"<br><br>💬 I understand Spanish and English, and always reply in English.';
   }
 
   // === FAREWELL ===
   if(/^(adios|adiós|bye|chao|chau|nos vemos|good night|hasta luego)\b/i.test(lq)){
-    return '👋 See you later, David! Whenever you need me, I\'m here. Remember: VEMIA never sleeps. 🚖⚡';
+    return '👋 See you later, David! Whenever you need me, I\'m here. Remember: VEMIA never sleeps. ⚡⚡';
   }
 
   // === MARGIN / MARGENES quick ===
@@ -5190,7 +5181,7 @@ function chatBotAnswer(q){
   // === Conceptos que crecieron más que revenue ===
   if(/(que|qué) (concepto|gastos|costos).+(crecieron|crecio|crecimiento).+(revenue|ingreso)|outpac.+revenue/i.test(lq)){
     const revG = _v2('revenue', CUR) ? (_v2('revenue', CUR)-_v2('revenue', PREV))/Math.abs(_v2('revenue', PREV))*100 : 0;
-    const expenses = ['driver_payments','maintenance_opex','ev_fuel_cost','marketing','uber_take_rate','corporate_expenses'];
+    const expenses = ['opex','direct_line_sga','cf_corp_ga','da','interest_expense'];
     let items = expenses.map(k => {
       const c = Math.abs(_v2(k, CUR)), p = Math.abs(_v2(k, PREV));
       if(!p) return null;
@@ -5215,20 +5206,22 @@ function chatBotAnswer(q){
     return '🔴 <b>Gap to break-even</b><br>• EBITDA ' + mlblShort(CUR) + ': ' + fmtMm(eb) + 'M<br>• Gap to close: <b>' + fmtMm(Math.abs(eb)) + 'M</b><br>• Run-rate last 3 months: ' + fmtMm(avg) + 'M/month<br><br>💡 To reach 0 you need to improve ~' + fmtMm(Math.abs(eb)) + 'M of margin (Revenue ↑ or Costs ↓).';
   }
 
-  // === Costo por viaje / Revenue por viaje / Margen contribución ===
-  if(/costo.+por.+viaje|cost.+per.+trip/i.test(lq)){
-    const opex = Math.abs(_v2('opex')), trips = _v2('trips_total');
-    if(!trips) return '⚠️ I have no trips for ' + mlblShort(CUR);
-    return '🚖 <b>Costo por viaje · ' + mlblShort(CUR) + '</b><br>• OPEX total: ' + fmtMm(opex) + 'M<br>• Trips: ' + trips.toLocaleString() + '<br>• <b>Costo/Trip: $' + (opex*1e6/trips).toFixed(1) + ' MXN</b>';
+  // === Unit economics EVF: por vehiculo monitoreado ===
+  if(/costo.+por.+(vehiculo|unidad)|cost.+per.+(vehicle|unit)|opex.+per.+vehicle/i.test(lq)){
+    const opex = Math.abs(_v2('opex')), veh = +arr('zee_total_monitored')[KPI_LI]||0;
+    if(!veh) return '⚠️ I have no monitored-vehicle count for ' + mlblShort(KPI_LI);
+    return '⚡ <b>OPEX per monitored vehicle · ' + mlblShort(CUR) + '</b><br>• OPEX total: ' + fmtMm(opex) + '<br>• Monitored vehicles: ' + Math.round(veh).toLocaleString() + ' (' + mlblShort(KPI_LI) + ')<br>• <b>OPEX/vehicle: $' + (opex/veh).toLocaleString('en-US',{maximumFractionDigits:0}) + ' MXN</b><br><br>⚠️ Rough ratio: OPEX includes EPC project cost, which is not driven by the monitored fleet.';
   }
-  if(/(ingreso|revenue).+por.+viaje|revenue.+per.+trip|price.+per.+trip/i.test(lq)){
-    const ppt = _v2('price_per_ride');
-    return '💵 <b>Revenue por viaje · ' + mlblShort(CUR) + '</b><br>• Price/Trip: <b>$' + ppt.toFixed(1) + ' MXN</b>';
+  if(/(ingreso|revenue).+por.+(vehiculo|unidad)|revenue.+per.+(vehicle|unit)/i.test(lq)){
+    const rev = _v2('revenue'), veh = +arr('zee_total_monitored')[KPI_LI]||0;
+    if(!veh) return '⚠️ I have no monitored-vehicle count.';
+    return '💵 <b>Revenue per monitored vehicle · ' + mlblShort(CUR) + '</b><br>• Revenues: ' + fmtMm(rev) + '<br>• Monitored vehicles: ' + Math.round(veh).toLocaleString() + '<br>• <b>Revenue/vehicle: $' + (rev/veh).toLocaleString('en-US',{maximumFractionDigits:0}) + ' MXN</b><br><br>⚠️ Most revenue is EPC (project-based), so this is an indicative ratio, not a unit economic.';
   }
-  if(/(margen|margin).+(contribuci|contribution).+viaje|contribution.+per.+trip/i.test(lq)){
-    const gp = _v2('gross_profit'), trips = _v2('trips_total');
-    if(!trips) return '⚠️ I have no trips.';
-    return '📊 <b>Contribution margin per trip · ' + mlblShort(CUR) + '</b><br>• GP: ' + fmtMm(gp) + 'M<br>• Trips: ' + trips.toLocaleString() + '<br>• <b>GP/Trip: $' + (gp*1e6/trips).toFixed(1) + ' MXN</b>';
+  if(/backlog.+cobertura|backlog.+coverage|cuanto.+backlog.+revenue|backlog.+vs.+revenue/i.test(lq)){
+    const bl = +arr('epc_backlog')[KPI_LI]||0;
+    const rev3 = (sum(arr('revenue'), Math.max(0,CUR-2), CUR))/3;
+    if(!bl || !rev3) return '⚠️ I need both Backlog and revenue to compute coverage.';
+    return '📘 <b>Backlog coverage · ' + mlblShort(KPI_LI) + '</b><br>• Backlog: ' + fmtMm(bl) + '<br>• Avg monthly revenue (last 3m): ' + fmtMm(rev3) + '<br>• <b>Coverage: ' + (bl/rev3).toFixed(1) + ' months</b> of revenue at the current run-rate.';
   }
 
   // === Vehiculos fuera de operacion ===
@@ -5241,8 +5234,8 @@ function chatBotAnswer(q){
 
   // === Trips trend ===
   if(/trips?.+(tendencia|trend|ultimos.+meses|last.+months)/i.test(lq)){
-    const t = _trend('trips_total', 3);
-    let out = '🚖 <b>Trips · últimos 3 meses</b>';
+    const t = _trend('epc_backlog', 3);
+    let out = '⚡ <b>Trips · últimos 3 meses</b>';
     t.forEach(x => { out += '<br>• '+x.m+': '+x.v.toLocaleString(); });
     const d = t.length>1 ? t[t.length-1].v - t[0].v : 0;
     const pct = t.length>1 && t[0].v ? d/Math.abs(t[0].v)*100 : 0;
@@ -5250,12 +5243,11 @@ function chatBotAnswer(q){
     return out;
   }
 
-  // === Trips needed for budget ===
-  if(/trips?.+(necesario|needed).+(budget|presupuesto)|cuant.+viajes.+budget/i.test(lq)){
-    const ppt = _v2('price_per_ride');
+  // === Revenue gap vs budget ===
+  if(/(epc|revenue).+(necesario|needed).+(budget|presupuesto)|cuant.+falta.+budget/i.test(lq)){
     const revB = _bv2('revenue');
     const revC = _v2('revenue');
-    const trips = _v2('trips_total');
+    const trips = +arr('zee_total_monitored')[KPI_LI]||0;
     if(!ppt || !revB) return '⚠️ Falta data de price/trip o budget revenue.';
     const tripsNeeded = revB*1e6/ppt;
     const gap = tripsNeeded - trips;
@@ -5264,14 +5256,16 @@ function chatBotAnswer(q){
 
   // === Cancellation / unattendance ===
   if(/cancela|unatt|fill rate/i.test(lq)){
-    const fr = _v2('fill_rate_eop'), un = _v2('unattendance_rate');
+    const fr = 0, un = 0; // KPIs de flota operada: no aplican a EV Fleets
     return '📊 <b>Fill / Cancellation · ' + mlblShort(CUR) + '</b><br>• Fill Rate (EOP): ' + fmtPct(fr*100,1) + '<br>• Unattendance Rate: ' + fmtPct(un*100,1) + '<br><br>💡 Target Fill Rate: ≥90%.';
   }
 
-  // === Avg trips per driver per day ===
-  if(/viajes.+por.+conductor|trips per driver|tpd/i.test(lq)){
-    const tpd = _v2('trips_per_driver');
-    return '🚖 <b>Trips per driver · ' + mlblShort(CUR) + '</b><br>• Trips/Driver: <b>' + tpd.toFixed(1) + '</b>';
+  // === ZEE mix: LTO vs third-party ===
+  if(/vehiculos.+por.+cliente|vehicles per client|monitored.+per/i.test(lq)){
+    const _lto = +arr('zee_monitored_lto')[KPI_LI]||0, _3p = +arr('zee_monitored_3p')[KPI_LI]||0;
+    const _tt = _lto + _3p;
+    if(!_tt) return '⚠️ I have no monitored-vehicle split for ' + mlblShort(KPI_LI);
+    return '⚡ <b>ZEE monitored fleet · ' + mlblShort(KPI_LI) + '</b><br>• LTO: <b>' + Math.round(_lto).toLocaleString() + '</b> (' + fmtPct(_lto/_tt*100,1) + ')<br>• Third-party: <b>' + Math.round(_3p).toLocaleString() + '</b> (' + fmtPct(_3p/_tt*100,1) + ')<br>• <b>Total: ' + Math.round(_tt).toLocaleString() + '</b>';
   }
 
   // === Headline of the month ===
@@ -5279,10 +5273,10 @@ function chatBotAnswer(q){
     const rev = _v2('revenue'), revB = _bv2('revenue');
     const eb = _v2('ebitda'), ebB = _bv2('ebitda');
     let head = '';
-    if(eb > 0 && eb > ebB) head = '🟢 "DAE logra EBITDA positivo arriba de Budget en ' + mlblShort(CUR) + '"';
-    else if(rev > revB && eb < 0) head = '🟡 "Revenue de DAE rompe Budget en ' + mlblShort(CUR) + ', pero EBITDA aún en rojo"';
-    else if(rev < revB) head = '🔴 "DAE cierra ' + mlblShort(CUR) + ' por debajo de Budget — Revenue ' + fmtPct((rev-revB)/Math.abs(revB)*100,1) + ' vs plan"';
-    else head = '⚪ "DAE entrega resultados mixtos en ' + mlblShort(CUR) + ' — Revenue OK, foco en eficiencia"';
+    if(eb > 0 && eb > ebB) head = '🟢 "EV Fleets logra EBITDA positivo arriba de Budget en ' + mlblShort(CUR) + '"';
+    else if(rev > revB && eb < 0) head = '🟡 "Revenue de EV Fleets rompe Budget en ' + mlblShort(CUR) + ', pero EBITDA aún en rojo"';
+    else if(rev < revB) head = '🔴 "EV Fleets cierra ' + mlblShort(CUR) + ' por debajo de Budget — Revenue ' + fmtPct((rev-revB)/Math.abs(revB)*100,1) + ' vs plan"';
+    else head = '⚪ "EV Fleets entrega resultados mixtos en ' + mlblShort(CUR) + ' — Revenue OK, foco en eficiencia"';
     return '📰 <b>Headline del mes</b><br>' + head;
   }
 
@@ -5308,7 +5302,7 @@ function chatBotAnswer(q){
     const rev = _v2('revenue'), opex = Math.abs(_v2('opex')), sga = Math.abs(_v2('corporate_expenses'));
     const revHit = rev * (1-pct);
     const ebNew = revHit - opex - sga;
-    return '🎯 <b>Sensitivity: Revenue ↓ ' + fmtPct(pct*100,0) + '</b><br>• Revenue ' + mlblShort(CUR) + ': ' + fmtMm(rev) + 'M<br>• Revenue post-hit: ' + fmtMm(revHit) + 'M (-' + fmtMm(rev*pct) + 'M)<br>• Estimated EBITDA (assuming fixed costs): <b>' + fmtMm(ebNew) + 'M</b><br><br>💡 Assumes OPEX and SG&A constant. In reality, driver pay and commissions would drop ~80% of the hit.';
+    return '🎯 <b>Sensitivity: Revenue ↓ ' + fmtPct(pct*100,0) + '</b><br>• Revenue ' + mlblShort(CUR) + ': ' + fmtMm(rev) + 'M<br>• Revenue post-hit: ' + fmtMm(revHit) + 'M (-' + fmtMm(rev*pct) + 'M)<br>• Estimated EBITDA (assuming fixed costs): <b>' + fmtMm(ebNew) + 'M</b><br><br>💡 Assumes OPEX and SG&A constant. In reality, subcontracted EPC cost would drop ~80% of the hit.';
   }
 
   // === Incident analyses ===
@@ -5319,7 +5313,7 @@ function chatBotAnswer(q){
   }
   if(/% .*incident|porcentaje.+incident|incident.+rate|trips? con incident/i.test(lq)){
     const total = _v2('inc_atfault_total') + _v2('inc_notfault_total');
-    const trips = _v2('trips_total');
+    const trips = +arr('zee_total_monitored')[KPI_LI]||0;
     return '⚠️ <b>Incidentes vs Trips · ' + mlblShort(CUR) + '</b><br>• Incidentes total: ' + total + '<br>• Trips: ' + trips.toLocaleString() + '<br>• Rate: <b>' + (trips?(total/trips*100).toFixed(1):'-') + '%</b> (1 incidente por cada ' + (total?Math.round(trips/total).toLocaleString():'-') + ' trips)';
   }
 
@@ -5334,7 +5328,7 @@ function chatBotAnswer(q){
   // === Talking point ===
   if(/talking point|punto.+hablar|elevator pitch|frase para decir/i.test(lq)){
     const rev = _v2('revenue'), eb = _v2('ebitda');
-    return '🎤 <b>Talking point · ' + mlblShort(CUR) + '</b><br><br>"In ' + mlblShort(CUR) + ', DAE generated ' + fmtMm(rev) + 'M of revenue with EBITDA of ' + fmtMm(eb) + 'M. ' + (eb < 0 ? 'Still in scaling phase, the operating focus is on performance ratio and churn.' : 'Showing positive margin traction while maintaining cost discipline.') + '"<br><br>💡 Ready to say out loud.';
+    return '🎤 <b>Talking point · ' + mlblShort(CUR) + '</b><br><br>"In ' + mlblShort(CUR) + ', EV Fleets generated ' + fmtMm(rev) + 'M of revenue with EBITDA of ' + fmtMm(eb) + 'M. ' + (eb < 0 ? 'Still in scaling phase — the operating focus is EPC execution and converting backlog into revenue.' : 'Showing positive margin traction while maintaining cost discipline.') + '"<br><br>💡 Ready to say out loud.';
   }
 
   // === Suggest next question ===
@@ -5346,30 +5340,35 @@ function chatBotAnswer(q){
   if(/(1 slide|una slide|one slide|slide summary)/i.test(lq)){
     const rev = _v2('revenue'), revB = _bv2('revenue');
     const eb = _v2('ebitda'), ebB = _bv2('ebitda');
-    const ch = _v2('churn');
-    return '🎯 <b>DAE · ' + mlblShort(CUR) + ' · 1-Slide</b><br><br>' +
+    const ch = 0;
+    return '🎯 <b>EV Fleets · ' + mlblShort(CUR) + ' · 1-Slide</b><br><br>' +
       '<b>Revenue</b>: ' + fmtMm(rev) + 'M (' + (revB?fmtPct((rev-revB)/Math.abs(revB)*100,1)+' vs Bud':'') + ')<br>' +
       '<b>EBITDA</b>: ' + fmtMm(eb) + 'M (' + (ebB?fmtPct((eb-ebB)/Math.abs(ebB)*100,1)+' vs Bud':'') + ')<br>' +
-      '<b>Churn</b>: ' + fmtPct(ch*100,1) + '<br><br>' +
+      '<b>EPC Backlog</b>: ' + fmtMm(+arr('epc_backlog')[KPI_LI]||0) + ' · <b>Pipeline</b>: ' + fmtMm(+arr('epc_pipeline')[KPI_LI]||0) + '<br><br>' +
       '<b>Key takeaway</b>: ' + (eb < 0 ? 'Foco operativo y de costos. Camino a profitability gradual.' : 'Margen positivo. Escalar con disciplina.');
   }
 
   // === Explicar formula ===
-  if(/que es.+(rph|revenue per hour|performance ratio|fill rate|churn|ebitda margin|gross margin)|explica.+(rph|performance ratio|fill rate|churn)/i.test(lq)){
-    if(/rph|revenue per hour/i.test(lq)) return '📚 <b>RPH (Revenue per Hour)</b><br>= Revenue ÷ Supply Hours<br><br>Measures how much the fleet earns for each hour a driver is available. Key productivity metric.';
-    if(/performance ratio|pr\b/i.test(lq)) return '📚 <b>Performance Ratio</b><br>= Time on Trip ÷ Time Online<br><br>% of time the driver is actually on a trip vs just connected. Target ≥80%.';
-    if(/fill rate/i.test(lq)) return '📚 <b>Fill Rate</b><br>= Trips Completed ÷ Trips Requested<br><br>% of requests that get completed. Target ≥90%.';
-    if(/churn/i.test(lq)) return '📚 <b>Churn (monthly)</b><br>= Drivers who left ÷ Active drivers at start<br><br>Attrition rate. Target <25%/month.';
-    if(/ebitda margin/i.test(lq)) return '📚 <b>EBITDA Margin</b><br>= EBITDA ÷ Revenue<br><br>% of each revenue peso left before D&A, interest and taxes.';
-    if(/gross margin/i.test(lq)) return '📚 <b>Gross Margin</b><br>= Gross Profit ÷ Revenue = (Revenue - OPEX) ÷ Revenue<br><br>% left after direct operating costs.';
+  if(/que es.+(epc|backlog|pipeline|zee|chaas|faas|emsp|watts|ebitda margin|gross margin|interco)|explica.+(epc|backlog|pipeline|zee|chaas|faas|emsp|watts)/i.test(lq)){
+    if(/backlog/i.test(lq)) return '📚 <b>EPC Backlog</b><br>Signed EPC work that has not been executed yet.<br><br>It is the most direct forward indicator: backlog becomes EPC revenue as projects get built. Reported end-of-period, in MXN$m.';
+    if(/pipeline/i.test(lq)) return '📚 <b>EPC Pipeline</b><br>Open commercial opportunities not yet signed.<br><br>Sits one step before Backlog: pipeline → (win) → backlog → (execute) → revenue.';
+    if(/interco/i.test(lq)) return '📚 <b>EPC Interco</b><br>EPC work executed for other VEMO entities rather than external clients.<br><br>Shown separately from third-party EPC because its margin profile and commercial risk are different.';
+    if(/\bepc\b/i.test(lq)) return '📚 <b>EPC</b> (Engineering, Procurement &amp; Construction)<br>Design, installation and operation of charging infrastructure — up to full electrolineras.<br><br>Project-based, so it is lumpy month to month. Split into <b>third-party</b> and <b>Interco</b>.';
+    if(/zee/i.test(lq)) return '📚 <b>ZEE</b><br>VEMO\'s fleet-monitoring platform: real-time visibility of vehicles, charging, users and performance.<br><br>Tracked here as monitored vehicles, split <b>LTO</b> + <b>third-party</b>.';
+    if(/chaas/i.test(lq)) return '📚 <b>ChaaS (Charging-as-a-Service)</b><br>The client gets charging capacity as a service instead of buying and operating it.<br><br>Lets a fleet electrify from day one with no upfront capital. Lands in <b>Contracted Revenues</b>.';
+    if(/faas/i.test(lq)) return '📚 <b>FaaS / operational leasing</b><br>Vehicle leasing with chargers and monitoring technology included.<br><br>Recurring revenue, reported inside <b>Contracted Revenues</b>.';
+    if(/emsp/i.test(lq)) return '📚 <b>eMSP</b><br>Service that turns an existing private charger into a revenue-generating public charging point.';
+    if(/watts/i.test(lq)) return '📚 <b>Watts B2B</b><br>Pay-per-use access to VEMO\'s public charging hubs, so a company can go electric without building its own infrastructure.';
+    if(/ebitda margin/i.test(lq)) return '📚 <b>EBITDA Margin</b><br>= EBITDA ÷ Revenues<br><br>% of each revenue peso left before D&amp;A, interest and taxes. Also reported <i>ex CF &amp; Corp G&amp;A</i>.';
+    if(/gross margin/i.test(lq)) return '📚 <b>Gross Margin</b><br>= Gross Profit ÷ Revenues = (Revenues − OPEX) ÷ Revenues<br><br>% left after direct operating cost.';
   }
 
   // === Esto no lo se / no data ===
-  if(/competidor|competitor|zona geografica|por zona|client.+recurrent|recurring client|cac|ltv|driver satisfaction|dia de la semana|day of week|driver.+mejor|best driver/i.test(lq)){
-    return '🤷 <b>I don\'t have that data</b><br>Available data comes from the EVF Excel (P&L) and the Proposed Main KPIs file (commercial KPIs). I don\'t have:<br>• Data by geographic zone<br>• Data by customer or session<br>• CAC/LTV (would need acquisition data)<br>• Individual driver satisfaction<br>• Breakdown by day of week<br><br>💡 For those analyses, export from the Uber system or ask the Ops team.';
+  if(/competidor|competitor|zona geografica|por zona|client.+recurrent|recurring client|cac|ltv|dia de la semana|day of week|client.+mejor|best client|per project|por proyecto/i.test(lq)){
+    return '🤷 <b>I don\'t have that data</b><br>Available data comes from the EVF Excel (P&L) and the Proposed Main KPIs file (commercial KPIs). I don\'t have:<br>• Project-by-project or client-by-client detail<br>• Data by geographic zone<br>• CAC/LTV (would need acquisition data)<br>• Client-level satisfaction<br>• Breakdown by day of week<br><br>💡 For those analyses, export from the source system or ask the Ops team.';
   }
   if(/regulatorio|regulatory|reforma|ley/i.test(lq)){
-    return '🤷 <b>Regulatory risk</b><br>I don\'t have real-time data on the regulatory front. General notes:<br>• Labor reform (driver classification as employees)<br>• Federal/CDMX EV subsidies<br>• Uber/ride-hailing regulation by SECTUR or local governments<br><br>💡 Check with VEMO\'s legal/regulatory team.';
+    return '🤷 <b>Regulatory risk</b><br>I don\'t have real-time data on the regulatory front. General notes:<br>• Permitting and interconnection rules for charging infrastructure (CRE / CFE)<br>• Federal/CDMX EV subsidies<br>• Municipal permits for charging hubs and electrolineras<br><br>💡 Check with VEMO\'s legal/regulatory team.';
   }
 
     // === DEEP FALLBACK: question-type + fuzzy + context + intent parsing ===
@@ -5483,9 +5482,9 @@ function chatBotAnswer(q){
     const suggestions = [];
     if(/revenue|ingres|sales/i.test(lq)) suggestions.push('"revenue ytd 2026"', '"revenue per hour"');
     if(/profit|margin|ebitda/i.test(lq)) suggestions.push('"ebitda ytd 2026"', '"ebitda margin"');
-    if(/cost|gasto|opex|spend/i.test(lq)) suggestions.push('"opex this month"', '"top opex"', '"costo por viaje"');
-    if(/driver|conductor/i.test(lq)) suggestions.push('"active drivers"', '"churn"', '"hires this month"');
-    if(/trip|viaje/i.test(lq)) suggestions.push('"trips ytd 2026"', '"price per ride"');
+    if(/cost|gasto|opex|spend/i.test(lq)) suggestions.push('"opex this month"', '"top opex"', '"cost per vehicle"');
+    if(/vehicle|vehiculo|fleet|flota|zee/i.test(lq)) suggestions.push('"zee monitored vehicles"', '"monitored lto"');
+    if(/epc|proyecto|project|backlog|pipeline/i.test(lq)) suggestions.push('"epc backlog"', '"epc pipeline"', '"backlog coverage"');
     if(/why|por que|reason|drove/i.test(lq)) suggestions.push('"main increases"', '"executive summary"');
     if(/best|mejor|highest|max/i.test(lq)) suggestions.push('"best month ebitda"', '"rank kpis by impact"');
     if(/worst|peor|lowest|min/i.test(lq)) suggestions.push('"worst month revenue"', '"biggest risks"');
@@ -5501,12 +5500,12 @@ function chatBotAnswer(q){
       smartFallback += '<br><br>';
     }
     smartFallback += '<b>I can answer:</b><br>';
-    smartFallback += '📊 <b>KPIs</b> — "revenue march 2026", "ebitda 2025", "take rate", "churn"<br>';
+    smartFallback += '📊 <b>KPIs</b> — "revenue march 2026", "ebitda 2025", "epc backlog", "pipeline"<br>';
     smartFallback += '📈 <b>Analysis</b> — "executive summary", "main increases", "rank kpis by impact"<br>';
     smartFallback += '🎯 <b>Strategy</b> — "what should I worry about", "what do you recommend", "1 slide summary"<br>';
     smartFallback += '🔮 <b>Forecast</b> — "forecast year end", "best month ebitda", "what if revenue drops 10%"<br>';
     smartFallback += '🌐 <b>VEMO</b> — "about VEMO", "linkedin", "fun fact", "joke"<br>';
-    smartFallback += '🎮 <b>Fun</b> — "play game" 🚖<br><br>';
+    smartFallback += '🎮 <b>Fun</b> — "play game" ⚡<br><br>';
     smartFallback += '💡 I understand English & Spanish. Try rephrasing or use the chips below.';
     return smartFallback;
 }
@@ -5536,18 +5535,20 @@ function setupChat(){
 
   // === Ask Claude URL builder ===
   function _buildAskClaudeUrl(userQuestion, vemiaAnswer){
-    // Contexto DAE compacto para pre-cargar en Claude
+    // Contexto EVF compacto para pre-cargar en Claude
     const rev = +arr('revenue')[CUR]||0, revB = +barr('revenue')[CUR]||0;
     const eb = +arr('ebitda')[CUR]||0, ebB = +barr('ebitda')[CUR]||0;
     const ni = +arr('net_income')[CUR]||0;
-    const ch = +arr('churn')[CUR]||0, pr = +arr('performance_ratio')[CUR]||0;
-    const ctx = 'You are a senior FP&A analyst at VEMO (Mexican ride-hailing company, division DAE = EV Fleets). Answer this executive question using the following data:\\n\\n' +
+    const _cbl = +arr('epc_backlog')[KPI_LI]||0, _cpl = +arr('epc_pipeline')[KPI_LI]||0;
+    const _cepc = +arr('epc')[CUR]||0, _czee = +arr('zee_total_monitored')[KPI_LI]||0;
+    const ctx = 'You are a senior FP&A analyst at VEMO (Mexico). This is the EV Fleets (EVF) unit: EPC charging-infrastructure projects (third-party + interco), Contracted Revenues (ChaaS/FaaS), and ZEE monitored fleet. Answer this executive question using the following data:\\n\\n' +
       '**Period:** ' + mlbl(CUR) + '\\n' +
       '**Revenue:** ' + fmtMm(rev) + 'M (Budget: ' + fmtMm(revB) + 'M)\\n' +
       '**EBITDA:** ' + fmtMm(eb) + 'M (Budget: ' + fmtMm(ebB) + 'M)\\n' +
       '**Net Income:** ' + fmtMm(ni) + 'M\\n' +
-      '**Churn:** ' + (ch*100).toFixed(1) + '%\\n' +
-      '**Performance Ratio:** ' + (pr*100).toFixed(1) + '%\\n\\n' +
+      '**EPC (3rd party):** ' + fmtMm(_cepc) + 'M\\n' +
+      '**EPC Backlog:** ' + fmtMm(_cbl) + 'M · **EPC Pipeline:** ' + fmtMm(_cpl) + 'M\\n' +
+      '**ZEE Monitored Vehicles:** ' + Math.round(_czee).toLocaleString() + '\\n\\n' +
       (vemiaAnswer ? '**VEMIA (local AI) answered:**\\n' + vemiaAnswer.replace(/<[^>]+>/g,'') + '\\n\\n---\\n\\n' : '') +
       '**My question:** ' + userQuestion + '\\n\\n' +
       'Provide a professional, concise answer as if you were briefing the CFO. Use bullet points where helpful.';
@@ -5616,7 +5617,7 @@ function setupChat(){
       // 🧠 Ask Claude
       const askC = document.createElement('button');
       askC.textContent = '🧠 Ask Claude';
-      askC.title = 'Open claude.ai with your question + DAE context';
+      askC.title = 'Open claude.ai with your question + EV Fleets context';
       askC.style.cssText = 'font-size:9.5px;padding:2px 8px;background:linear-gradient(90deg,#7BDADA,#11ABAB);color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700';
       askC.addEventListener('click', e=>{
         e.stopPropagation();
@@ -5633,8 +5634,8 @@ function setupChat(){
     let chips = [];
     if(/revenue|ingreso/.test(lq)) chips = ['ebitda this month', 'main increases', 'why did revenue change'];
     else if(/ebitda/.test(lq)) chips = ['margin ebitda', 'best month ebitda', 'forecast year end ebitda'];
-    else if(/churn|driver/.test(lq)) chips = ['hires this month', 'exits this month', 'performance ratio'];
-    else if(/opex|costo/.test(lq)) chips = ['expenses grew faster than revenue', 'top opex', 'driver payments'];
+    else if(/backlog|pipeline|epc/.test(lq)) chips = ['epc pipeline', 'backlog coverage', 'epc sales'];
+    else if(/opex|costo/.test(lq)) chips = ['expenses grew faster than revenue', 'top opex', 'cost per vehicle'];
     else if(/budget|presupuesto/.test(lq)) chips = ['biggest miss vs budget', 'on track to budget', 'forecast year end'];
     else if(/risk|riesgo/.test(lq)) chips = ['top opportunities', 'what do you recommend', 'CFO concerns'];
     else if(/opport|opp/.test(lq)) chips = ['biggest risks', 'rank kpis by impact', 'what do you recommend'];
@@ -5675,11 +5676,11 @@ function setupChat(){
     'forecast year end ebitda','best month ebitda','best month revenue',
     'rank kpis by business impact','what should management focus on',
     '1 slide summary','headline del mes',
-    'que recomiendas','que opinas de DAE','que es DAE','about VEMO',
-    'fun fact','joke','linkedin','website','quien lidera DAE',
-    'compara ebitda mar apr','take rate','churn','performance ratio',
+    'que recomiendas','que opinas de EV Fleets','que es EVF','about VEMO',
+    'fun fact','joke','linkedin','website','quien lidera EVF',
+    'compara ebitda mar apr','epc backlog','epc pipeline','zee monitored vehicles',
     'tendencia ebitda','que % de revenue se va a opex',
-    'cuanto falta para breakeven','costo por viaje','ingreso por viaje',
+    'cuanto falta para breakeven','cost per vehicle','backlog coverage',
     '3 cosas que salieron bien','3 cosas que salieron mal',
     'que pasaria si revenue cae 10%','help','que hora es','margenes'
   ];
@@ -5718,7 +5719,7 @@ function setupChat(){
     b.addEventListener('click', ()=>doSend(b.dataset.q));
   });
   function welcome(){
-    appendMsg('Hi David! 👋 I\'m <b>VEMIA</b> 🚖 — your AI assistant for DAE.<br><br>Ask me in English or Spanish (I always reply in English) about KPIs, P&L, risks, opportunities, forecasts, comparisons, margins, or try:<br>• <b>"executive summary"</b><br>• <b>"what do you think of DAE"</b><br>• <b>"joke"</b> 😄<br><br>💡 Tip: press <kbd>/</kbd> anytime to focus, <kbd>Esc</kbd> to close.', 'bot');
+    appendMsg('Hi David! 👋 I\'m <b>VEMIA</b> ⚡ — your AI assistant for EV Fleets.<br><br>Ask me in English or Spanish (I always reply in English) about KPIs, P&L, risks, opportunities, forecasts, comparisons, margins, or try:<br>• <b>"executive summary"</b><br>• <b>"what do you think of EV Fleets"</b><br>• <b>"joke"</b> 😄<br><br>💡 Tip: press <kbd>/</kbd> anytime to focus, <kbd>Esc</kbd> to close.', 'bot');
   }
   welcome();
 }
@@ -5914,7 +5915,15 @@ function renderMonthlyHL(){
         return (MONTH_NUM[ma]||0) - (MONTH_NUM[mb]||0);
       });
     sel.innerHTML = keys.map(k => '<option value="'+k+'">'+k+'</option>').join('');
-    if(keys.length) sel.value = keys[keys.length-1];
+    // Preferir el ultimo mes con H&L realmente capturados; si no hay, el ultimo disponible
+    if(keys.length){
+      let _pick = keys[keys.length-1];
+      for(let i=keys.length-1; i>=0; i--){
+        const _m = MONTHLY_HL[keys[i]];
+        if(_m && ((_m.highlights && _m.highlights.length) || (_m.lowlights && _m.lowlights.length))){ _pick = keys[i]; break; }
+      }
+      sel.value = _pick;
+    }
     sel.addEventListener('change', renderMonthlyHL);
     renderMonthlyHL();
   }
