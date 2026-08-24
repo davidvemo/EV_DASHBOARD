@@ -60,7 +60,7 @@ body{font-family:'Space Grotesk',-apple-system,sans-serif;background:var(--bg);c
 /* KPI cards */
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:11px;margin-bottom:24px}
 .kpi-card{background:var(--sf);border:1px solid var(--b);border-radius:10px;padding:13px 15px 14px;position:relative;overflow:hidden;display:flex;flex-direction:column}
-.kpi-spark{margin-top:10px;height:50px;overflow:hidden}
+.kpi-spark{margin-top:auto;padding-top:10px;height:50px;overflow:hidden}
 body.dark-mode .kpi-spark svg path[stroke="#11ABAB"]{stroke:#7BDADA!important}
 body.dark-mode .kpi-spark svg path[stroke="#1F5454"]{stroke:#9aa3ac!important}
 .kpi-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--teal)}
@@ -646,7 +646,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 <!-- =================== EXECUTIVE SUMMARY =================== -->
 <section class="section active" data-s="exec">
   <div id="kpi-cards-grid" class="kpi-grid"></div>
-  <div style="font-size:10.5px;color:var(--tx3);font-style:italic;margin:-6px 0 8px 0;letter-spacing:0.02em">View: <b>EVF Business Plan</b> · P&amp;L actuals through <b id="pl-through-lbl"></b> · Commercial KPI actuals through <b id="kpi-through-lbl"></b></div>
+  <div style="font-size:10.5px;color:var(--tx3);font-style:italic;margin:-6px 0 8px 0;letter-spacing:0.02em">View: <b>Managerial View</b> · P&amp;L actuals through <b id="pl-through-lbl"></b> · Commercial KPI actuals through <b id="kpi-through-lbl"></b></div>
   <!-- Chart full-width con dropdown para elegir KPI -->
   <div class="chart-card" style="margin-bottom:22px">
     <div class="chart-hd" style="gap:12px">
@@ -655,7 +655,6 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
       <div class="chart-toggles">
         <label><input type="checkbox" id="exec-kpi-bud" checked> Budget</label>
         <label><input type="checkbox" id="exec-kpi-proj"> Run-Rate</label>
-        <label><input type="checkbox" id="exec-kpi-season"> Seasonality</label>
       </div>
     </div>
     <div class="chart-body" style="height:300px"><canvas id="exec-kpi-canvas"></canvas></div>
@@ -698,7 +697,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 <!-- =================== P&L =================== -->
 <section class="section" data-s="pl">
   <!-- EBITDA vs Budget Bridge (unico bridge en P&L) -->
-  <div class="vemo-section-title">EBITDA <b>vs Budget</b> Bridge <span style="font-size:10px;font-weight:400;color:var(--tx3);letter-spacing:0.04em;text-transform:none;margin-left:8px;font-style:italic">EVF Business Plan view</span></div>
+  <div class="vemo-section-title">EBITDA <b>vs Budget</b> Bridge <span style="font-size:10px;font-weight:400;color:var(--tx3);letter-spacing:0.04em;text-transform:none;margin-left:8px;font-style:italic">Managerial View</span></div>
   <div class="chart-card" style="margin-bottom:22px">
     <div class="chart-hd">
       <span class="t">Budget EBITDA → Actual EBITDA · <span id="ebridge-period"></span></span>
@@ -716,13 +715,12 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
   <!-- Toggles Historical View + Vista P&L Summary -->
   <div style="background:var(--sf);border:1px solid var(--b);border-radius:var(--r);padding:11px 16px;margin:22px 0 14px 0;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
     <div class="stabs" id="pl-view-toggle" style="margin:0;display:none">
-      <button class="active" data-view="managerial">General</button>
+      <button class="active" data-view="managerial">Managerial View</button>
     </div>
     <label style="display:flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-size:13px;color:var(--forest);font-weight:600;cursor:pointer">
       <input type="checkbox" id="pl-historic-toggle" style="width:18px;height:18px;accent-color:var(--teal);cursor:pointer" />
       <span>📊 <b>Historical View</b></span>
     </label>
-    <span style="margin-left:auto;font-size:11px;color:var(--tx3);letter-spacing:0.03em">EVF Business Plan view · First column fixed on scroll</span>
   </div>
 
   <!-- TABLA AL FINAL -->
@@ -744,22 +742,8 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
       <button data-mode="yoy">YoY</button>
       <button data-mode="ytd">YTD</button>
       <button data-mode="bud">vs Budget</button>
-      <button data-mode="custom">Custom Months</button>
     </div>
   </div>
-  <!-- Month pickers for Custom (hidden by default) -->
-  <div id="custom-pickers" class="var-filters" style="display:none">
-    <span class="lbl">Month A</span>
-    <select id="cmp-a"></select>
-    <span class="lbl" style="margin-left:8px">Month B</span>
-    <select id="cmp-b"></select>
-    <span class="lbl" style="margin-left:8px;color:var(--tx3);font-weight:500">Show:</span>
-    <div class="vmode">
-      <button class="active" data-cmp="abs">$ Absolute</button>
-      <button data-cmp="pct">% Change</button>
-    </div>
-  </div>
-  <div id="cmp-table" class="vemo-wrap" style="margin-bottom:24px"></div>
 
 
   <div class="note">📊 <b>Heatmap</b> — currently in <b id="hm-mode-lbl">MoM</b> mode. Switch the mode above to see YoY or YTD.</div>
@@ -769,7 +753,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 
 <footer class="foot">
   <div>VEMO · EV Fleets · Strictly Private &amp; Confidential</div>
-  <div>build 2026-08-21 15:34</div>
+  <div>build 2026-08-24 10:55</div>
 </footer>
 
 <script>
@@ -882,8 +866,9 @@ document.addEventListener('click', function(ev){
   });
   KPI_RANGE = newRange;
   console.log('[range toggle] KPI_RANGE =', KPI_RANGE);
-  try { renderAllRatios(); }
-  catch(e){ console.warn('rerender ratios error', e); }
+  // Solo las tablas: no se toca ningun chart, por eso ya no hay parpadeo.
+  try { refreshRatioTables(); }
+  catch(e){ console.warn('refresh ratio tables error', e); }
 });
 
 /* ============ ALERTS ============ */
@@ -979,8 +964,12 @@ function getVal(ki, idx){
 }
 
 // Build inline SVG sparkline for KPI cards (clean, no inline labels)
-function _kpiSparkline(series, budgetSeries, w, h){
+function _kpiSparkline(series, budgetSeries, w, h, offset){
   w = w || 260; h = h || 50;
+  // offset = indice ORIGINAL (en D.months) del primer elemento de 'series'.
+  // Sin el, al recortar la serie al anio en curso el filtro de anio de la
+  // linea de Budget miraria el mes equivocado y la punteada desapareceria.
+  offset = offset || 0;
   const vals = series.filter(v => v != null && !isNaN(v));
   if(!vals.length) return '';
   // FIX: include Budget values in min/max so the dashed budget line stays inside viewBox
@@ -989,7 +978,8 @@ function _kpiSparkline(series, budgetSeries, w, h){
     ? budgetSeries.filter(v => v != null && !isNaN(v) && v !== 0)
     : [];
   const allVals = vals.concat(budVals);
-  const mn = Math.min.apply(null, allVals), mx = Math.max.apply(null, allVals);
+  // Eje Y SIEMPRE desde cero (sin auto-zoom); si hay negativos, desde el minimo.
+  const mn = Math.min(0, Math.min.apply(null, allVals)), mx = Math.max.apply(null, allVals);
   const range = mx - mn || 1;
   const n = series.length;
   const stepX = n > 1 ? w / (n - 1) : w;
@@ -1013,7 +1003,7 @@ function _kpiSparkline(series, budgetSeries, w, h){
   if(budgetSeries && budgetSeries.length){
     let bs = false;
     for(let i=0; i<n; i++){
-      if(D.months && D.months[i] && D.months[i] < '2026-01') continue;
+      if(D.months && D.months[offset+i] && D.months[offset+i] < '2026-01') continue;
       const bv = budgetSeries[i]; if(bv == null || isNaN(bv) || bv === 0) continue;
       budgetPath += (bs ? 'L' : 'M') + (i*stepX).toFixed(1) + ',' + y(bv).toFixed(1) + ' ';
       bs = true;
@@ -1074,10 +1064,11 @@ function renderKPICards(){
     const cardCls=(budPct!=null && isNegBetter(budPct))?'amber':'';
 
     // Serie para sparkline
-    const spStart = 0;
+    // Solo el anio en curso: el sparkline arranca en Ene del anio actual.
+    const spStart = (typeof YTD_START !== 'undefined') ? Math.min(YTD_START, Math.max(0,_li)) : 0;
     const spSeries = (A||[]).slice(spStart, _li+1);
     const spBudget = (B && B.length) ? (B||[]).slice(spStart, _li+1) : null;
-    const sparkline = _kpiSparkline(spSeries, spBudget, 260, 50);
+    const sparkline = _kpiSparkline(spSeries, spBudget, 260, 50, spStart);
     // Rango de valores (min-max) formateado corto
     const spVals = spSeries.filter(v => v != null && !isNaN(v));
     let rangeTxt = '';
@@ -1089,6 +1080,8 @@ function renderKPICards(){
           const pct = Math.abs(v) <= 1 ? v*100 : v;
           return pct.toFixed(0) + '%';
         }
+        // KPIs de unidades (vehiculos): enteros con coma, nunca "2k"
+        if(ki && ki.fmt === 'int') return Math.round(v).toLocaleString();
         const a = Math.abs(v);
         if(a >= 1e9) return _withCommas(v/1e9,1)+'B';
         if(a >= 1e6) return _withCommas(v/1e6,1)+'M';
@@ -1127,7 +1120,7 @@ function renderKPICards(){
       '<div class="kpi-mom"><span class="arr '+momCls+'">'+arrSym+'</span> <span class="'+momCls+'">'+momTxt+'</span> <span style="color:var(--tx3)">vs '+mlblShort(_prev)+'</span></div>'+
       (valBud?
         '<div class="kpi-bud"><span><span class="lbl">vs Budget</span> '+fmtVal(valBud,ki)+'</span><span class="v '+budCls+'">'+budTxt+'</span></div>'
-       :'<div class="kpi-bud"><span class="lbl">Budget</span><span class="v" style="color:var(--tx3)">n.a.</span></div>')+
+       :'')+
       '<div class="kpi-spark">'+sparkline+'</div>'+
       legendSlot +
       sparkFooter +
@@ -1623,6 +1616,15 @@ function devCellPct(actual,ref,isPct){
 
 // Estado global del rango: declarado arriba para evitar TDZ
 function rangeStart(){ return KPI_RANGE === 'historic' ? 0 : YTD_START; }
+// Etiqueta real del rango historico (p.ej. "2025-2026") en vez de "Historic".
+function histRangeLbl(){
+  const ms = D.months || [];
+  if(!ms.length) return 'Historic';
+  const y0 = String(ms[0] || '').slice(0,4);
+  const yN = String(ms[Math.max(0, Math.min(LI, ms.length-1))] || '').slice(0,4);
+  if(y0 && yN && y0 !== yN) return y0 + '-' + yN;
+  return yN || y0 || 'Historic';
+}
 function rangeEnd(){ return YTD_END; }
 
 // FORMATO TIPO 'Tabla de Metricas Operacionales' — lista expandible, click = mes a mes con vs Budget
@@ -1630,7 +1632,7 @@ function renderRatioExpandable(targetId, list, sectionTitle){
   const tgt=document.getElementById(targetId); if(!tgt) return;
   const RS = rangeStart(), RE = rangeEnd();
   let html = sectionTitle ? ('<div class="vemo-section-title">'+sectionTitle+'</div>') : '';
-  const hint = mlblShort(RS)+' → '+mlblShort(RE)+' · '+(KPI_RANGE==='ytd'?'YTD '+CURY:'Full history')+' · click section to expand';
+  const hint = mlblShort(RS)+' → '+mlblShort(RE)+' · '+(KPI_RANGE==='ytd'?'YTD '+CURY:histRangeLbl())+' · click section to expand';
   html += '<div class="opmet-wrap"><div class="opmet-hd"><span class="t">Operational Metrics Table</span><span class="hint">'+hint+'</span></div>';
   // Buscar el indice del primer mes de 2026 (para filtrado only2026)
   const _idx2026 = (D.months||[]).findIndex(m => m && m.startsWith('2026-01'));
@@ -1874,7 +1876,6 @@ function renderRatioCharts(containerId, chartDefs){
       '<div class="chart-toggles">'+
         (hasBud ? '<label><input type="checkbox" data-toggle="bud" data-card="'+containerId+'-c'+i+'" checked> Budget</label>' : '')+
         '<label><input type="checkbox" data-toggle="proj" data-card="'+containerId+'-c'+i+'"> Run-Rate</label>'+
-        '<label><input type="checkbox" data-toggle="season" data-card="'+containerId+'-c'+i+'"> Seasonality</label>'+
       '</div></div>'+
       '<div class="chart-body"><canvas id="'+containerId+'-c'+i+'"></canvas></div></div>';
   });
@@ -1979,7 +1980,7 @@ function renderRatioCharts(containerId, chartDefs){
       const card = document.getElementById(canvasId)?.closest('.chart-card');
       const showBud = card?.querySelector('[data-toggle="bud"]')?.checked ?? false;
       const showProj = card?.querySelector('[data-toggle="proj"]')?.checked ?? false;
-      const showSeason = card?.querySelector('[data-toggle="season"]')?.checked ?? false;
+      const showSeason = false;   // EVF no usa vista de estacionalidad
       // marginKey: si esta definido, agregar dataset de % en eje secundario a la derecha
       let mArr = null;
       if(cd.marginKey){
@@ -2037,18 +2038,18 @@ function renderAllRatios(){
     tgt.insertAdjacentHTML('beforeend', '<div class="vemo-section-title">'+sectionTitle+'</div>');
     // 2) Charts arriba
     renderRatioCharts(targetId, charts);
-    // 3) Toggle YTD/Historic — solo afecta a la tabla numérica, no a los charts
+    // 3) Toggle de rango — refresca SOLO la tabla numerica de abajo
     const toggleId = targetId + '-range-toggle';
     tgt.insertAdjacentHTML('beforeend',
-      '<div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px 0;padding:10px 14px;background:var(--sf);border:1px solid var(--b);border-radius:8px;flex-wrap:wrap;gap:10px">' +
-      '<div style="font-size:11px;color:var(--tx3);font-style:italic">💡 The toggle below only affects the numeric table (deltas, budget, etc.). Charts always show full history.</div>' +
+      '<div style="display:flex;justify-content:flex-end;align-items:center;margin:18px 0 8px 0;padding:10px 14px;background:var(--sf);border:1px solid var(--b);border-radius:8px;flex-wrap:wrap;gap:10px">' +
       '<div class="stabs" id="' + toggleId + '" data-role="range-toggle" style="margin:0">' +
       '<button class="' + (KPI_RANGE==='ytd'?'active':'') + '" data-range="ytd">YTD</button>' +
-      '<button class="' + (KPI_RANGE==='historic'?'active':'') + '" data-range="historic">Historic</button>' +
+      '<button class="' + (KPI_RANGE==='historic'?'active':'') + '" data-range="historic">' + histRangeLbl() + '</button>' +
       '</div>' +
       '</div>');
-    // 4) Tabla expandible abajo
-    renderRatioExpandable(targetId, list, '');
+    // 4) Tabla expandible abajo, en contenedor propio para poder refrescarla sola
+    tgt.insertAdjacentHTML('beforeend', '<div id="' + targetId + '-tbl"></div>');
+    renderRatioExpandable(targetId + '-tbl', list, '');
   }
   renderPair('rat-main', RATIOS.main, RATIO_CHARTS.main, 'EVF – <b>Main Commercial KPIs</b>');
   // Financial sub-tab: subtotal P&L lines (Revenues, Gross Profit, EBITDA, EBIT,
@@ -2061,15 +2062,30 @@ function renderAllRatios(){
     tgt.querySelectorAll('[data-evf-fin-tbl]').forEach(function(n){ n.remove(); });
     const wrap = document.createElement('div');
     wrap.setAttribute('data-evf-fin-tbl','1');
-    wrap.innerHTML = '<div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px 0;padding:10px 14px;background:var(--sf);border:1px solid var(--b);border-radius:8px;flex-wrap:wrap;gap:10px">'
-      + '<div style="font-size:11px;color:var(--tx3);font-style:italic">\u{1F4A1} The toggle below only affects the numeric table. Charts always show full history.</div>'
+    wrap.innerHTML = '<div style="display:flex;justify-content:flex-end;align-items:center;margin:18px 0 8px 0;padding:10px 14px;background:var(--sf);border:1px solid var(--b);border-radius:8px;flex-wrap:wrap;gap:10px">'
       + '<div class="stabs" data-role="range-toggle" style="margin:0">'
       + '<button class="' + (KPI_RANGE==='ytd'?'active':'') + '" data-range="ytd">YTD</button>'
-      + '<button class="' + (KPI_RANGE==='historic'?'active':'') + '" data-range="historic">Historic</button>'
+      + '<button class="' + (KPI_RANGE==='historic'?'active':'') + '" data-range="historic">' + histRangeLbl() + '</button>'
       + '</div></div><div id="rat-fin-tbl"></div>';
     tgt.appendChild(wrap);
     renderRatioExpandable('rat-fin-tbl', RATIOS.fin, '');
   })();
+}
+
+// Refresca SOLO las tablas numericas de Operational Metrics.
+// Los charts NO se destruyen ni se reconstruyen -> el toggle de rango no parpadea.
+function refreshRatioTables(){
+  [['rat-main-tbl', RATIOS.main], ['rat-fin-tbl', RATIOS.fin]].forEach(function(p){
+    const el = document.getElementById(p[0]);
+    if(!el) return;
+    el.innerHTML = '';
+    try { renderRatioExpandable(p[0], p[1], ''); }
+    catch(e){ console.warn('refreshRatioTables', p[0], e); }
+  });
+  // Sincronizar el estado activo de TODOS los toggles de rango
+  document.querySelectorAll('[data-role="range-toggle"] button').forEach(function(x){
+    x.classList.toggle('active', x.dataset.range === KPI_RANGE);
+  });
 }
 
 // === HUBS EXPENSE: desglose de gasto por hub (hoja PL_HUBS) ===
@@ -2263,8 +2279,9 @@ function makeLineChart(canvasId,label,data,opts){
       return v.toFixed(1);
     };
   }
-  // === MODO SEASONALITY: una LÍNEA POR AÑO, eje X = meses Ene-Dic ===
-  // Compara el patron estacional de 2024 (archivo LY), 2025 y 2026 YTD.
+  // === MODO POR AÑO (DESACTIVADO EN EVF): una LÍNEA POR AÑO, eje X Ene-Dic ===
+  // EVF no usa vista de estacionalidad, asi que no hay checkbox que lo active.
+  // Se conserva el codigo por si mas adelante se quiere habilitar.
   if(opts.seasonality){
     const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     const byYear={};
@@ -2289,14 +2306,14 @@ function makeLineChart(canvasId,label,data,opts){
         pointBackgroundColor:(yrColors[yr]||'#888'), pointHoverRadius:5, spanGaps:false,
         borderDash:(yr==='2024'?[5,3]:(yr==='2023'?[2,2]:[]))};
     });
-    // Eje Y ACOTADO al rango de los datos (NO desde cero) para ver mejor el movimiento estacional
+    // Eje Y SIEMPRE desde cero (sin auto-zoom al rango visible de los datos)
     const _allV=[];
     sdatasets.forEach(function(ds){ ds.data.forEach(function(v){ if(v!=null&&!isNaN(v)) _allV.push(v); }); });
     let _yMin, _yMax;
     if(_allV.length){
       const _mn=Math.min(..._allV), _mx=Math.max(..._allV), _rng=(_mx-_mn)||Math.abs(_mx)||1;
       const _pad=_rng*0.10;
-      _yMin=_mn-_pad; _yMax=_mx+_pad;
+      _yMin=Math.min(0,_mn); _yMax=_mx+_pad;
     }
     if(__SEASON_CHARTS[canvasId]){ try{__SEASON_CHARTS[canvasId].destroy();}catch(e){} }
     const _ch=new Chart(ctx,{type:'line',data:{labels:MN,datasets:sdatasets},
@@ -2457,7 +2474,7 @@ function renderExecKpiChart(){
   const B = barrCand(ki.keys);
   const showBud = document.getElementById('exec-kpi-bud')?.checked;
   const showProj = document.getElementById('exec-kpi-proj')?.checked;
-  const showSeason = document.getElementById('exec-kpi-season')?.checked;
+  const showSeason = false;   // EVF no usa vista de estacionalidad
   const yfmt = ki.type==='pct' ? (v=>(v*100).toFixed(0)+'%') : (ki.fmt==='mm' ? fmtMm : (ki.fmt==='int'?(v=>Math.round(v).toLocaleString()):(v=>{const r=Math.round(v*10)/10;return r.toLocaleString(undefined,{maximumFractionDigits:1});})));
   const hist2024 = (D.hist_2024 && ki.keys) ? (function(){ for(const k of ki.keys){ if(D.hist_2024[k]) return D.hist_2024[k]; } return null; })() : null;
   const hist2023 = (D.hist_2023 && ki.keys) ? (function(){ for(const k of ki.keys){ if(D.hist_2023[k]) return D.hist_2023[k]; } return null; })() : null;
@@ -2470,11 +2487,9 @@ function renderExecKpiChart(){
     const sel = document.getElementById('exec-kpi-picker');
     const bud = document.getElementById('exec-kpi-bud');
     const proj = document.getElementById('exec-kpi-proj');
-    const season = document.getElementById('exec-kpi-season');
     if(sel) sel.addEventListener('change', renderExecKpiChart);
     if(bud) bud.addEventListener('change', renderExecKpiChart);
     if(proj) proj.addEventListener('change', renderExecKpiChart);
-    if(season) season.addEventListener('change', renderExecKpiChart);
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', bind);
   else bind();
@@ -2980,7 +2995,6 @@ function renderVariationTable(fromIdx,toIdx,mode){
     body+='<tr>'+row+'</tr>';
   });
   tgt.innerHTML='<div class="vemo-section-title" style="font-size:18px">Variation table — '+(mode==='mom'?'MoM':(mode==='yoy'?'YoY':'YTD'))+'</div>'+
-    '<div style="font-size:10.5px;color:var(--tx3);font-style:italic;margin:-6px 0 10px 2px">Note: <b>▲</b> the line went up · <b>▼</b> the line went down (in size). Color = business impact: <span style="color:#168888;font-weight:700">green</span> favorable (more revenue or less expense), <span style="color:#C0392B;font-weight:700">red</span> unfavorable. Amounts &amp; % shown as magnitude.</div>'+
     '<div class="tbl-scroll"><table class="vemo-tbl"><thead><tr class="sub">'+header+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
 
