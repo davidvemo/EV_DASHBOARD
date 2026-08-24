@@ -755,7 +755,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 
 <footer class="foot">
   <div>VEMO · EV Fleets · Strictly Private &amp; Confidential</div>
-  <div>build 2026-08-24 16:36</div>
+  <div>build 2026-08-24 16:40</div>
 </footer>
 
 <script>
@@ -1501,7 +1501,9 @@ function buildPLRows(simple){
       }
       if(!_any) return;
     }
-    const hasChildren = line.children && line.children.length;
+    // Sin drill-down en el Executive Summary (simple): es una foto.
+    // Los desplegables viven solo en el tab P&L.
+    const hasChildren = line.children && line.children.length && !simple;
     const id = hasChildren? nextId() : null;
     const opts = {
       subtotal: line.subtotal,
