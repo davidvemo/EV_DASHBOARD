@@ -637,7 +637,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 
   <div class="tab-bar">
     <button class="active" data-s="exec">Executive Summary</button>
-    <button data-s="ratios">Operational Metrics</button>
+    <button data-s="ratios">Operational &amp; Financial Metrics</button>
     <button data-s="pl">P&amp;L</button>
     <button data-s="var">Variation</button>
   </div>
@@ -753,7 +753,7 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--b);font-
 
 <footer class="foot">
   <div>VEMO · EV Fleets · Strictly Private &amp; Confidential</div>
-  <div>build 2026-08-24 10:55</div>
+  <div>build 2026-08-24 11:08</div>
 </footer>
 
 <script>
@@ -1633,7 +1633,7 @@ function renderRatioExpandable(targetId, list, sectionTitle){
   const RS = rangeStart(), RE = rangeEnd();
   let html = sectionTitle ? ('<div class="vemo-section-title">'+sectionTitle+'</div>') : '';
   const hint = mlblShort(RS)+' → '+mlblShort(RE)+' · '+(KPI_RANGE==='ytd'?'YTD '+CURY:histRangeLbl())+' · click section to expand';
-  html += '<div class="opmet-wrap"><div class="opmet-hd"><span class="t">Operational Metrics Table</span><span class="hint">'+hint+'</span></div>';
+  html += '<div class="opmet-wrap"><div class="opmet-hd"><span class="t">Operational &amp; Financial Metrics Table</span><span class="hint">'+hint+'</span></div>';
   // Buscar el indice del primer mes de 2026 (para filtrado only2026)
   const _idx2026 = (D.months||[]).findIndex(m => m && m.startsWith('2026-01'));
   const _year2026Start = _idx2026 >= 0 ? _idx2026 : 12;
