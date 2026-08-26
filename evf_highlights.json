@@ -229,7 +229,53 @@
     ]
   },
   "Jul-26": {
-    "highlights": [],
-    "lowlights": []
+    "highlights": [
+      {
+        "title": "ChaaS Offsite and Watts B2B",
+        "body": "• Watts B2B revenues reached a record MXN$ 1.4m (+55.2% MoM). The increase was mainly driven by LAFA's consumption, which reached 185,747 kWh (+51% MoM) and MXN$ 1.3m, its highest consumption to date."
+      },
+      {
+        "title": "EMSP: Co-branding and credit program",
+        "body": "• During July two previously signed chargers reached COD and became active in Watts: i) Chevrolet dealership in Oaxaca, with 1 CCS1 60 kW DC charger, and ii) BYD dealership in Xalapa, with 1 GB/T 60 kW DC charger. Including these sites, the EMSP portfolio comprises 27 DC chargers representing 3,565 kW across 20 cities."
+      },
+      {
+        "title": "EPC-Related Sales",
+        "body": "• YTD EPC-related sales reached MXN$ 94m, of which MXN$ 26m corresponds to 10 ChaaS-related projects. YTD executed and recognized revenues reached MXN$ 32.5m, providing significant execution coverage for the coming months."
+      },
+      {
+        "title": "Selected Backlog &amp; Pipeline",
+        "body": "• Total backlog of MXN$ 59.9m, with most expected to be executed in August and October.<br>• Total pipeline of MXN $234.0m, most relevant including: (i) MXN$ 19m from remaining Grupo Andrade ChaaS + EMSP, (ii) MXN$ 5.4m the second phase of the GM assembly-plants charging infrastructure, and (iii) MXN$ 3.8m from chargers for KIA dealerships, with the remaining pipeline distributed across additional small and mid-sized dealership/corporate EPC opportunities."
+      },
+      {
+        "title": "ZEE",
+        "body": "• Monthly contracted ZEE vehicles increased from 466 to 620 (+33.0% MoM, +24.7% vs budget), adding 154 vehicles for LALA, bringing LALA's total to 421 vehicles. Sigma Alimentos remains the second largest customer, with 59 monitored vehicles.<br>• LALA has indicated its intention to acquire 300 BYD vehicles, which could be instrumented with ZEE before year-end. Other material opportunities include Oxxo, with potential for 200 vehicles, while pilot tests are underway with MELI's carriers and Bimbo. A cost analysis conducted during the period supported the product's competitiveness in the market. As reminder, our strategic goal is to get into the kitchen of these large corporates through ZEE, which allows us to build relationships with their Ops teams, and increase our prospects of upselling from within."
+      }
+    ],
+    "lowlights": [
+      {
+        "title": "Total EPC/O&amp;M",
+        "body": "• Total EPC revenues closed at MXN $9.5m (+3.3% vs Budget), of which: (i) MXN $3.7m came from Coppel; (ii) MXN $3.5m from DHL charger supply; (iii) MXN $1.7m from KIA; and (iv) MXN $0.6m from other smaller projects. However, reported revenue closed at MXN $2.4m after two prior-period corrections: the reclassification of three Holcim sites to ChaaS for MXN $5.6m, and the removal of MXN $1.5m in duplicated income on 2026 projects."
+      },
+      {
+        "title": "ChaaS Offsite and Watts B2B",
+        "body": "• No additional B2B customer was signed during July."
+      }
+    ],
+    "pnl_revenue": {
+      "bud": "MXN -$21.5m: Driven by: (i) lower Interco EPC (-$15.6m), and (ii) lower third-party EPC (-$6.8m). July revenues reached (+$9.5m), after a clean-up of -$7.1m as part of the 2026 pre-audit clean up: (i) Holcim contract, previously booked as EPC (-$5.6m), was reclassified to ChaaS, and duplicated revenues from 2026 projects were reversed (-$1.5m). This was partially offset by higher contracted revenues (+$0.9m) mainly from ZEE services for LTO EV vehicles, now booked here as the ZEE.",
+      "mom": "MXN +$0.7m: Driven by: (i) higher contracted revenues (+$0.6m) and (ii) higher third-party EPC (+$0.4m); partly offset by (iii) lower Interco EPC (-$0.2m)."
+    },
+    "pnl_gp": {
+      "bud": "MXN -$6.9m: Driven by lower revenues (-$21.5m), partially offset by lower EPC Direct Cost (+$14.5m). Gross Profit Margin was mainly affected by the revenue shortfall; on a normalized basis, GP Mg remains in line with historical levels (ca. 26%).",
+      "mom": "MXN -$1.8m: Mainly driven by revenue shortfall of -$7.1m."
+    },
+    "pnl_ebitda": {
+      "bud": "MXN -$7.0m: Driven by: (i) lower GP (-$6.9m), and (ii) slightly higher SG&amp;A (-$0.1m) on account of Q2 Insurance broker amortization (ca. -$0.4m); partially offset by (a) lower payroll (+$0.2m) and (b) lower Corp. &amp; CF SG&amp;A (+$0.1m).",
+      "mom": "MXN -$0.9m: Driven by: (i) a lower GP (-$1.8m), and (ii) higher CF &amp; Corp. SG&amp;A (-$0.2m). This was partially offset by a lower DL SG&amp;A (+$1.1m), due to cancellation of provisions from 2025, that will no longer be executed during 2026."
+    },
+    "pnl_ni": {
+      "bud": "MXN -$6.9m: Driven by a lower EBITDA (-$7.0m).",
+      "mom": "MXN -$0.8m: Mainly driven by lower EBITDA (-$0.9m)."
+    }
   }
 }
